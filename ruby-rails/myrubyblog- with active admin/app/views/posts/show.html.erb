@@ -1,0 +1,40 @@
+<%# Posts#show, here we display the post %>
+
+<p><%=@post.title %></p> 
+<p><%=@post.created_at.strftime("%B %d  %Y") %></p> 
+<p><%=@post.body %></p>
+
+
+<%# displaying the category a post belongs to is done thanks to
+	the associations defined in the models accordingly, belongs_to, has_many,
+	this is a way to link models, had several issues getting this
+	to work, the problem was the db migration files for posts and categories%
+	the associations must be included in the table definitions
+	and the db should contain such relationships.%>
+
+	
+<p>Category: <%= link_to @post.category.name, category_path(:id=>@post.category.id) if @post.category_id %></p>
+
+<p><%=link_to "Back", posts_path %></p>
+
+
+
+
+<%# :confirm is actually some js %>
+<%# the hash :method=>delete shows something really important for routing,
+	run rake routes, a list of 7 entries should be displayed for each 
+	controller, unless some more were added manually, the first column to
+	the left are named routes, _path should be appended to it to get the full 
+	named route that can be used in coding, each one is a shortcut to the action
+	on the last column to the right like posts#show, notice how there are
+	empty fields under some, this is because for a same named route different
+	http methods(verbs) can be used, GET is default, POST, DELETE,..., so, 
+	in order to delete a post above the named route for posts#destroy is used
+	but with :method=>delete, so that destroy action executes, take a look at
+	the rake routes image.
+	When a http request is generated, it can be a GET, POST, DELETE, PUT,
+	...etc method for a same URL, the request is then sent to the server
+	(webrick, apache, etc) which interprets the files of our ruby application. 
+ %> 
+
+<p>Find me in app/views/posts/show.html.erb</p>

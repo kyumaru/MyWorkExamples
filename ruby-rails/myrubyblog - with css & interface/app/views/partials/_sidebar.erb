@@ -1,0 +1,40 @@
+<div id="sidebar">
+		<ul>
+			<li>
+				<div id="search" >
+					<form method="get" action="#">
+						<div>
+							<input type="text" name="s" id="search-text" value="" />
+							<input type="submit" id="search-submit" value="GO" />
+						</div>
+					</form>
+				</div>
+				<div style="clear: both;">&nbsp;</div>
+			</li>
+			<li>
+				<h2>Get The Framework</h2>
+				<p>You can download Ruby and/or Ruby on Rails for free right now
+												<br />
+												<a style="color:#D93544;" href="http://rubyonrails.org/download" target="blank">GET IT NOW</a>
+											</p>
+			</li>
+			<li>
+				<h2>Categories</h2>
+				<ul>
+					<%all_categories.each do |cat|%>
+						<li> <%= link_to cat.name, category_path(cat.id)%> </li>			
+					<%end%>
+				</ul>
+			</li>
+			<li>
+				<h2>Blogroll</h2>
+				<ul>
+					<%all_posts.each do |post|%>
+						<li> <%= link_to post.title, post_path(post.id)%> </li>			
+					<%end%>
+				</ul>
+			</li>
+			
+		</ul>
+	</div>
+	<!-- end #sidebar -->

@@ -1,0 +1,34 @@
+<%# naming convention for a partial view is _viewName.html.erb%>
+
+<%# form_for is a helper method that generates a form object for another 
+	object, mapping such object properties, once created its methods can be
+	used to create labels, text_area, text_field,select...%>
+
+<%= form_for @post do |f| %>
+<%# this code renders the errors on validation on an ul %>
+<% if @post.errors.any? %>
+	<h2> Errors:</h2>
+	<ul>
+	<%@post.errors.full_messages.each do |message|%>
+		<li><%=message%></li>
+	<% end %>  
+	</ul>
+<% end %> 
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :body %>
+  </p>
+  
+  <p>  
+    <%= f.select :category_id, Category.all.collect{|x| [x.name,x.id]}, {:include_blank => 'select one'} %>
+  </p>
+ 
+  <p>
+    <%= f.submit "update"%> <%# gets submitted to edit action%>
+  </p>
+<% end %>

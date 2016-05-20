@@ -1,0 +1,19 @@
+<%# This is the / (index) view for posts controller, index action, aka Posts#index %>
+
+<%# views in ruby support html, js, erb blocks, show instance variables in 
+	controllers, helper methods,....%>
+
+<%# there are 2 kinds of erb blocks, execute or execute with display
+    if = is used the result of execution will display %> 
+<%# link_to is a rails helper method to create hrefs, without using html %>
+ 
+<h2>My ruby blog Index </h2>
+<hr/> <%# separator line%>
+<% @posts.each do |p| %> 
+	<p><%= link_to p.title, p %></p> 
+	<p><%=p.body %></p> 
+	<hr/>
+<% end %> <%# the end of an erb block with more erb blocks inside%> 
+
+
+<p>Find me in app/views/posts/index.html.erb</p>

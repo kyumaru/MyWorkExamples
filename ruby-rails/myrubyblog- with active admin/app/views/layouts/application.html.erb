@@ -1,0 +1,24 @@
+<%#this is the layout(similar to site master in .net) for all views%>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Myrubyblog</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%# a way of displaying flash messages is iterating through the flash object
+	using a hash, note how flash objects are hashes themselves %>
+
+<%flash.each do |key,value|%>
+<%=value%><br>
+<%end%>	
+
+<%# the content of any view is stored into yield object below and rendered there%>
+<%= yield %>
+
+</body>
+</html>

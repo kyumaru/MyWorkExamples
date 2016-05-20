@@ -1,0 +1,40 @@
+<%#this is the layout(similar to site master in .net) for all views%>
+
+<%=render "partials/header"%>
+
+<%# the content of any view is stored into yield object below and rendered there%>
+
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+
+<%# a way of displaying flash messages is iterating through the flash object
+using a hash, note how flash objects are hashes themselves %>
+			<div class="flash-message">
+			<%flash.each do |key,value|%>
+			<%=value%><br>
+			<%end%>
+			</div>	
+
+<%= yield %>
+ 					
+					<div style="clear: both;">&nbsp;</div>
+				</div>
+				<!-- end #content -->
+				
+	<%=render "partials/sidebar"%>
+	
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+	<div id="footer">
+		<p>&copy; 2013, My Ruby Blog - Sample Project</p>
+	</div>
+</div>
+<!-- end #footer -->
+
+</body>
+</html>
