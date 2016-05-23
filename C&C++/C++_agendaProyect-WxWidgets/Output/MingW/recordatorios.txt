@@ -1,0 +1,84 @@
+%nombre%
+<NOMBRE>
+%fecha%
+<FECHA>
+%asunto%
+<ASUNTO>
+%lugar%
+<LUGAR>
+%hinicio%
+<HORA INICIO>
+%hfin%
+<HORA FIN>
+%nombre%
+sssssssssssssss
+%fecha%
+sssssssssssss
+%asunto%
+ssssssssssssssssssssss
+%lugar%
+sssssssssssssssssssssssss
+%hinicio%
+<HORA INICssssssssO>
+%hfin%
+s
+%nombre%
+<NOMBRE>
+%fecha%
+<FECHA>
+%asunto%
+<ASUNTO>
+%lugar%
+<LUGAR>
+%hinicio%
+<HORA INICIO>
+%hfin%
+<FIN>
+%nombre%
+<NOMBRE>
+%fecha%
+<FECHA>
+%asunto%
+<ASUNTO>
+%lugar%
+<LUGAR>
+%hinicio%
+<HORA INICIO>
+%hfin%
+<HORA FIN>
+%nombre%
+<NOMBRE>
+%fecha%
+<FECHA>
+%asunto%
+<ASUNTO>
+%lugar%
+<LUGAR>
+%hinicio%
+<HORA INICIO>
+%hfin%
+<FIN>
+%nombre%
+<NOMBRE>
+%fecha%
+<FECHA>
+%asunto%
+<ASUNTO>
+%lugar%
+<LUGAR>
+%hinicio%
+<HORA INICIO>
+%hfin%
+<FIN>
+%nombre%
+<NOMBRE>
+%fecha%
+<FECHA>
+%asunto%
+<ASUNTO>
+%lugar%
+<LUGAR>
+%hinicio%
+<HORA INICIO>
+%hfin%
+<FIN>

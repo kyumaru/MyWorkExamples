@@ -1,0 +1,24 @@
+﻿
+@* @model WebApplication1.Models.User *@
+
+@model WebApplication1.ViewModels.LoginData
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+@Html.ValidationSummary(true)
+
+@using (Html.BeginForm())//equivalent to <form>
+{
+    @Html.LabelFor(u => u.Email)<br />
+    @Html.TextBoxFor(u => u.Email)<br /><br />
+    @Html.LabelFor(u => u.Password)<br />
+    @Html.PasswordFor(u => u.Password)<br /><br />
+
+    <p>
+        <button type="submit">Ingresar!</button>
+    </p>
+}

@@ -1,0 +1,79 @@
+/*    border-collapse: collapse; you will need to unify the borders of tables*/
+* {
+	/*text-align:center;/*every text aligns center*/
+	font-size: 100%;
+	font-family:arial,sans-serif;
+	/*margin: 0 auto 0 auto;??keeps everything in the middle on window size horizontaly*/
+	
+}
+
+body {
+    margin:0%;
+	height:100%;
+    width:100%;
+}
+
+legend{
+color:#7BC143;
+}
+
+
+.containerdiv,fieldset{
+	margin:5px 5px 40px 5px; 
+	border:grey solid 4px;
+}
+
+
+legend{
+	text-align:left;
+}
+
+#div0 span input{/*zeroing onto those specific inputs by a div container id*/
+	margin:20px 60px auto 0px;
+	padding:5px;
+}
+
+.radios  input{/*zeroing onto those specific inputs by a div container id*/
+	margin:20px 0px 30px 60px;
+}
+
+#div0{
+	margin-bottom:60px;
+}
+
+.centraldiv{
+	text-align:center;/*this crap of input types seem to aling according to text*/
+	margin:30px;
+	float:center;
+}
+
+.blockdivleft input {
+	margin:10px;
+}
+
+.blockdivright input {
+	margin:10px;
+}
+
+.optionblock{
+position:relative;
+right:-200px;
+width:400px;
+}
+
+.blockdivleft{
+display:block;
+float:left;
+}
+
+.blockdivright{
+display:block;
+float:right;
+}
+
+.aceptar, .cancelar{
+}
+
+#buttons{
+	float:right;
+}

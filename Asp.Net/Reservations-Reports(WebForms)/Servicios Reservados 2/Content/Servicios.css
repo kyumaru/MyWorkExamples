@@ -1,0 +1,116 @@
+﻿body {
+  color: #000;
+  background: white;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+
+h3{
+    padding:24px;
+    font-size:1.2em;
+    color: #7BC143;
+}
+section{
+   border-color:#c8c5c5;
+
+}
+section.principal{
+    border: 2px solid;
+    margin-left: 5%;
+    height: 80%;
+    margin-right: 5%;
+}
+section.contenedor{
+    border: 2px solid;
+    margin: 2.5%;
+    padding-left:2%;
+}
+select{
+    margin-left: 5%;
+    width: 60px;
+    height: 30px;
+}
+label.itemContenedor{
+    display:inline-block;
+    font-size: 0.8em;
+    margin: 1%;
+    width:30%;
+}
+header{
+    font-size: 1.1em;
+    color: #7BC143;
+    margin-bottom: 12px;
+}
+section>section>ul>li.itemContenedor {
+    display: inline-block;
+    margin-bottom: 12px;
+    width: 30%;
+}
+li.itemContenedor>input{
+    width:250px;
+}
+section>section>ul>li.failed {
+    border-bottom-color:red;
+    background-color: rgba(245, 94, 94, 0.80);
+}
+section>section>ul>li.failed:after {
+    content:"*";
+    font-size: 2em;
+    color: red;
+}
+section>section>ul>li.passed {
+    border-bottom-color:#7BC143;
+}
+input.selectorDeFecha{
+    background-color:rgba(245, 240, 240, 0.00);
+    border:none;
+    border-radius: 0px;
+    background-image:url(../Images/imagenes_OET/DatePicker.gif);
+    width:21px;
+    height:18px;
+}
+.tablaDeDatos{
+    border:1px solid;
+    border-color: #7BC143;
+    display:inline-block;
+}
+.tablaDeDatos>tr:first-child{
+    background-color:#7BC143;
+    color:white;
+}
+.tablaDeDatos>tr:nth-child(2n+1){
+    background-color:#7BC143;
+    color:white;
+}
+
+.contenedor_tabla{
+    display:inline-grid;
+    min-height:300px;
+}
+aside{
+    display:inline-block;
+    float:right;
+}
+aside>input {
+    margin-top:2px;
+    text-decoration:none;
+    background-color:#7BC143;
+    display:list-item;
+    width:45px;
+    height:40px;
+
+}
+#Content2{
+    width:150%;
+}
+.botonesLaterales>input{
+    width:101px;
+}
+.botonesLaterales{
+    display:none;
+}
+.btn-Naranja {
+  background-color: #F26631;
+  border-color: orange;
+}

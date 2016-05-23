@@ -1,0 +1,201 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+    #divLeft {
+       border: 2px solid;
+       border-radius: 25px;
+       width:50%;
+       float: left;
+       margin: auto;
+
+    }
+
+    #divRight {
+       border: 2px solid;
+       border-radius: 25px;
+       width:45%;
+       float: right;
+       margin: auto;
+       word-wrap: break-word;
+
+
+    }
+
+    .clear-both {
+      clear: both;
+    }
+
+</style>
+
+
+
+<div id="wrapper">
+    <div id="divLeft" class="jumbotron">
+        <form id="myform" asp-controller="Home" asp-action="Index" method="post">
+
+            <div class="form-group">
+                <label for="name">Name </label>
+                <input name ="field1" class="form-control" id="name" type="text" placeholder="Full name" />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email </label>
+                <input name="field2" class="form-control" id="email" type="email" placeholder="example@example.com" />
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password </label>
+                <input class="form-control" id="password" type="password" placeholder="Minimun 8 characters" />
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date of birth </label>
+                <input class="form-control" id="date" type="date" placeholder="mm/dd/yyyy" />
+            </div>
+
+            <input id="myPostButton" class="btn-primary" type="button" value="post to server">
+        </form>
+    </div>
+
+    <div id="divRight" class="jumbotron">
+
+        <label for="demo">Post report</label>
+        
+        <select id="mySelect">
+            <option value="0">--Sumbmissions--</option>
+        </select>
+        
+        <p id="demo">
+        </p>
+    </div>
+
+    <div class="clear-both"></div>
+
+
+</div>
+
+
+ 
+<script type="text/javascript">
+
+    //check 
+   // http://stackoverflow.com/questions/15625195/jquery-validator-plugin-ajax-submitting-not-working
+   // http://stackoverflow.com/questions/15060292/a-simple-jquery-form-validation-script
+    //TODO validation
+    /*
+    $(document).ready(function () {
+
+        $('#myform').validate({ // initialize the plugin
+            rules: {
+                field1: {
+                    required: true,
+                    minlength: 2
+                },
+                field2: {
+                    required: true,
+                    email: true
+                }
+            }
+        });
+
+    });
+    */
+
+    //GlOBAL TODO change to closure
+    var myList;
+
+    function updateReport(model) {
+        
+        var res = '<br>' +
+                 'Name: ' + model.name + '<br>' +
+                 'Email: ' + model.email + '<br>' +
+                 'Password: ' + model.password + '<br>' +
+                 'Date: ' + model.date;
+
+        document.getElementById("demo").innerHTML = res;
+
+        return false
+    }
+
+    //update on select change
+    $('select').on('change', function () {
+        //alert(listVal()); // or $(this).val()
+        //alert(myList[this.selectedIndex].name);
+
+        var index = this.selectedIndex - 1;
+        var model = myList[index];
+
+        if(index>-1)
+            updateReport(model);
+
+    });
+
+    
+    // TODO
+    /*enclosure to hold current list of models
+    var listVal = (function (l) {
+
+        //alert(l);
+        
+        var list = (function () {
+            if (typeof l != 'undefined')
+                list = l;
+        })();
+            
+        return list;
+    
+    });
+    */
+
+    //jquery-ajax request
+    $(function () {
+
+        $("#myPostButton").on("click",function(){
+            var form = $(this).parent("form");
+            
+
+            //javaScript object
+            var myJSobject = {
+                name: $("#name").val(),
+                email: $("#email").val(),
+                password: $("#password").val(),
+                date: $("#date").val()
+            };
+
+            $.ajax({
+                type: "POST",
+                url: form.attr("action"),
+                //data: form.serialize()
+                data: JSON.stringify(myJSobject),
+                dataType: "json",
+                contentType: "application/json; charset=utf-8"
+
+            })
+                .success(function (dataFromServer) {
+                    //alert("post succesful");
+                    updateReport(dataFromServer);
+
+                    //accesing modelList, it is an JS array at this point
+                    //dataFromServer.modelList[dataFromServer.modelList.length - 1].name;
+        
+                    //$("#demo").text(res) --did not set multiline
+                    
+                    //this should be a closure
+                    myList = null;
+                    myList = dataFromServer.modelList;
+
+                    var myNewOption = dataFromServer.modelList[dataFromServer.modelList.length - 1].name;
+                    var myNewValue = dataFromServer.modelList.length;
+                
+                    $('#mySelect').append($('<option>', {
+                        value: myNewValue,
+                        text: myNewOption
+                    }));
+
+                    
+                })
+        });
+    })
+</script>

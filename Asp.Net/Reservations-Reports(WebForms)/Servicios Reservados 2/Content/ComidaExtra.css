@@ -1,0 +1,57 @@
+﻿body {
+  color: #000;
+  background: white;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+h3{
+    font-size: 1.0em;
+    margin-top: 24px;
+    width: 90%;
+    margin-left:5%;
+    padding-bottom: 15px;
+    border-bottom:solid 3px;
+    border-bottom-color: #7BC143;
+    color: #7BC143;
+}
+section{
+   border-color:#c8c5c5;
+
+}
+section.principal{
+    border: 2px solid;
+    margin-left: 5%;
+    height: 90%;
+    margin-right: 5%;
+}
+label.itemContenedor{
+    display:list-item;
+    font-size: 0.8em;
+    margin: 1%;
+}
+ul>li.itemContenedor {
+    display: inline-block;
+    margin:12px;
+    width: 30%;
+    padding: 8px;
+}
+select {
+  width: 110px;
+  margin-left: 10px;
+}
+
+#notas{
+    margin-left: 10%;
+    margin-right:10%;
+    margin-top:2%;
+    margin-bottom:4%;
+    width:80%;
+    height:120px;
+}
+label{
+    margin-left:2%;
+    font-size:1.2em;
+    color:#7BC143;
+
+}

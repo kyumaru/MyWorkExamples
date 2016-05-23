@@ -1,0 +1,18 @@
+﻿body {
+}
+
+.division {
+  display: inline-flex;
+  width: 100%;
+}
+
+.izquierda {
+    width: 45%;
+    display:block;
+}
+
+.derecha {
+    width:45%;
+    display:block;
+    margin-left: 2%;
+}

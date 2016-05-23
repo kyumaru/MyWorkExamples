@@ -1,0 +1,133 @@
+﻿@model WebApplication1.Models.ProjectTask
+
+@{
+    ViewBag.Title = "Create";
+    var test = (int)ViewBag.myProject;
+}
+
+<h2>Crear Tarea</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Nueva</h4>
+        <br />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.hours, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.hours, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.hours, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.approved, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.approved)
+                    @Html.ValidationMessageFor(model => model.approved, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProjectID, "ProjectID", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("ProjectID", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ProjectID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br />
+
+       
+    </div>
+
+if ((int)ViewBag.myProject!=-1)
+{
+
+    <div>
+        <h4>@Html.DisplayNameFor(model => @Model.assignees)</h4>
+        <table class="table">
+            <tr>
+                <th>Nombre</th>
+                <th>Carrera</th>
+                <th>Carné</th>
+                <th>Asignar</th>
+            </tr>
+
+            @{
+                List<WebApplication1.ViewModels.AssignedUserData> users = ViewBag.Users;
+
+
+                foreach (var item in users)
+                {
+                    <tr>
+                       
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Major)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Ucard)
+                        </td>
+                        <td>
+                        @if (true)
+                        {
+                                <input type="checkbox"
+                                       name="selectedUsers"
+                                       value="@item.UserID" @*this should be item.ID*@
+                                       @(Html.Raw(item.Assigned ? "checked=\"checked\"" : "")) />
+                        }
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+
+       
+
+    </div>
+
+
+    <div>
+        @Html.ActionLink("Regresar a Editar-Proyecto", "Edit", "Project", new { id = ViewBag.myProject }, null) 
+
+    </div>
+}
+    else {
+        <div>
+            @Html.ActionLink("Regresar a Tareas", "Index")
+        </div>
+                }
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Crear" class="btn btn-success" />
+                    </div>
+                </div>
+                }
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

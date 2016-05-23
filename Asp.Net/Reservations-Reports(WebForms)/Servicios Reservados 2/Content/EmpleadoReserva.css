@@ -1,0 +1,39 @@
+﻿h3{
+    font-size: 1.15em;
+    padding-bottom:3px;
+    Width: 75%;
+    border-bottom: 1px solid #7BC143;
+    color:#7BC143;
+    margin-left:24px;
+}
+h4{
+    font-size: 1.11em;
+    padding-bottom:3px;
+    Width: 50%;
+    border-bottom: 1px solid #7BC143;
+    color:#7BC143;
+}
+
+
+.btn-group-vertical{
+    margin-left:10%;
+}
+section>input.btn.btn-success {
+  width: 200px;
+}
+.comidasReservadas{
+    display:inline-block;
+}
+
+section#comidasReservadas {
+  display: -webkit-box;
+}
+.comida{
+    width:175px;
+    background-color: #F26631;
+    border-color: orange;
+}
+.btn-Naranja {
+  background-color: #F26631;
+  border-color: orange;
+}

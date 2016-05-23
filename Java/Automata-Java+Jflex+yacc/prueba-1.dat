@@ -1,0 +1,19 @@
+hay un simbolo x
+hay un simbolo y
+hay un simbolo w
+
+hay un estado 0
+hay un estado 1
+hay un estado 2
+hay un estado 3
+
+hay una transicion desde 1 hacia 1 por x
+hay una transicion desde 3 hacia 0 por y
+hay una transicion desde 2 hacia 3 por w
+hay una transicion desde 2 hacia 2 por w
+
+3 es estado final
+1 es estado final
+
+
+

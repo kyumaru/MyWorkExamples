@@ -1,0 +1,127 @@
+﻿@* it is important to note razor views and html helpers such as -displayFor()- are intended to work with models *@
+
+@using WebApplication1.ViewModels
+@model WebApplication1.ViewModels.CreateProjectData
+
+@{
+    ViewBag.Title = "Create";
+
+    TempData["Data1"] = 1;
+}
+
+<h2>Crear Proyecto</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Nuevo</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(u => @Model.project.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => @Model.project.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => @Model.project.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => @Model.project.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => @Model.project.Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => @Model.project.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => @Model.project.hours, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => @Model.project.hours, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => @Model.project.hours, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => @Model.project.approved, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => @Model.project.approved)
+                    @Html.ValidationMessageFor(model => @Model.project.approved, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <dl class="dl-horizontal">
+
+                <dt>
+                    @Html.DisplayNameFor(model => @Model.project.assignees)
+                </dt>
+
+                <dd>
+                    <table class="table">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Carrera</th>
+                            <th>Carné</th>
+                            <th>Asignar</th>
+                        </tr>
+
+                        @{
+                            List<WebApplication1.ViewModels.AssignedUserData> users = ViewBag.Users;
+
+
+                            foreach (var item in users)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Major)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Ucard)
+                                    </td>
+                                    <td>
+
+                                        @if (true)
+                                        {
+                                            //@Html.ActionLink("Asignar", "Create", new { id = item.ID })
+                                            //@Html.CheckBox(@item.ID.ToString(), false)
+
+                                            <input type="checkbox"
+                                                   name="selectedUsers"
+                                                   value="@item.UserID" @*this should be item.ID*@
+                                                   @(Html.Raw(item.Assigned ? "checked=\"checked\"" : "")) />                                        
+                                        }
+                                    </td>
+
+                                </tr>
+                            }
+
+                        }
+                       
+                    </table>
+                </dd>
+
+            </dl>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Crear" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Regresar a Proyectos", "Index")
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

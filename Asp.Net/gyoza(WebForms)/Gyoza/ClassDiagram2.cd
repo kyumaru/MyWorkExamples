@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Gyoza.InterfazCuenta">
+    <Position X="10.5" Y="5.75" Width="2.75" />
+    <Members>
+      <Field Name="aceptado" Hidden="true" />
+      <Field Name="alertAlerta" Hidden="true" />
+      <Field Name="botonAceptar" Hidden="true" />
+      <Field Name="botonAceptarModal" Hidden="true" />
+      <Field Name="botonCancelar" Hidden="true" />
+      <Field Name="botonConsultar" Hidden="true" />
+      <Field Name="botonEliminar" Hidden="true" />
+      <Field Name="botonInsertar" Hidden="true" />
+      <Field Name="botonModificar" Hidden="true" />
+      <Field Name="confirmacion" Hidden="true" />
+      <Field Name="controladora" Hidden="true" />
+      <Field Name="cuentaConsultada" Hidden="true" />
+      <Field Name="cuentaConsultar" Hidden="true" />
+      <Field Name="gridViewCuentas" Hidden="true" />
+      <Field Name="idsGrid" Hidden="true" />
+      <Field Name="Label1" Hidden="true" />
+      <Field Name="Label13" Hidden="true" />
+      <Field Name="Label15" Hidden="true" />
+      <Field Name="Label16" Hidden="true" />
+      <Field Name="Label17" Hidden="true" />
+      <Field Name="Label18" Hidden="true" />
+      <Field Name="Label19" Hidden="true" />
+      <Field Name="Label2" Hidden="true" />
+      <Field Name="Label23" Hidden="true" />
+      <Field Name="Label24" Hidden="true" />
+      <Field Name="labelAlerta" Hidden="true" />
+      <Field Name="labelApellidos" Hidden="true" />
+      <Field Name="labelTipoAlerta" Hidden="true" />
+      <Field Name="modo" Hidden="true" />
+      <Method Name="Page_Load" Hidden="true" />
+      <Field Name="permisos" Hidden="true" />
+      <Field Name="resultadosPorPagina" Hidden="true" />
+      <Field Name="seConsulto" Hidden="true" />
+      <Method Name="SendMail" Hidden="true" />
+      <Field Name="textApellidos" Hidden="true" />
+      <Field Name="textCedula" Hidden="true" />
+      <Field Name="textCelular" Hidden="true" />
+      <Field Name="textCorreo" Hidden="true" />
+      <Field Name="textNombre" Hidden="true" />
+      <Field Name="textOficina" Hidden="true" />
+      <Field Name="textPassword" Hidden="true" />
+      <Field Name="textRol" Hidden="true" />
+      <Field Name="textUsername" Hidden="true" />
+      <Field Name="UpdatePanelPruebas" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEAgAAlYEDIYIAgCACAAgQImgXCPICEAhkIBMuoABCU=</HashCode>
+      <FileName>InterfazCuenta.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.InterfazProyecto">
+    <Position X="13.5" Y="5.75" Width="3" />
+    <Members>
+      <Field Name="aAPos" Hidden="true" />
+      <Field Name="Alerta" Hidden="true" />
+      <Field Name="asociadosArray" Hidden="true" />
+      <Field Name="botonAceptar" Hidden="true" />
+      <Field Name="botonAceptarModal" Hidden="true" />
+      <Field Name="botonCancelar" Hidden="true" />
+      <Field Name="botonConsultar" Hidden="true" />
+      <Field Name="botonEliminar" Hidden="true" />
+      <Field Name="botonInsertar" Hidden="true" />
+      <Field Name="botonModificar" Hidden="true" />
+      <Field Name="botonRequerimiento" Hidden="true" />
+      <Field Name="calendario1" Hidden="true" />
+      <Field Name="calendario2" Hidden="true" />
+      <Field Name="calendario3" Hidden="true" />
+      <Field Name="controladora" Hidden="true" />
+      <Field Name="controladoraC" Hidden="true" />
+      <Field Name="dAPos" Hidden="true" />
+      <Field Name="desasociadosArray" Hidden="true" />
+      <Field Name="fechaAsignacion" Hidden="true" />
+      <Field Name="fechaFinalizacion" Hidden="true" />
+      <Field Name="fechaInicio" Hidden="true" />
+      <Field Name="gridMiembrosAsociados" Hidden="true" />
+      <Field Name="gridMiembrosNoAsociados" Hidden="true" />
+      <Field Name="gridViewProyecto" Hidden="true" />
+      <Field Name="idArray" Hidden="true" />
+      <Field Name="Label1" Hidden="true" />
+      <Field Name="Label13" Hidden="true" />
+      <Field Name="Label14" Hidden="true" />
+      <Field Name="Label15" Hidden="true" />
+      <Field Name="Label16" Hidden="true" />
+      <Field Name="Label17" Hidden="true" />
+      <Field Name="Label18" Hidden="true" />
+      <Field Name="Label19" Hidden="true" />
+      <Field Name="Label2" Hidden="true" />
+      <Field Name="Label20" Hidden="true" />
+      <Field Name="Label3" Hidden="true" />
+      <Field Name="Label4" Hidden="true" />
+      <Field Name="Label5" Hidden="true" />
+      <Field Name="Label6" Hidden="true" />
+      <Field Name="labelAlerta" Hidden="true" />
+      <Field Name="labelTipoAlerta" Hidden="true" />
+      <Field Name="miembrosAsociados" Hidden="true" />
+      <Field Name="miembrosNoAsociados" Hidden="true" />
+      <Field Name="miembrosPorPagina" Hidden="true" />
+      <Field Name="modo" Hidden="true" />
+      <Field Name="permisos" Hidden="true" />
+      <Field Name="proyectoConsultado" Hidden="true" />
+      <Field Name="resultadosPorPagina" Hidden="true" />
+      <Field Name="seConsulto" Hidden="true" />
+      <Field Name="tablaAsociados" Hidden="true" />
+      <Field Name="tablaDesasociados" Hidden="true" />
+      <Field Name="textCelular" Hidden="true" />
+      <Field Name="textCorreo" Hidden="true" />
+      <Field Name="textEstado" Hidden="true" />
+      <Field Name="textNombre" Hidden="true" />
+      <Field Name="textObjetivo" Hidden="true" />
+      <Field Name="textOficina" Hidden="true" />
+      <Field Name="textRepresentante" Hidden="true" />
+      <Field Name="textTelefono" Hidden="true" />
+      <Field Name="UpdatePanelPruebas" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EEAoAAscEHYYIYiCEiYKhUA2gXCfCAEwTkrBEsIQBDc=</HashCode>
+      <FileName>InterfazProyecto.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.InterfazRequerimientos">
+    <Position X="7.75" Y="5.75" Width="2.5" />
+    <Members>
+      <Field Name="A1" Hidden="true" />
+      <Field Name="aceptado" Hidden="true" />
+      <Field Name="Alert" Hidden="true" />
+      <Field Name="archivosLabel2" Hidden="true" />
+      <Field Name="botonAceptar" Hidden="true" />
+      <Field Name="botonAceptarModal" Hidden="true" />
+      <Field Name="botonAgregarArchivo" Hidden="true" />
+      <Field Name="botonCancelar" Hidden="true" />
+      <Field Name="botonConsultar" Hidden="true" />
+      <Field Name="botonCriterio" Hidden="true" />
+      <Field Name="botonEliminar" Hidden="true" />
+      <Field Name="botonInsertar" Hidden="true" />
+      <Field Name="botonModificar" Hidden="true" />
+      <Field Name="confirmacion" Hidden="true" />
+      <Field Name="controladora" Hidden="true" />
+      <Field Name="controladoraP" Hidden="true" />
+      <Field Name="criteriosEnMemoria" Hidden="true" />
+      <Field Name="fFileName" Hidden="true" />
+      <Field Name="gridArchivos" Hidden="true" />
+      <Field Name="gridCriteriosAceptacion" Hidden="true" />
+      <Field Name="gridSubirArchivos" Hidden="true" />
+      <Field Name="gridViewProyectos" Hidden="true" />
+      <Field Name="gridViewRequerimientos" Hidden="true" />
+      <Field Name="idArray" Hidden="true" />
+      <Field Name="idsCriterio" Hidden="true" />
+      <Field Name="idsGrid" Hidden="true" />
+      <Field Name="Label1" Hidden="true" />
+      <Field Name="label10" Hidden="true" />
+      <Field Name="Label11" Hidden="true" />
+      <Field Name="Label12" Hidden="true" />
+      <Field Name="Label13" Hidden="true" />
+      <Field Name="Label14" Hidden="true" />
+      <Field Name="Label15" Hidden="true" />
+      <Field Name="Label16" Hidden="true" />
+      <Field Name="Label17" Hidden="true" />
+      <Field Name="Label19" Hidden="true" />
+      <Field Name="Label2" Hidden="true" />
+      <Field Name="Label20" Hidden="true" />
+      <Field Name="Label21" Hidden="true" />
+      <Field Name="Label22" Hidden="true" />
+      <Field Name="Label23" Hidden="true" />
+      <Field Name="Label3" Hidden="true" />
+      <Field Name="Label4" Hidden="true" />
+      <Field Name="Label5" Hidden="true" />
+      <Field Name="Label6" Hidden="true" />
+      <Field Name="Label7" Hidden="true" />
+      <Field Name="Label8" Hidden="true" />
+      <Field Name="Label9" Hidden="true" />
+      <Field Name="LabelAlert" Hidden="true" />
+      <Field Name="listaPathArchivos" Hidden="true" />
+      <Field Name="modo" Hidden="true" />
+      <Field Name="pEncargado" Hidden="true" />
+      <Field Name="permisos" Hidden="true" />
+      <Field Name="proyectoConsultado" Hidden="true" />
+      <Field Name="radioButtonList1" Hidden="true" />
+      <Field Name="requerimientoConsultado" Hidden="true" />
+      <Field Name="requerimientoConsultar" Hidden="true" />
+      <Field Name="resultadosPorPagina" Hidden="true" />
+      <Field Name="seConsulto" Hidden="true" />
+      <Field Name="sEncargado" Hidden="true" />
+      <Field Name="tablaArchivosBackup" Hidden="true" />
+      <Field Name="tablaSubirArchivos" Hidden="true" />
+      <Field Name="textContenido" Hidden="true" />
+      <Field Name="textCriterioAceptacion" Hidden="true" />
+      <Field Name="textDescripcionProyecto" Hidden="true" />
+      <Field Name="textEscenario" Hidden="true" />
+      <Field Name="textEstado" Hidden="true" />
+      <Field Name="textEstadoRequerimiento" Hidden="true" />
+      <Field Name="textEstimacion" Hidden="true" />
+      <Field Name="textModulo" Hidden="true" />
+      <Field Name="textNombre" Hidden="true" />
+      <Field Name="textNombreRequerimiento" Hidden="true" />
+      <Field Name="textOficinaProp" Hidden="true" />
+      <Field Name="textPrimerEncargado" Hidden="true" />
+      <Field Name="textPrioridad" Hidden="true" />
+      <Field Name="textRazon" Hidden="true" />
+      <Field Name="textRol" Hidden="true" />
+      <Field Name="textSegundoEncargado" Hidden="true" />
+      <Field Name="textSprint" Hidden="true" />
+      <Field Name="tieneArchivos" Hidden="true" />
+      <Field Name="UpdatePanel1" Hidden="true" />
+      <Field Name="UpdatePanelPruebas" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>cUohIGkXFC97oGETASwwxLoC3eH/IURhdhqFGu4BDi8=</HashCode>
+      <FileName>InterfazRequerimientos.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.InterfazSeguridad">
+    <Position X="5" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAJAAAAAAEAAAAAAABAAAAAAgACEAIQAAA=</HashCode>
+      <FileName>InterfazSeguridad.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.Modulo_Cuenta.ControladoraBDCuentas" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAggAEAAAAAAAAAiAAAACAAAEAAAAEAAAAAABAAAAAA=</HashCode>
+      <FileName>App_Code\Modulo Cuenta\ControladoraBDCuentas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.Modulo_Cuenta.ControladoraCuentas" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAggAAAAAAAAAgAiAAAACAAAEAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Modulo Cuenta\ControladoraCuentas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.Modulo_Cuenta.EntidadCuenta" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAgQAAAKEAAAAgCACAIAgAgSCAAAEAoAAAAA=</HashCode>
+      <FileName>App_Code\Modulo Cuenta\EntidadCuenta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.Modulo_Proyecto.ControladoraBDProyecto" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAgAAAAAQAACABAAAACAAIAAAQAQAAAAAAIAAA=</HashCode>
+      <FileName>App_Code\Modulo Proyecto\ControladoraBDProyecto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.Modulo_Proyecto.ControladoraProyecto" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAABAAAAAAAEARAAAAAAAAACAAAQAAABAAIAAA=</HashCode>
+      <FileName>App_Code\Modulo Proyecto\ControladoraProyecto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.Modulo_Proyecto.EntidadProyecto" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ApAECADQAAAAQACAAAIggAiAAAAIgIIAAAACAAIIBAg=</HashCode>
+      <FileName>App_Code\Modulo Proyecto\EntidadProyecto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.Modulo_Requerimientos.ControladoraBDRequerimientos" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACgAAAQAEAAAAEAICAgAAEAAAQAAEAAAAAAgBAAAAAQ=</HashCode>
+      <FileName>App_Code\Modulo Requerimientos\ControladoraBDRequerimientos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.Modulo_Requerimientos.ControladoraRequerimientos" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACgAAAQAEgAAQEAgCAgAAAABAAAAECAAAEAgAAAAAAA=</HashCode>
+      <FileName>App_Code\Modulo Requerimientos\ControladoraRequerimientos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.Modulo_Requerimientos.EntidadArchivoAsociado" Collapsed="true">
+    <Position X="9.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAACAAAAAIAAAAAAAEAAgABAAIA=</HashCode>
+      <FileName>App_Code\Modulo Requerimientos\EntidadArchivoAsociado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.Modulo_Requerimientos.EntidadRequerimiento" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEAASABAIEAAACCAAAAAgEBCQABAQkAAQAAACEAAAAg=</HashCode>
+      <FileName>App_Code\Modulo Requerimientos\EntidadRequerimiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.Modulo_Rol.ControladoraBDRoles" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAABAAABAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>App_Code\Modulo Rol\ControladoraBDRoles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.Modulo_Rol.ControladoraRoles" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAABAAABCAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Modulo Rol\ControladoraRoles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.Modulo_Rol.EntidadRol" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAABAIAAAQCAEAAAABAAAAAAIAAAACAAAQAAA=</HashCode>
+      <FileName>App_Code\Modulo Rol\EntidadRol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.DataSet1TableAdapters.Trabaja_EnTableAdapter" Collapsed="true">
+    <Position X="6.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.DataSet1TableAdapters.CuentaTableAdapter" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASgAGAAEAAAAAcgIAAAAAAAACEYCEAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.DataSet1TableAdapters.Archivo_AsociadoTableAdapter" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASABGAAEAAAAQcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyoza.DataSet1TableAdapters.RequerimientoTableAdapter" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEACAAEcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

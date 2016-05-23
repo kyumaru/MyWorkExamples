@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="ff" red="cc" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="botonAceptar" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="esExento" min="-2" max="-2" attributes="0"/>
+                      <Component id="jAgregarProducto" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jNomProducto" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jEtProveedor" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jEtPCosto" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jEtGanancia" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jEtCantidad" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jEtCantMinima" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jEtCantMinima1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jEtCantMinima2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jEtCantMinima3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="idSucursal" pref="159" max="32767" attributes="0"/>
+                              <Component id="cantidadMaxima" max="32767" attributes="0"/>
+                              <Component id="nombre" max="32767" attributes="0"/>
+                              <Component id="idproducto" max="32767" attributes="0"/>
+                              <Component id="idProveedor" max="32767" attributes="0"/>
+                              <Component id="precioCosto" max="32767" attributes="0"/>
+                              <Component id="porcentajeUtilidad" max="32767" attributes="0"/>
+                              <Component id="cantidadActual" alignment="0" max="32767" attributes="0"/>
+                              <Component id="cantidadMinima" alignment="0" max="32767" attributes="0"/>
+                              <Component id="tipoVenta" alignment="0" pref="159" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="jBotonCancelar" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="28" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                  <Component id="jAgregarProducto" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jNomProducto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="nombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="idproducto" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jEtProveedor" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="idProveedor" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jEtPCosto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="precioCosto" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jEtGanancia" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="porcentajeUtilidad" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jEtCantidad" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cantidadActual" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jEtCantMinima" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cantidadMinima" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jEtCantMinima1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cantidadMaxima" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jEtCantMinima2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="tipoVenta" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="19" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jEtCantMinima3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="idSucursal" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="esExento" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="botonAceptar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jBotonCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="botonAceptar">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Aceptar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonAceptarActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jAgregarProducto">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Lucida Grande" size="14" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Agregar Producto"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jNomProducto">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Nombre Producto"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="nombre">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Id Producto"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="idproducto">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jEtProveedor">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Proveedor"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="idProveedor">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jEtPCosto">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Precio Costo"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="precioCosto">
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="esExento">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Exento"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jEtGanancia">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="% Ganancia"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="porcentajeUtilidad">
+        </Component>
+        <Component class="javax.swing.JButton" name="jBotonCancelar">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cancelar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBotonCancelarActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jEtCantidad">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cantidad"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="cantidadActual">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jEtCantMinima">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cantidad Minima"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="cantidadMinima">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jEtCantMinima1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cantidad Maxima"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="cantidadMaxima">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jEtCantMinima2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Tipo Venta"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="tipoVenta">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jEtCantMinima3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="id sucursal"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="idSucursal">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="827"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

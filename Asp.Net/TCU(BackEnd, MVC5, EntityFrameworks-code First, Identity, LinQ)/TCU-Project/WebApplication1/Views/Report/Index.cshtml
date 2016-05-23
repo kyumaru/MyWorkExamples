@@ -1,0 +1,61 @@
+﻿@model IEnumerable<WebApplication1.ViewModels.ReportData>
+
+@{
+    ViewBag.Title = "Report";
+}
+
+<h2>Reportes</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        <table class="table">
+            <tr>
+                <th>
+                   Email
+                </th>
+                <th>
+                  Nombre
+                </th>
+                <th>
+                   Carrera
+                </th>
+                <th>
+                   Carné
+                </th>
+                <th>
+                    Total Horas
+                </th>
+                <th>
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.user.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.user.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.user.Major)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.user.Ucard)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.totalHours)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Detalles", "Details" , "Report", new { userId = item.user.ID },null)
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+}

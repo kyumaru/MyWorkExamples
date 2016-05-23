@@ -1,0 +1,223 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+//ABOUT static methods http://stackoverflow.com/questions/2671496/java-when-to-use-static-method
+
+package agg;
+
+import java.util.Random; 
+import java.util.*; //stuff for arrraylists
+import static java.lang.Math.*;
+/**
+ *
+ * @author kyu
+ */
+public class AGG {
+  
+/*** DESCRIPCION DEL CIRCUITO RESISTIVO ****/
+//if static is removed from Rs definition static make_ADN wont work, also is this is used to refer to it 
+  static float[] Rs={0.1f,1.0f,1.2f,1.5f,1.8f,3.9f,4.7f,5.1f,5.6f,6.8f,8.2f};//posibles resistencias totales en matriz de Gx, ningun valor es suma de otros 2 en la lista
+  static int[] Is={13};//vector de Imalla total proviene de suma de fuentes de corriente presentes
+  static int[] Sd={1,2};//cantidad de conductancias entre los nodos ij, cantidad de terminos en la suma para un elemento de la diagonal 
+  ArrayList<Float> Vx=new ArrayList<>();//contenedor de volatajes solucion
+
+  /*** PARAMETROS DEL AG ****/
+  //globales
+  int N=Sd.length;//matrizes solucion son N*N
+  int probaCruze=95;
+  int probaMutar=15;
+  int cuantos=50;//cuantos bichillos solucion
+  ArrayList<Solucion> poblacion=new ArrayList<>();//contenedor de soluciones
+  Solucion mejor=new Solucion();//la mejor solucion encontrada  
+
+  
+//evolves the whole system
+//debe haber una poblacion inicial creada
+void evolucionar(int N){
+   //while(N>0&&mejor.aptitud<9999){
+      evaluarAptitudes();
+      this.Seleccionar();
+      salvarMejor(poblacion.get(0));
+      //this.cheat();
+      //poblacion=new ArrayList<Solucion>(this.reproduccion());
+      
+      --N;
+   //}
+}  
+  
+  
+  //ordena segun aptitudes, los primeros son los mas aptos    
+void Seleccionar(){
+   Collections.sort(poblacion);
+}
+ 
+void evaluarAptitudes(){//evalua la aptitud de todos en la poblacion
+    for(int i=0;i<poblacion.size();i++)   
+      poblacion.get(i).set_aptitud(calc_apt(poblacion.get(i)));
+}
+//stores the best solution so far and prints it to console
+void salvarMejor(Solucion tupla){
+    if(mejor.aptitud>tupla.aptitud){
+        /*lets clone de object, it should be done by Clone() object method
+            http://howtodoinjava.com/2012/11/08/a-guide-to-object-cloning-in-java/
+        */
+        mejor=new Solucion();
+        mejor.genes=new  ArrayList<Float>(tupla.genes);
+        mejor.Gx=new  ArrayList<Float>(tupla.Gx);
+        mejor.Vx=new  ArrayList<Float>(tupla.Vx);
+        mejor.aptitud=tupla.get_aptitud();
+        //prints to console when there is a better solution
+        System.out.println(mejor.aptitud);       
+        for(int i=0;i<N;i++){
+           System.out.println(mejor.get_genes().subList(N*i, N+N*i));
+        }
+         System.out.println("");  
+    }
+}
+  
+  
+  
+  //todo el calculo del vector de voltajes se hace aqui
+  float calc_apt(Solucion tupla){
+      float[][] Mup = new float[N][N];
+      float[][] Mdown = new float[N][N];
+      Mdown=this.to_2dMatrix(tupla.Gx);
+      float detdown=this.calc_det(Mdown, N);
+      float apt=0;
+      for(int i=0;i<N;i++){//for every vx to calculate
+          Mup=this.to_2dMatrix(this.swapColumn(tupla.Gx, i));
+          float vx=this.calc_det(Mup,N)/detdown;
+          tupla.Vx.add(vx);//save voltages for this solution
+          apt+=vx;
+      }
+      return Math.abs(apt);
+  }
+  
+  //converts arraylist into M[][]
+  float[][] to_2dMatrix(ArrayList<Float> al){
+      float[][] Mres = new float[N][N];
+      int filaIndex=-1;
+      for(int i=0;i<al.size();i++){//for every element of the arraylist
+          if(i%N==0) ++filaIndex; 
+          Mres[filaIndex][i%N]=al.get(i);    
+      }
+      return Mres;
+  }
+  
+  //gets determinant of a matrix[][]
+    float calc_det(float A[][],int N){
+        float det=0;
+        if(N == 1){
+            det = A[0][0];
+        }
+        else if (N == 2){
+            det = A[0][0]*A[1][1] - A[1][0]*A[0][1];
+        }
+        else{
+            det=0;
+            for(int j1=0;j1<N;j1++)
+            {
+                float[][] m = new float[N-1][];
+                for(int k=0;k<(N-1);k++){
+                    m[k] = new float[N-1];
+                }
+                for(int i=1;i<N;i++){
+                    int j2=0;
+                    for(int j=0;j<N;j++){
+                        if(j == j1)
+                            continue;
+                        m[i-1][j2] = A[i][j];
+                        j2++;
+                    }
+                }
+                det += Math.pow(-1.0,1.0+j1+1.0)* A[0][j1] * calc_det(m,N-1);
+            }
+        }
+        return det;
+    }
+  
+  ArrayList<Float> swapColumn( ArrayList<Float> Gx, int k){//swaps colum k of the matrix with Is
+      ArrayList<Float> resGx= new ArrayList<>(Gx);//lets create a new copy so the parameter received Gx is not changed
+      int[] Isx=new int[this.N];//full DC vector 
+      
+      for(int i=0;i<N;i++){ //padding Isx with 0s if necessary
+          if(i<Is.length)
+              Isx[i]=Is[i];
+          else
+              Isx[i]=0;
+      }
+      int index=0;
+      for(int i=k;i<N*N;i+=N){//hay q hacer N substituciones
+         resGx.set(i,(float)Isx[index]);
+         ++index;
+      }
+      return resGx;
+  }
+ 
+  //returns a rand resitance Rx
+  static Float Make_ADN(){        
+      Random rand = new Random();
+      rand.setSeed(rand.nextInt(1000000));                
+      //return (Float)Math.pow(Rs[rand.nextInt(Rs.length)],-1) ;
+      return Rs[rand.nextInt(Rs.length)];
+  }
+  
+  boolean fillDiagonals(Solucion tupla,int i){// el elemento i de la diagonal con la suam de Rxs en solucion x y en su Gx
+      float sumaRx=0f;
+      float sumaGx=0f;
+      for(int k=0;k<Sd[i];k++){//para cada suma q hay q hacer segun el elemento i de Sd
+           sumaRx+=Make_ADN();
+           sumaGx+=Math.pow(sumaRx,-1);
+      }
+      tupla.genes.add(sumaRx);
+      tupla.Gx.add(sumaGx);
+      
+      return false;
+  }
+  
+  boolean CrearGenoma(Solucion tupla){// crea todas las celdas de la tuppla solucion    
+      //ArrayList<Integer> genoma = new ArrayList<>();//para una nueva tupla
+      int dindex=0;
+      for(int i=0;i<N*N;i++)//n*n tamano de las tuplas  
+      {
+          if(i==dindex){//call to fill diagonal index element
+              fillDiagonals(tupla,i%N);
+              dindex+=N+1;
+          }
+          else{
+              float ADN=Make_ADN();
+              tupla.genes.add(ADN);
+              tupla.Gx.add(-(float)Math.pow(ADN,-1));
+          }
+      }      
+      return false;
+  }
+    
+  //crea una nueva poblacion inicia la poblacion
+  void CrearPoblacion(int cuantos){    
+    for(int i=0;i<cuantos;i++)  
+    {   
+       Solucion tupla= new Solucion();//
+       this.CrearGenoma(tupla);
+       //tupla.set_aptitud(calc_apt(tupla)); done by another method
+       poblacion.add(tupla);
+    }       
+  }
+ 
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+       AGG myAG= new AGG();
+       //myAG.CrearGenoma();
+       myAG.CrearPoblacion(myAG.cuantos);
+       //myAG.swapColumn(myAG.poblacion.get(0).Gx,2);
+       //myAG.to_2dMatrix(myAG.poblacion.get(0).Gx);
+       myAG.evolucionar(0xFFFFFF);
+       System.out.println(AGG.Make_ADN());//no instance is req to use the method it belongs to none and every instance of the class
+       
+    }  
+}

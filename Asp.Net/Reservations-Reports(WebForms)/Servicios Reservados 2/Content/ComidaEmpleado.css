@@ -1,0 +1,64 @@
+﻿input[ type="checkbox"]{
+}
+h4{
+    color: #7BC143;
+    font-size:1.2em;
+}
+#fechaDeEntrada,
+input.selectorDeFecha{
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color:rgba(245, 240, 240, 0.00);
+    border-radius: 0px;
+    background-image:url('../Images/imagenes_OET/DatePicker.gif');
+    height:18px;
+    width: 21px;
+}
+li.itemFormulario{
+    width: 30%;
+    padding: 2px;
+    display:none
+}
+
+ul{
+      list-style-type: none;
+      display:inline-block;
+}
+
+#ContenedorManejoDeHorario>input[type="button"]{
+    float:right;
+    margin-right: 25px;
+}
+.listaformulario{
+    width:80%;
+    height:10%;
+    display:inline-block;
+    color:#000000;
+
+}
+.itemFormulario{
+    width: 30%;
+    display:inline-block;
+    color:#000000;
+}
+#ContenedorManejoDeHorario>div>*{
+    padding: 2px;
+}
+[type="date"]{
+    width:150px;
+    float:none;
+}
+ul{
+    display:block;
+}
+input#MainContent_btnAceptar:disabled:hover {
+  cursor: not-allowed;
+}
+input#MainContent_btnAceptar:Disabled {
+  background-color: rgba(142, 200, 95, 0.76);
+}
+
+input#MainContent_fecha {
+  width: 150px;
+}

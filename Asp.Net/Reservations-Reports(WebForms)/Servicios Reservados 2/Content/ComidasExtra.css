@@ -1,0 +1,84 @@
+﻿body {
+  color: #000;
+  background: white;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  display:block;
+}
+
+h3{
+    font-size: 1.0em;
+    margin-top: 24px;
+    width: 90%;
+    margin-left:5%;
+    padding-bottom: 15px;
+    border-bottom:solid 3px;
+    border-bottom-color: #7BC143;
+    color: #7BC143;
+}
+section{
+   border-color:#c8c5c5;
+
+}
+section.principal{
+    border: 2px solid;
+    margin-left: 5%;
+    height: 90%;
+    margin-right: 5%;
+}
+label.itemContenedor{
+    display:list-item;
+    font-size: 0.8em;
+    margin: 1%;
+}
+ul>li.itemContenedor {
+    display: inline-block;
+    margin:12px;
+    width: 15%;
+    padding: 8px;
+}
+select {
+  width: 165px;
+  margin-left: 10px;
+}
+
+#notas{
+  margin-left: 4%;
+  margin-right: 10%;
+  margin-top: 1%;
+  margin-bottom: 4%;
+  width: 80%;
+  height: 120px;
+}
+label {  
+  margin-left: 1%;
+  font-size: 1.03em;
+  color: #7BC143;
+  display: inherit;
+}
+input{
+    border: 1px solid;
+    border-radius:4px;
+    margin:6px;
+    margin-left: 10px;
+    width: 40%;
+}
+
+input.selectorDeFecha{
+    background-color:rgba(245, 240, 240, 0.00);
+    border:none;
+    border-radius: 0px;
+    background-image:url(../Images/imagenes_OET/DatePicker.gif);
+    width:21px;
+    height:18px;
+}
+ul>li>input.tiempo{
+    line-height: 12px;
+}
+[type="submit"]{
+      height: 35PX;
+      width: 150px;
+}
+input#MainContent_fechaDeEntrada {
+  height: 18px;
+}

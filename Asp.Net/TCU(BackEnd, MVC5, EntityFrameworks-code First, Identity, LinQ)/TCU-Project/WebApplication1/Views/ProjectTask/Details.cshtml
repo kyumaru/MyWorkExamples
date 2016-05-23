@@ -1,0 +1,107 @@
+﻿@model WebApplication1.Models.ProjectTask
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Tarea</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hours)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hours)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.approved)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.approved)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Project.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Project.Name)
+        </dd>
+
+    </dl>
+</div>
+
+<h4>Responsables</h4>
+<div>
+    <table class="table">
+        <tr>
+            <th>Nombre</th>
+            <th>Carrera</th>
+            <th>Carné</th>
+        </tr>
+        @foreach (var item in Model.assignees)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Major)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ucard)
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+
+
+
+@if (@User.IsInRole("admin"))
+{
+    <p>
+    
+        @if (ViewBag.myProjectID != null)
+        {
+            @Html.ActionLink("Regresar a Editar-Proyecto", "Edit", "Project", new { id = (int)ViewBag.myProjectID }, null)
+        }
+        else {
+            @Html.ActionLink("Regresar a Tareas", "Index")
+
+        }
+    </p>
+}
+else {
+
+    if (ViewBag.myProjectID != null)
+    {}
+    else {
+         <p>
+           @Html.ActionLink("Regresar a Tareas", "Index")
+        </p>
+    }
+
+}

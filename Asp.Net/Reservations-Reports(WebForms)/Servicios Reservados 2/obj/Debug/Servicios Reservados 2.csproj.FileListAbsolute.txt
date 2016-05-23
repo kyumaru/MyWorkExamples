@@ -1,0 +1,1053 @@
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\servicios\Sistema de Servicios Reservados\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\serviciosgit\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\Users\b12422\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\serv\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\Users\b04833\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\servGit\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\Users\b14011\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\Users\b12422\Desktop\proyectoInge\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\b06171\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\Users\b06171\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\Users\b12422\Desktop\inge2\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\servicios\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\Users\b04833\Source\Repos\codemasters2\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\jdpicado\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\WebGrease.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\EntityFramework.xml
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\Users\b06171\Source\Repos\codemasters5\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\b14709\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\Users\b17013\Source\Repos\codemasters\Servicios Reservados 2\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\EntityFramework.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\WebGrease.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\EntityFramework.xml
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\b12422\Desktop\sprint3\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\EntityFramework.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\WebGrease.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\EntityFramework.xml
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\Users\b12422\Desktop\sprint3\sprint3\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Servicios Reservados 2.dll.config
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Servicios Reservados 2.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Servicios Reservados 2.pdb
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Antlr3.Runtime.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.Core.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\EntityFramework.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Newtonsoft.Json.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Oracle.DataAccess.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Oracle.DataAccess.EntityFramework.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\System.Net.Http.Formatting.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\System.Web.Http.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\System.Web.Http.WebHost.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\System.Web.Optimization.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\System.Web.Providers.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\WebGrease.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Newtonsoft.Json.xml
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\System.Net.Http.Formatting.xml
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\System.Web.Http.xml
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\System.Web.Http.WebHost.xml
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\EntityFramework.xml
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.Core.xml
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\es\System.Web.Http.resources.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\es\EntityFramework.resources.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\es\System.Web.Providers.resources.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.csprojResolveAssemblyReference.cache
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.dll
+C:\Users\b12422\Desktop\sprint3TODO\sprint3\Servicios Reservados 2\obj\Debug\Servicios Reservados 2.pdb

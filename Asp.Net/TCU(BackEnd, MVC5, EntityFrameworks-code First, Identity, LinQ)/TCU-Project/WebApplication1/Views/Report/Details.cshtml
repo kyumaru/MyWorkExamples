@@ -1,0 +1,49 @@
+﻿@model IEnumerable<WebApplication1.Models.ProjectTask>
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalles</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+   
+        <th>
+            @Html.DisplayNameFor(model => model.approved)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Project.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hours)
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.approved)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Project.Name)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.hours)
+            </td>
+           
+        </tr>
+    }
+
+</table>
+
+

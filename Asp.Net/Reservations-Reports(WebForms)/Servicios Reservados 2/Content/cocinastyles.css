@@ -1,0 +1,149 @@
+/*    border-collapse: collapse; you will need to unify the borders of tables*/
+* {
+	text-align:center;/*every text aligns center*/
+	/*color:white;*/
+	font-size: 100%;
+	font-family:arial,sans-serif;
+	/*margin: 0 auto 0 auto;??keeps everything in the middle on window size horizontaly*/
+	
+}
+
+body {
+    margin:0%;
+	height:100%;
+    width:100%;
+}
+/*textarea*/
+
+textarea{
+	resize: none;
+	border: none;
+	height:100%;
+    width:100%;
+	box-sizing: border-box;
+}
+
+
+.basura{
+	height:110px;
+    width:300px;
+}
+
+
+table,td,th{
+	border:grey solid 4px;
+	border-collapse: collapse; /*you will need to unify the borders of tables*/
+}
+
+
+table th{
+	background-color:#7BC143; 
+    color: white;
+	padding: 10px 10px 10px 10px;
+	
+}
+
+
+#span-div0{
+	/*margin: 5px 5px 5px 5px;*/
+}
+
+.fieldset-div{
+	margin: 30px auto 30px auto;
+	padding: 25px 25px 25px 25px;
+	border:grey solid 4px;
+	margin-bottom:60px;
+}
+
+#container-fieldset{
+
+margin-top:10px;
+	border:grey solid 4px;
+	font-size:28px;
+}
+
+#content{/*central left div with content*/
+	float:left;
+	color:grey;
+	font-weight:bold;
+
+}
+
+
+
+#topmost-div{
+color:white;
+	width:100%;
+	
+	background-color:#7BC143; /*  paths has to be relative to the CSS file
+												not the HTML file(obviously) */
+	/*border-radius:10px;*/
+	/*background-color:green;*/
+	border: solid grey 3px;/*css3 wrap border*/
+}
+
+.block-inline{
+	display:inline-block;
+}
+
+#topmost-left{
+	margin:10px 0 0 0;/*pro version, clock wise top right bottom left values*/
+	float:left;
+	
+}
+#topmost-right{
+	float:right;
+}
+
+#topmost-center{
+	position:relative;
+	left:-10%;
+}
+
+#topmost-center h1{/*using wrapping div to style h1 it contains, outside h1 not affected*/
+	text-align:center;
+	font-size:50px;
+	position:relative;/*relative to where it shows initialy*/
+	right:-30%;/*used along position:relative*/
+	
+}
+
+
+#central-right{
+	width: 19%;
+	height:auto;/*auto adjust to li elements size*/
+	background:#14145A;
+	float:right;
+	border-radius:10px;
+	border: solid grey 3px;
+}
+
+
+
+#central-right ul{
+	list-style:none;
+	padding: 5px 5px 5px 5px;
+}
+
+#central-right li{
+	padding-top:25px;
+	padding-bottom:25px;
+	border-bottom:grey solid 4px;
+}
+
+#central-right a{/*one to take out the nasty underlining*/
+	color:white;
+	text-decoration:none;
+	/*font-weight:bold;*/
+}
+
+#central-right a:visited{/*one to take out the nasty underlining*/
+	
+}
+
+#central-right a:hover{/*a second for the hover effects*/
+	font-size: 135%;
+	background:#3399FF;
+	text-decoration: underline;
+}
+

@@ -1,0 +1,20 @@
+hay un simbolo a
+hay un simbolo b
+hay un simbolo c
+
+hay un estado 0
+hay un estado 1
+hay un estado 2
+hay un estado 3
+
+
+hay una transicion desde 2 hacia 1 por c
+hay una transicion desde 3 hacia 2 por b
+hay una transicion desde 2 hacia 1 por a
+hay una transicion desde 2 hacia 2 por b
+
+2 es estado final
+1 es estado final
+
+
+
