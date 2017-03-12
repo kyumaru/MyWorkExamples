@@ -1,0 +1,10 @@
+C:\Users\tRasHcAn\Desktop\WebApiDemo1\EmployeeDBAccess\bin\Debug\EmployeeDBAccess.dll.config
+C:\Users\tRasHcAn\Desktop\WebApiDemo1\EmployeeDBAccess\bin\Debug\EmployeeDBAccess.dll
+C:\Users\tRasHcAn\Desktop\WebApiDemo1\EmployeeDBAccess\bin\Debug\EmployeeDBAccess.pdb
+C:\Users\tRasHcAn\Desktop\WebApiDemo1\EmployeeDBAccess\bin\Debug\EntityFramework.dll
+C:\Users\tRasHcAn\Desktop\WebApiDemo1\EmployeeDBAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tRasHcAn\Desktop\WebApiDemo1\EmployeeDBAccess\bin\Debug\EntityFramework.xml
+C:\Users\tRasHcAn\Desktop\WebApiDemo1\EmployeeDBAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tRasHcAn\Desktop\WebApiDemo1\EmployeeDBAccess\obj\Debug\EmployeeDBAccess.csprojResolveAssemblyReference.cache
+C:\Users\tRasHcAn\Desktop\WebApiDemo1\EmployeeDBAccess\obj\Debug\EmployeeDBAccess.dll
+C:\Users\tRasHcAn\Desktop\WebApiDemo1\EmployeeDBAccess\obj\Debug\EmployeeDBAccess.pdb
