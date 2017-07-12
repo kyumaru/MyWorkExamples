@@ -1,0 +1,75 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Utilerias.OrdenesDeTrabajo
+</name>
+</assembly>
+<members>
+<member name="T:My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Utilerias.OrdenesDeTrabajo.EtapasOrdenTrabajo">
+ <summary>
+ Etapas de ordenes de trabajo
+ </summary>
+ <remarks></remarks>
+ <author>Carlos Gómez Ondoy</author>
+ <creationDate>01/02/2016</creationDate>
+ <changeLog>
+    <author>Cesar Bermudez</author>
+    <creationDate>25/02/2016</creationDate>
+    <change>se agrega la etapa EVALUACION_PRELIMINAR_INFORME</change>
+ </changeLog>
+</member>
+<member name="T:Utilerias.OrdenesDeTrabajo.TipoDocumento">
+ <summary>
+ Tipos de documento
+ </summary>
+ <remarks></remarks>
+ <author>Carlos Gómez Ondoy</author>
+ <creationDate>01/02/2016</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="T:Utilerias.OrdenesDeTrabajo.Cargo">
+ <summary>
+ Cargo asociado al funcinario segun el proyecto
+ </summary>
+ <remarks></remarks>
+ <author>César Bermúdez García</author>
+ <creationDate>03/02/2016</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="T:Utilerias.OrdenesDeTrabajo.Clasificacion">
+ <summary>
+ Clasificación para el tiempo, EST: ESTIMADO RAL: REAL
+ </summary>
+ <remarks></remarks>
+ <author>César Bermúdez García</author>
+ <creationDate>03/02/2016</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="T:Utilerias.OrdenesDeTrabajo.ClasificacionMateriales">
+ <summary>
+ Clasificación para materiales: A- Alta rotación, B- Baja rotación, C- Segunda'
+ </summary>
+ <remarks></remarks>
+ <author>César Bermúdez García</author>
+ <creationDate>29/05/2016</creationDate>
+ <changeLog></changeLog>
+</member>
+</members>
+</doc>

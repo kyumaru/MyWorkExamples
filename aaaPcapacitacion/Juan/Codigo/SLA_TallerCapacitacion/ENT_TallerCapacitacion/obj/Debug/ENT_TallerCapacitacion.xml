@@ -1,0 +1,202 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ENT_TallerCapacitacion
+</name>
+</assembly>
+<members>
+<member name="T:My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTccCondicionLibro.CondicionLibro">
+ <summary>
+ Abreviatura que identifica la condición de un libro
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTccCondicionLibro.Descripcion">
+ <summary>
+ Descripción de la condición del libro
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmAutor.IdPersonal">
+ <summary>
+ Número de identificación
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmAutor.Nombre">
+ <summary>
+ Nombre del autor
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmAutor.PrimerApellido">
+ <summary>
+ Primer apellido del autor
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmAutor.SegundoApellido">
+ <summary>
+ Segundo apellido del autor
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmAutor.FechaHoraNacimiento">
+ <summary>
+ Fecha y hora de nacimiento
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmAutor.Estado">
+ <summary>
+ Estado del registro.
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmAutor.TimeStamp">
+ <summary>
+ Control de concurrencia
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmAutor.Usuario">
+ <summary>
+ Usuario que manipula la información del registro
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmAutorPorLibro.Isbn">
+ <summary>
+ Número estándar internacional de libros. es un identificador único para libros previsto para uso comercial, los hay de 10 y 13 dígitos
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmAutorPorLibro.IdPersonal">
+ <summary>
+ Número de identificación
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmLibro.Isbn">
+ <summary>
+ Número estándar internacional de libros. es un identificador único para libros previsto para uso comercial, los hay de 10 y 13 dígitos
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmLibro.CondicionLibro">
+ <summary>
+ Abreviatura que identifica la condición de un libro
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmLibro.Titulo">
+ <summary>
+ Título del libro
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmLibro.Resumen">
+ <summary>
+ Resumen del libro
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmLibro.TotalPaginas">
+ <summary>
+ Indica la cantidad de páginas del libro. solo permite registrar libros con más de 10 páginas hasta un máximo de 100
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmLibro.FechaHoraImpresion">
+ <summary>
+ Fecha y hora en la cual fue impreso el libro
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmLibro.TimeStamp">
+ <summary>
+ Control de concurrencia
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmLibro.Usuario">
+ <summary>
+ Usuario que manipula la información del registro
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTpTcDatosAutor.NombreCompleto">
+ <summary>
+ 
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="P:TallerCapacitacion.EntidadNegocio.Catalogos.EntTpTcDatosAutor.IdPersonal">
+ <summary>
+ 
+ </summary>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+</members>
+</doc>

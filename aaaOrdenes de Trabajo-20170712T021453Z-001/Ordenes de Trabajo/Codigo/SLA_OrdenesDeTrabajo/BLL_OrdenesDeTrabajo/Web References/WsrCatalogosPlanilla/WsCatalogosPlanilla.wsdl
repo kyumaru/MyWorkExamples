@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://orh.ucr.ac.cr/BLL_Planillas/BLL_PLMantenimientos" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla">
+      <s:import namespace="http://orh.ucr.ac.cr/BLL_Planillas/BLL_PLMantenimientos" />
+      <s:element name="PLM_DIAS_FERIADOS_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_DIAS_FERIADOS_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_DIAS_FERIADOS_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_DIAS_FERIADOS_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_DIAS_FERIADOS_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_DIAS_FERIADOS_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_BANCOS_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_BANCOS_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_BANCOS_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_BANCOS_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_BANCOS_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_BANCOS_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLE_DE_PLANILLA_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosDescripcion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosDescripcionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosDescripcionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GENERICO_ObtenerFechaSistema">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GENERICO_ObtenerFechaSistemaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GENERICO_ObtenerFechaSistemaResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLP_PARAMETROS_PLANILLA_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLP_PARAMETROS_PLANILLA_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLP_PARAMETROS_PLANILLA_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLP_PARAMETROS_PLANILLA_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLP_PARAMETROS_PLANILLA_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLP_PARAMETROS_PLANILLA_ObtenerRegistroResult" type="s1:PLP_PARAMETROS_PLANILLA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLP_PARAMETROS_PLANILLA_Mantenimiento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="s1:PLP_PARAMETROS_PLANILLA" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_Accion" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLP_PARAMETROS_PLANILLA_MantenimientoResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="PLM_UBICACION_POR_USUARIO_ObtenerUbicacionesPorUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_UserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Estado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_UBICACION_POR_USUARIO_ObtenerUbicacionesPorUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_UBICACION_POR_USUARIO_ObtenerUbicacionesPorUsuarioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLE_DE_PLANILLA_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLE_DE_PLANILLA_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_EMPLE_DE_PLANILLA_ObtenerRegistroResult" type="s1:PLM_EMPLE_DE_PLANILLA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRol">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_ApplicationName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_RoleName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolPorUnidad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_ApplicationName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_RoleName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodigoUbica" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolPorUnidadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolPorUnidadResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLH_TOPES_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLH_TOPES_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLH_TOPES_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_CARRERA_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_CARRERA_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_CARRERA_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_CENTRO_ASISTENCIA_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_CENTRO_ASISTENCIA_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_CENTRO_ASISTENCIA_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_CENTRO_ASISTENCIA_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_CENTRO_ASISTENCIA_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_CENTRO_ASISTENCIA_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_CENTRO_ASISTENCIA_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_CENTRO_ASISTENCIA_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_CENTRO_ASISTENCIA_ObtenerRegistroResult" type="s1:PLM_CENTRO_ASISTENCIA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://orh.ucr.ac.cr/BLL_Planillas/BLL_PLMantenimientos">
+      <s:complexType name="PLP_PARAMETROS_PLANILLA">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="COD_PARAMETRO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VALOR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DESCRIPCION" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PLM_EMPLE_DE_PLANILLA">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NUM_EMPLEADO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TIPO_ID_PERS" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ID_PERSONAL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NUM_ASEGURADO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NOMBRE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="APELLIDO1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="APELLIDO2" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="COD_REL_LAB" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="COD_CD_LAB" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="COD_UNIDAD_PAGO" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="COD_BANCO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CUENTA_BANCO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TIPO_CUENTA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FREC_PAGO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CORREO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="REGIMEN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MAGISTERIO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="USUARIO_ULT_MODI" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_ULT_MODI" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PLM_CENTRO_ASISTENCIA">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CODIGO_CENTRO_ASIT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DESCRIPCION" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ESTADO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PLM_DIAS_FERIADOS_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_DIAS_FERIADOS_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="PLM_DIAS_FERIADOS_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_DIAS_FERIADOS_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_DIAS_FERIADOS_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_DIAS_FERIADOS_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="PLM_DIAS_FERIADOS_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_DIAS_FERIADOS_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_BANCOS_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_BANCOS_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="PLM_BANCOS_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_BANCOS_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_BANCOS_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_BANCOS_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="PLM_BANCOS_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_BANCOS_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLE_DE_PLANILLA_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLE_DE_PLANILLA_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLE_DE_PLANILLA_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLE_DE_PLANILLA_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosDescripcionSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLE_DE_PLANILLA_ListarRegistrosDescripcion" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosDescripcionSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLE_DE_PLANILLA_ListarRegistrosDescripcionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GENERICO_ObtenerFechaSistemaSoapIn">
+    <wsdl:part name="parameters" element="tns:GENERICO_ObtenerFechaSistema" />
+  </wsdl:message>
+  <wsdl:message name="GENERICO_ObtenerFechaSistemaSoapOut">
+    <wsdl:part name="parameters" element="tns:GENERICO_ObtenerFechaSistemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLP_PARAMETROS_PLANILLA_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:PLP_PARAMETROS_PLANILLA_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="PLP_PARAMETROS_PLANILLA_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:PLP_PARAMETROS_PLANILLA_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLP_PARAMETROS_PLANILLA_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:PLP_PARAMETROS_PLANILLA_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="PLP_PARAMETROS_PLANILLA_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:PLP_PARAMETROS_PLANILLA_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLP_PARAMETROS_PLANILLA_MantenimientoSoapIn">
+    <wsdl:part name="parameters" element="tns:PLP_PARAMETROS_PLANILLA_Mantenimiento" />
+  </wsdl:message>
+  <wsdl:message name="PLP_PARAMETROS_PLANILLA_MantenimientoSoapOut">
+    <wsdl:part name="parameters" element="tns:PLP_PARAMETROS_PLANILLA_MantenimientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_UBICACION_POR_USUARIO_ObtenerUbicacionesPorUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_UBICACION_POR_USUARIO_ObtenerUbicacionesPorUsuario" />
+  </wsdl:message>
+  <wsdl:message name="PLM_UBICACION_POR_USUARIO_ObtenerUbicacionesPorUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_UBICACION_POR_USUARIO_ObtenerUbicacionesPorUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLE_DE_PLANILLA_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLE_DE_PLANILLA_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLE_DE_PLANILLA_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLE_DE_PLANILLA_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRol" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolPorUnidadSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolPorUnidad" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolPorUnidadSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolPorUnidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLH_TOPES_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:PLH_TOPES_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="PLH_TOPES_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:PLH_TOPES_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_CARRERA_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_CARRERA_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="PLM_CARRERA_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_CARRERA_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_CENTRO_ASISTENCIA_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_CENTRO_ASISTENCIA_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="PLM_CENTRO_ASISTENCIA_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_CENTRO_ASISTENCIA_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_CENTRO_ASISTENCIA_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_CENTRO_ASISTENCIA_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="PLM_CENTRO_ASISTENCIA_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_CENTRO_ASISTENCIA_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_CENTRO_ASISTENCIA_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_CENTRO_ASISTENCIA_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="PLM_CENTRO_ASISTENCIA_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_CENTRO_ASISTENCIA_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WsCatalogosPlanillaSoap">
+    <wsdl:operation name="PLM_DIAS_FERIADOS_ListarRegistros">
+      <wsdl:input message="tns:PLM_DIAS_FERIADOS_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:PLM_DIAS_FERIADOS_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_DIAS_FERIADOS_ListarRegistrosLista">
+      <wsdl:input message="tns:PLM_DIAS_FERIADOS_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:PLM_DIAS_FERIADOS_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_BANCOS_ListarRegistros">
+      <wsdl:input message="tns:PLM_BANCOS_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:PLM_BANCOS_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_BANCOS_ListarRegistrosLista">
+      <wsdl:input message="tns:PLM_BANCOS_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:PLM_BANCOS_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ListarRegistros">
+      <wsdl:input message="tns:PLM_EMPLE_DE_PLANILLA_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:PLM_EMPLE_DE_PLANILLA_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosLista">
+      <wsdl:input message="tns:PLM_EMPLE_DE_PLANILLA_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:PLM_EMPLE_DE_PLANILLA_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosDescripcion">
+      <wsdl:input message="tns:PLM_EMPLE_DE_PLANILLA_ListarRegistrosDescripcionSoapIn" />
+      <wsdl:output message="tns:PLM_EMPLE_DE_PLANILLA_ListarRegistrosDescripcionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GENERICO_ObtenerFechaSistema">
+      <wsdl:input message="tns:GENERICO_ObtenerFechaSistemaSoapIn" />
+      <wsdl:output message="tns:GENERICO_ObtenerFechaSistemaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLP_PARAMETROS_PLANILLA_ListarRegistros">
+      <wsdl:input message="tns:PLP_PARAMETROS_PLANILLA_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:PLP_PARAMETROS_PLANILLA_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLP_PARAMETROS_PLANILLA_ObtenerRegistro">
+      <wsdl:input message="tns:PLP_PARAMETROS_PLANILLA_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:PLP_PARAMETROS_PLANILLA_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLP_PARAMETROS_PLANILLA_Mantenimiento">
+      <wsdl:input message="tns:PLP_PARAMETROS_PLANILLA_MantenimientoSoapIn" />
+      <wsdl:output message="tns:PLP_PARAMETROS_PLANILLA_MantenimientoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_UBICACION_POR_USUARIO_ObtenerUbicacionesPorUsuario">
+      <wsdl:input message="tns:PLM_UBICACION_POR_USUARIO_ObtenerUbicacionesPorUsuarioSoapIn" />
+      <wsdl:output message="tns:PLM_UBICACION_POR_USUARIO_ObtenerUbicacionesPorUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ObtenerRegistro">
+      <wsdl:input message="tns:PLM_EMPLE_DE_PLANILLA_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:PLM_EMPLE_DE_PLANILLA_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRol">
+      <wsdl:input message="tns:PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolSoapIn" />
+      <wsdl:output message="tns:PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolPorUnidad">
+      <wsdl:input message="tns:PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolPorUnidadSoapIn" />
+      <wsdl:output message="tns:PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolPorUnidadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLH_TOPES_ListarRegistros">
+      <wsdl:input message="tns:PLH_TOPES_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:PLH_TOPES_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_CARRERA_ListarRegistros">
+      <wsdl:input message="tns:PLM_CARRERA_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:PLM_CARRERA_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_CENTRO_ASISTENCIA_ListarRegistros">
+      <wsdl:input message="tns:PLM_CENTRO_ASISTENCIA_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:PLM_CENTRO_ASISTENCIA_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_CENTRO_ASISTENCIA_ListarRegistrosLista">
+      <wsdl:input message="tns:PLM_CENTRO_ASISTENCIA_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:PLM_CENTRO_ASISTENCIA_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_CENTRO_ASISTENCIA_ObtenerRegistro">
+      <wsdl:input message="tns:PLM_CENTRO_ASISTENCIA_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:PLM_CENTRO_ASISTENCIA_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WsCatalogosPlanillaSoap" type="tns:WsCatalogosPlanillaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PLM_DIAS_FERIADOS_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_DIAS_FERIADOS_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_DIAS_FERIADOS_ListarRegistrosLista">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_DIAS_FERIADOS_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_BANCOS_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_BANCOS_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_BANCOS_ListarRegistrosLista">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_BANCOS_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_EMPLE_DE_PLANILLA_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosLista">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_EMPLE_DE_PLANILLA_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosDescripcion">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_EMPLE_DE_PLANILLA_ListarRegistrosDescripcion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GENERICO_ObtenerFechaSistema">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/GENERICO_ObtenerFechaSistema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLP_PARAMETROS_PLANILLA_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLP_PARAMETROS_PLANILLA_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLP_PARAMETROS_PLANILLA_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLP_PARAMETROS_PLANILLA_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLP_PARAMETROS_PLANILLA_Mantenimiento">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLP_PARAMETROS_PLANILLA_Mantenimiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_UBICACION_POR_USUARIO_ObtenerUbicacionesPorUsuario">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_UBICACION_POR_USUARIO_ObtenerUbicacionesPorUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_EMPLE_DE_PLANILLA_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRol">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolPorUnidad">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolPorUnidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLH_TOPES_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLH_TOPES_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_CARRERA_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_CARRERA_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_CENTRO_ASISTENCIA_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_CENTRO_ASISTENCIA_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_CENTRO_ASISTENCIA_ListarRegistrosLista">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_CENTRO_ASISTENCIA_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_CENTRO_ASISTENCIA_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_CENTRO_ASISTENCIA_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WsCatalogosPlanillaSoap12" type="tns:WsCatalogosPlanillaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PLM_DIAS_FERIADOS_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_DIAS_FERIADOS_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_DIAS_FERIADOS_ListarRegistrosLista">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_DIAS_FERIADOS_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_BANCOS_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_BANCOS_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_BANCOS_ListarRegistrosLista">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_BANCOS_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_EMPLE_DE_PLANILLA_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosLista">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_EMPLE_DE_PLANILLA_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ListarRegistrosDescripcion">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_EMPLE_DE_PLANILLA_ListarRegistrosDescripcion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GENERICO_ObtenerFechaSistema">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/GENERICO_ObtenerFechaSistema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLP_PARAMETROS_PLANILLA_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLP_PARAMETROS_PLANILLA_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLP_PARAMETROS_PLANILLA_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLP_PARAMETROS_PLANILLA_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLP_PARAMETROS_PLANILLA_Mantenimiento">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLP_PARAMETROS_PLANILLA_Mantenimiento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_UBICACION_POR_USUARIO_ObtenerUbicacionesPorUsuario">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_UBICACION_POR_USUARIO_ObtenerUbicacionesPorUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_EMPLE_DE_PLANILLA_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRol">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRol" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolPorUnidad">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_EMPLE_DE_PLANILLA_ObtenerUsuarioPorRolPorUnidad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLH_TOPES_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLH_TOPES_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_CARRERA_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_CARRERA_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_CENTRO_ASISTENCIA_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_CENTRO_ASISTENCIA_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_CENTRO_ASISTENCIA_ListarRegistrosLista">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_CENTRO_ASISTENCIA_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_CENTRO_ASISTENCIA_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosPlanilla/PLM_CENTRO_ASISTENCIA_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WsCatalogosPlanilla">
+    <wsdl:port name="WsCatalogosPlanillaSoap" binding="tns:WsCatalogosPlanillaSoap">
+      <soap:address location="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsCatalogosPlanilla.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WsCatalogosPlanillaSoap12" binding="tns:WsCatalogosPlanillaSoap12">
+      <soap12:address location="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsCatalogosPlanilla.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

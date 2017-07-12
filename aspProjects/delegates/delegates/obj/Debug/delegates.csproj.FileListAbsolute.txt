@@ -1,0 +1,15 @@
+C:\Users\tRasHcAn\Desktop\delegates\delegates\bin\Debug\delegates.exe.config
+C:\Users\tRasHcAn\Desktop\delegates\delegates\obj\Debug\delegates.csprojResolveAssemblyReference.cache
+C:\Users\tRasHcAn\Desktop\delegates\delegates\bin\Debug\delegates.exe
+C:\Users\tRasHcAn\Desktop\delegates\delegates\bin\Debug\delegates.pdb
+C:\Users\tRasHcAn\Desktop\delegates\delegates\obj\Debug\delegates.exe
+C:\Users\tRasHcAn\Desktop\delegates\delegates\obj\Debug\delegates.pdb
+C:\Users\tRasHcAn\Desktop\aspProjects\delegates\delegates\bin\Debug\delegates.exe.config
+C:\Users\tRasHcAn\Desktop\aspProjects\delegates\delegates\obj\Debug\delegates.exe
+C:\Users\tRasHcAn\Desktop\aspProjects\delegates\delegates\obj\Debug\delegates.pdb
+C:\Users\tRasHcAn\Desktop\aspProjects\delegates\delegates\bin\Debug\delegates.exe
+C:\Users\tRasHcAn\Desktop\aspProjects\delegates\delegates\bin\Debug\delegates.pdb
+C:\Users\tRasHcAn\Desktop\aspProjects\delegates\delegates\obj\Debug\delegates.csprojResolveAssemblyReference.cache
+C:\Users\tRasHcAn\Desktop\MyWorkExamples\aspProjects\delegates\delegates\bin\Debug\delegates.exe.config
+C:\Users\tRasHcAn\Desktop\MyWorkExamples\aspProjects\delegates\delegates\obj\Debug\delegates.exe
+C:\Users\tRasHcAn\Desktop\MyWorkExamples\aspProjects\delegates\delegates\obj\Debug\delegates.pdb

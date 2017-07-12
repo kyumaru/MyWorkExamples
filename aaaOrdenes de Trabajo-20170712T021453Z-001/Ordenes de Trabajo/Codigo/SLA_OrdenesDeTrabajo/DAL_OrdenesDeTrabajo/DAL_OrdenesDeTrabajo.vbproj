@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54C99846-5C81-4E63-AA3A-B2E5EF201D21}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>DAL_OrdenesDeTrabajo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DAL_OrdenesDeTrabajo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DAL_OrdenesDeTrabajo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Oracle\product\12.1.0\client_1\ODP.NET\bin\4\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Utilerias.BaseDatos.OracleServer">
+      <HintPath>..\..\..\..\Compilados\Utilerias.BaseDatos.OracleServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Utilerias.Genericos">
+      <HintPath>..\..\..\..\Compilados\Utilerias.Genericos.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Utilerias.Genericos.Extensiones">
+      <HintPath>..\..\..\..\Compilados\Utilerias.Genericos.Extensiones.dll</HintPath>
+    </Reference>
+    <Reference Include="Utilerias.OrdenesDeTrabajo">
+      <HintPath>..\..\Utilerias.OrdenesDeTrabajo\Utilerias.OrdenesDeTrabajo\bin\Release\Utilerias.OrdenesDeTrabajo.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalogos\DalOtcEstadoAjuste.vb" />
+    <Compile Include="Catalogos\DalOtcEstadoOrdenTrabajo.vb" />
+    <Compile Include="Catalogos\DalOtcEstadoTraslado.vb" />
+    <Compile Include="Catalogos\DalOtcTipoOrdenTrabajo.vb" />
+    <Compile Include="Catalogos\DalOtfInventario.vb" />
+    <Compile Include="Catalogos\DalOtfOperarioArea.vb" />
+    <Compile Include="Catalogos\DalOtfPeriodoCierre.vb" />
+    <Compile Include="Catalogos\DalOtlLineaTraslado.vb" />
+    <Compile Include="Catalogos\DalOtlSolicitudTraslado.vb" />
+    <Compile Include="Catalogos\DalOtlTrazabilidadProceso.vb" />
+    <Compile Include="Catalogos\DalOtlTrazabilSolTraslado.vb" />
+    <Compile Include="Catalogos\DalOtmActividad.vb" />
+    <Compile Include="Catalogos\DalOtmAlmacenBodega.vb" />
+    <Compile Include="Catalogos\DalOtmAreaProfesional.vb" />
+    <Compile Include="Catalogos\DalOtmAutorizadoDirector.vb" />
+    <Compile Include="Catalogos\DalOtmAutorizadoUbicacion.vb" />
+    <Compile Include="Catalogos\DalOtmCategoriaMaterial.vb" />
+    <Compile Include="Catalogos\DalOtmCategoriaServicio.vb" />
+    <Compile Include="Catalogos\DalOtmCorreoProveedor.vb" />
+    <Compile Include="Catalogos\DalOtmEncargadoAlmacen.vb" />
+    <Compile Include="Catalogos\DalOtmEncargadoContrato.vb" />
+    <Compile Include="Catalogos\DalOtmEspacio.vb" />
+    <Compile Include="Catalogos\DalOtmEtapaOrdenTrabajo.vb" />
+    <Compile Include="Catalogos\DalOtmEtapaViaContrato.vb" />
+    <Compile Include="Catalogos\DalOtmLugarTrabajo.vb" />
+    <Compile Include="Catalogos\DalOtmMaterial.vb" />
+    <Compile Include="Catalogos\DalOtmMotivoRechazo.vb" />
+    <Compile Include="Catalogos\DalOtmProveedor.vb" />
+    <Compile Include="Catalogos\DalOtmRequerimiento.vb" />
+    <Compile Include="Catalogos\DalOtmRubroDecisionInicia.vb" />
+    <Compile Include="Catalogos\DalOtmSectorTaller.vb" />
+    <Compile Include="Catalogos\DalOtmSubcategoriaCategor.vb" />
+    <Compile Include="Catalogos\DalOtmSubcategoriaMaterial.vb" />
+    <Compile Include="Catalogos\DalOtmSubcomponente.vb" />
+    <Compile Include="Catalogos\DalOtmTelefonoProveedor.vb" />
+    <Compile Include="Catalogos\DalOtmTipoDocumento.vb" />
+    <Compile Include="Catalogos\DalOtmTipoIncidente.vb" />
+    <Compile Include="Catalogos\DalOtmTipoLugarUbicacion.vb" />
+    <Compile Include="Catalogos\DalOtmTipoObra.vb" />
+    <Compile Include="Catalogos\DalOtmUbicacion.vb" />
+    <Compile Include="Catalogos\DalOtmUnidadEncargada.vb" />
+    <Compile Include="Catalogos\DalOtmUnidadMedida.vb" />
+    <Compile Include="Catalogos\DalOtmUnidadTiempo.vb" />
+    <Compile Include="Catalogos\DalOtmUnidadUbicacion.vb" />
+    <Compile Include="Catalogos\DalOtmViaCompraContrato.vb" />
+    <Compile Include="Catalogos\DalOtpParametro.vb" />
+    <Compile Include="Catalogos\DalOtpParametroGlobal.vb" />
+    <Compile Include="Catalogos\DalOtpParametroUbicacion.vb" />
+    <Compile Include="Catalogos\DalOttLineaTraslado.vb" />
+    <Compile Include="Catalogos\DalOttSolicitudTraslado.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OrdenesDeTrabajo\DalOtcEstadoGestionCompra.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtfAdjuntoIncidente.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtfAdjuntoOrdenTrabajo.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtfExcepcionPeriodo.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtfFichaTecnicaDetalle.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtfFichaTecnicaEspacio.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtfFichaTecnicaGeneral.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtfFichaTecnicaSubcomp.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtfIncidenteAlmacen.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtfOperario.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtfPlaneacionPreventivo.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtfPreOrdenTrabajo.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtfRevisionOrdenTrabaj.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtfRevisionPreOrdenTra.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtfUbicacionFavorita.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOthContratacion.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtlDetalleMaterial.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtlDetAprovisionamiento.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtlTrazabilGestionComp.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtlTrazabilGestionIngr.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtlTrazabilidadAjuste.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOtmFlujoGestionCompra.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttAdjuntoCotizacion.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttAdjuntoGestionCompr.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttAdjuntoGestionIngr.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttAdjuntoOrdenTrabajo.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttAjusteInventario.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttAnteproyecto.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttAprovisionamiento.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttContratacion.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttDesicionInicial.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttDetalleAjuste.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttDetalleGestionIngr.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttDetalleMaterial.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttDetalleRetiro.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttDetAprovisionamiento.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttDocumentoAnteproyect.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttDocumentoContratacion.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttFichaTecnicaDetalle.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttFichaTecnicaEspacio.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttFichaTecnicaGeneral.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttFichaTecnicaSubcomp.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttGestionCompra.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttGestionIngresoMater.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttGrupoGestionCompra.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttInformePresupuesto.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttLineaAdjudicacion.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttLineaGestionCompra.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttOfertaProveedor.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttOperarioOrdenTrab.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttOrdenTrabajo.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttOrdnTrabDecInicial.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttProveedorCotizacion.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttRevisionOrdenTrabaj.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttSolicitudMaterial.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttSolicitudReingreso.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttSolicitudRetiro.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttTiempoOperario.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttTrazabilidadProceso.vb" />
+    <Compile Include="OrdenesDeTrabajo\DalOttViabilidadTecnica.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ENT_OrdenesDeTrabajo\ENT_OrdenesDeTrabajo.vbproj">
+      <Project>{437a06b8-a0d6-4cb9-ba80-dfe65120aa94}</Project>
+      <Name>ENT_OrdenesDeTrabajo</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

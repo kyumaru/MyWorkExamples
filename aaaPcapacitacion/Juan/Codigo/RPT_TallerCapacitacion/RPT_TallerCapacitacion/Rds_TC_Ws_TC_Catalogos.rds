@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Rds_TC_Ws_TC_Catalogos">
+  <ConnectionProperties>
+    <Extension>XML</Extension>
+    <ConnectString>http://localhost/SLA_TallerCapacitacion/Ws_TC_Catalogos.asmx</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
+  </ConnectionProperties>
+  <DataSourceID>078997e1-2654-4fbe-8272-9fc00c6009f6</DataSourceID>
+</RptDataSource>

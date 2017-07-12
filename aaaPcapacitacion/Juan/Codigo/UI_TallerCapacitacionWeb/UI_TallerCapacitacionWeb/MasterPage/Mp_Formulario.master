@@ -1,0 +1,37 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPage/Mp_Base.master" AutoEventWireup="false" CodeFile="Mp_Formulario.master.vb" Inherits="MasterPage_Mp_Formulario" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphContenidoFormulario" runat="Server">
+    <section id="MenuSistema">
+        <article id="EncabezadoDelMenu">
+            <br />
+            Menú Principal
+        </article>
+        <article id="CuerpoDelMenu">
+            <asp:TreeView ID="tvMenu" runat="server" ImageSet="Arrows" NodeIndent="8">
+                <NodeStyle CssClass="opcionMenu" />
+                <LeafNodeStyle Font-Bold="false" />
+                <HoverNodeStyle Font-Bold="true" />
+            </asp:TreeView>
+        </article>
+        <article id="PieDelMenu">
+        </article>
+    </section>
+    <section id="AreaParaFormulario">
+        <asp:ContentPlaceHolder ID="cphFormulario" runat="server">
+        </asp:ContentPlaceHolder>
+    </section>
+    <script type="text/javascript">
+        function aplicarConfiguracionFormulario() {
+            $('[data-tipo="limpiarFormulario"]').click(function () {
+                limpiarControles();
+            });
+        }
+
+        $(document).ready(function () {
+            aplicarConfiguracionFormulario();
+        })
+    </script>
+</asp:Content>
+

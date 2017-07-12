@@ -1,0 +1,67 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPage/Mp_Base.master" AutoEventWireup="false" CodeFile="Mp_Listado.master.vb" Inherits="MasterPage_Mp_Listado" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphContenidoFormulario" runat="Server">
+    <section id="MenuSistema">
+        <article id="EncabezadoDelMenu">
+            <br />
+            Menú Principal
+        </article>
+        <article id="CuerpoDelMenu">
+            <asp:TreeView ID="tvMenu" runat="server" ImageSet="Arrows" NodeIndent="8">
+                <NodeStyle CssClass="opcionMenu" />
+                <LeafNodeStyle Font-Bold="false" />
+                <HoverNodeStyle Font-Bold="true" />
+            </asp:TreeView>
+        </article>
+        <article id="PieDelMenu">
+        </article>
+    </section>
+    <section id="AreaParaFormulario">
+        <asp:ContentPlaceHolder ID="cphFormulario" runat="server">
+        </asp:ContentPlaceHolder>
+    </section>
+    <script type="text/javascript">
+        function aplicarConfiguracionBasicaListado(pvo_OpcionesConfiguracion) {
+            $('[data-tipo="nuevoRegistro"]').attr('src', '<%=AdministradorRecursos.ObtenerRutaImagen(AdministradorRecursos.TAMANO_IMAGEN.x32, AdministradorRecursos.COLOR_IMAGEN.GRIS, "Nuevo_Documento.png")%>');
+            $('[data-tipo="nuevoRegistro"]').on({
+                'mouseover': function () { $(this).attr('src', '<%=AdministradorRecursos.ObtenerRutaImagen(AdministradorRecursos.TAMANO_IMAGEN.x32, AdministradorRecursos.COLOR_IMAGEN.COLOR, "Nuevo_Documento.png")%>'); },
+                'mouseout': function () { $(this).attr('src', '<%=AdministradorRecursos.ObtenerRutaImagen(AdministradorRecursos.TAMANO_IMAGEN.x32, AdministradorRecursos.COLOR_IMAGEN.GRIS, "Nuevo_Documento.png")%>'); }
+            });
+
+            $('[data-tipo="mostrarFiltros"]').attr('src', '<%=AdministradorRecursos.ObtenerRutaImagen(AdministradorRecursos.TAMANO_IMAGEN.x32, AdministradorRecursos.COLOR_IMAGEN.GRIS, "Lupa.png")%>');
+            $('[data-tipo="mostrarFiltros"]').on({
+                'mouseover': function () { $(this).attr('src', '<%=AdministradorRecursos.ObtenerRutaImagen(AdministradorRecursos.TAMANO_IMAGEN.x32, AdministradorRecursos.COLOR_IMAGEN.COLOR, "Lupa.png")%>'); },
+                'mouseout': function () { $(this).attr('src', '<%=AdministradorRecursos.ObtenerRutaImagen(AdministradorRecursos.TAMANO_IMAGEN.x32, AdministradorRecursos.COLOR_IMAGEN.GRIS, "Lupa.png")%>'); }
+            });
+
+            $('[data-tipo="modificarRegistro"]').attr('src', '<%=AdministradorRecursos.ObtenerRutaImagen(AdministradorRecursos.TAMANO_IMAGEN.x16, AdministradorRecursos.COLOR_IMAGEN.GRIS, "Icono_Editar.png")%>');
+            $('[data-tipo="modificarRegistro"]').on({
+                'mouseover': function () { $(this).attr('src', '<%=AdministradorRecursos.ObtenerRutaImagen(AdministradorRecursos.TAMANO_IMAGEN.x16, AdministradorRecursos.COLOR_IMAGEN.COLOR, "Icono_Editar.png")%>'); },
+                'mouseout': function () { $(this).attr('src', '<%=AdministradorRecursos.ObtenerRutaImagen(AdministradorRecursos.TAMANO_IMAGEN.x16, AdministradorRecursos.COLOR_IMAGEN.GRIS, "Icono_Editar.png")%>'); }
+            });
+
+            $('[data-tipo="borrarRegistro"]').attr('src', '<%=AdministradorRecursos.ObtenerRutaImagen(AdministradorRecursos.TAMANO_IMAGEN.x16, AdministradorRecursos.COLOR_IMAGEN.GRIS, "Icono_Borrar.png")%>');
+            $('[data-tipo="borrarRegistro"]').on({
+                'mouseover': function () { $(this).attr('src', '<%=AdministradorRecursos.ObtenerRutaImagen(AdministradorRecursos.TAMANO_IMAGEN.x16, AdministradorRecursos.COLOR_IMAGEN.COLOR, "Icono_Borrar.png")%>'); },
+                'mouseout': function () { $(this).attr('src', '<%=AdministradorRecursos.ObtenerRutaImagen(AdministradorRecursos.TAMANO_IMAGEN.x16, AdministradorRecursos.COLOR_IMAGEN.GRIS, "Icono_Borrar.png")%>'); }
+            });
+
+            $('[data-tipo="limpiarFiltros"]').click(function () {
+                limpiarControles();
+            });
+
+            if (pvo_OpcionesConfiguracion.alternarVisibilidadFiltroLista) {
+                $('[data-tipo="mostrarFiltros"]').show();
+                $('[data-tipo="cancelarBusqueda"]').show();
+                $('[data-tipo="mostrarFiltros"]').click(function () { mostrarAreaFiltrosDeBusqueda(); ocultarAreaDeListado(); });
+                $('[data-tipo="cancelarBusqueda"]').click(function () { ocultarAreaFiltrosDeBusqueda(); mostrarAreaDeListado(); });
+            } else {
+                $('[data-tipo="mostrarFiltros"]').hide();
+                $('[data-tipo="cancelarBusqueda"]').hide();
+            }
+        }
+    </script>
+</asp:Content>
+

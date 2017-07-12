@@ -1,0 +1,9 @@
+D:\Working Folder\Juan\Codigo\Utilerias.TallerCapacitacion\Utilerias.TallerCapacitacion\bin\Release\Utilerias.TallerCapacitacion.dll
+D:\Working Folder\Juan\Codigo\Utilerias.TallerCapacitacion\Utilerias.TallerCapacitacion\bin\Release\Utilerias.TallerCapacitacion.pdb
+D:\Working Folder\Juan\Codigo\Utilerias.TallerCapacitacion\Utilerias.TallerCapacitacion\bin\Release\Utilerias.TallerCapacitacion.xml
+D:\Working Folder\Juan\Codigo\Utilerias.TallerCapacitacion\Utilerias.TallerCapacitacion\obj\Release\Resources.resources
+D:\Working Folder\Juan\Codigo\Utilerias.TallerCapacitacion\Utilerias.TallerCapacitacion\obj\Release\Utilerias.TallerCapacitacion.vbproj.GenerateResource.Cache
+D:\Working Folder\Juan\Codigo\Utilerias.TallerCapacitacion\Utilerias.TallerCapacitacion\obj\Release\Utilerias.TallerCapacitacion.dll
+D:\Working Folder\Juan\Codigo\Utilerias.TallerCapacitacion\Utilerias.TallerCapacitacion\obj\Release\Utilerias.TallerCapacitacion.xml
+D:\Working Folder\Juan\Codigo\Utilerias.TallerCapacitacion\Utilerias.TallerCapacitacion\obj\Release\Utilerias.TallerCapacitacion.pdb
+D:\Working Folder\Juan\Codigo\Utilerias.TallerCapacitacion\Utilerias.TallerCapacitacion\obj\Release\Utilerias.TallerCapacitacion.vbprojResolveAssemblyReference.cache

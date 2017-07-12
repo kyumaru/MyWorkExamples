@@ -1,0 +1,187 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BLL_TallerCapacitacion
+</name>
+</assembly>
+<members>
+<member name="T:My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:TallerCapacitacion.LogicaNegocio.Catalogos.BllTccCondicionLibro.InsertarRegistro(TallerCapacitacion.EntidadNegocio.Catalogos.EntTccCondicionLibro)">
+ <summary>
+ Permite agregar un registro en la tabla TCC_CONDICION_LIBRO, no sin antes aplicar la validación de la llave primaria o alterna según corresponda
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso; el valor puede corresponder a la llave autogenerada. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.LogicaNegocio.Catalogos.BllTccCondicionLibro.BorrarRegistro(TallerCapacitacion.EntidadNegocio.Catalogos.EntTccCondicionLibro)">
+ <summary>
+ Permite borrar un registro en la tabla TCC_CONDICION_LIBRO, no sin antes aplicar la validación de dependencia con tablas relacionadas
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.LogicaNegocio.Catalogos.BllTccCondicionLibro.ObtenerRegistroPorLlavePrimaria(System.String)">
+ <summary>
+ Permite obtener un registro según su llave primaria
+ </summary>
+ <param name="pvc_CondicionLibro">Abreviatura que identifica la condición de un libro</param>
+ <returns>Entidad que representa la información obtenida al ejecutar la consulta</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.LogicaNegocio.Catalogos.BllTccCondicionLibro.PoseeRegistrosAsociados(System.String)">
+ <summary>
+ Verifica si un registro posee datos asociados en las tablas hijas
+ </summary>
+ <param name="pvc_CondicionLibro">Abreviatura que identifica la condición de un libro</param>
+ <returns>True: posee datos asociados. False: No posee datos asociados</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.LogicaNegocio.Catalogos.BllTcmAutor.InsertarRegistro(TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmAutor)">
+ <summary>
+ Permite agregar un registro en la tabla TCM_AUTOR, no sin antes aplicar la validación de la llave primaria o alterna según corresponda
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso; el valor puede corresponder a la llave autogenerada. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.LogicaNegocio.Catalogos.BllTcmAutor.ModificarRegistro(TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmAutor)">
+ <summary>
+ Permite modificar un registro en la tabla TCM_AUTOR, no sin antes aplicar la validación de la llave alterna
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.LogicaNegocio.Catalogos.BllTcmAutor.BorrarRegistro(TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmAutor)">
+ <summary>
+ Permite borrar un registro en la tabla TCM_AUTOR, no sin antes aplicar la validación de dependencia con tablas relacionadas
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.LogicaNegocio.Catalogos.BllTcmAutor.ObtenerRegistroPorLlavePrimaria(System.String)">
+ <summary>
+ Permite obtener un registro según su llave primaria
+ </summary>
+ <param name="pvc_IdPersonal">Número de identificación</param>
+ <returns>Entidad que representa la información obtenida al ejecutar la consulta</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.LogicaNegocio.Catalogos.BllTcmAutor.ObtenerRegistroPorLlaveAlterna(System.String)">
+ <summary>
+ Permite obtener un registro según su llave alterna
+ </summary>
+ <param name="pvc_Nombre">Nombre del autor</param>
+ <returns>Entidad que representa la información obtenida al ejecutar la consulta</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.LogicaNegocio.Catalogos.BllTcmAutor.PoseeRegistrosAsociados(System.String)">
+ <summary>
+ Verifica si un registro posee datos asociados en las tablas hijas
+ </summary>
+ <param name="pvc_IdPersonal">Número de identificación</param>
+ <returns>True: posee datos asociados. False: No posee datos asociados</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.LogicaNegocio.Catalogos.BllTcmAutorPorLibro.InsertarRegistro(TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmAutorPorLibro)">
+ <summary>
+ Permite agregar un registro en la tabla TCM_AUTOR_POR_LIBRO, no sin antes aplicar la validación de la llave primaria o alterna según corresponda
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso; el valor puede corresponder a la llave autogenerada. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.LogicaNegocio.Catalogos.BllTcmAutorPorLibro.ObtenerRegistroPorLlavePrimaria(System.String,System.String)">
+ <summary>
+ Permite obtener un registro según su llave primaria
+ </summary>
+ <param name="pvc_Isbn">Número estándar internacional de libros. es un identificador único para libros previsto para uso comercial, los hay de 10 y 13 dígitos</param>
+ <param name="pvc_IdPersonal">Número de identificación</param>
+ <returns>Entidad que representa la información obtenida al ejecutar la consulta</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.LogicaNegocio.Catalogos.BllTcmLibro.InsertarRegistro(TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmLibro)">
+ <summary>
+ Permite agregar un registro en la tabla TCM_LIBRO, no sin antes aplicar la validación de la llave primaria o alterna según corresponda
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso; el valor puede corresponder a la llave autogenerada. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.LogicaNegocio.Catalogos.BllTcmLibro.BorrarRegistro(TallerCapacitacion.EntidadNegocio.Catalogos.EntTcmLibro)">
+ <summary>
+ Permite borrar un registro en la tabla TCM_LIBRO, no sin antes aplicar la validación de dependencia con tablas relacionadas
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.LogicaNegocio.Catalogos.BllTcmLibro.ObtenerRegistroPorLlavePrimaria(System.String)">
+ <summary>
+ Permite obtener un registro según su llave primaria
+ </summary>
+ <param name="pvc_Isbn">Número estándar internacional de libros. es un identificador único para libros previsto para uso comercial, los hay de 10 y 13 dígitos</param>
+ <returns>Entidad que representa la información obtenida al ejecutar la consulta</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.LogicaNegocio.Catalogos.BllTcmLibro.PoseeRegistrosAsociados(System.String)">
+ <summary>
+ Verifica si un registro posee datos asociados en las tablas hijas
+ </summary>
+ <param name="pvc_Isbn">Número estándar internacional de libros. es un identificador único para libros previsto para uso comercial, los hay de 10 y 13 dígitos</param>
+ <returns>True: posee datos asociados. False: No posee datos asociados</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+</members>
+</doc>

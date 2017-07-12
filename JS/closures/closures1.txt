@@ -1,0 +1,18 @@
+function adder(n){
+	var inc=n;
+  var sum=0;
+  
+  /*the inner returned function is reacheable by object function adder using the reference 
+  to it, so the object, since it is reacheable 	 adder will be kept in heap */
+  return function add(){
+  	sum+= inc;
+    return  sum;
+  };
+}
+
+var myObjectREF= adder(6);
+myObjectREF();
+myObjectREF();
+myObjectREF();
+console.log(myObjectREF());
+console.dir(myObjectREF);

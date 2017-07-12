@@ -1,0 +1,15 @@
+C:\Users\tRasHcAn\Desktop\Interfaces\Interfaces\bin\Debug\Interfaces.exe.config
+C:\Users\tRasHcAn\Desktop\Interfaces\Interfaces\bin\Debug\Interfaces.exe
+C:\Users\tRasHcAn\Desktop\Interfaces\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\tRasHcAn\Desktop\Interfaces\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\tRasHcAn\Desktop\Interfaces\Interfaces\obj\Debug\Interfaces.exe
+C:\Users\tRasHcAn\Desktop\Interfaces\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\tRasHcAn\Desktop\aspProjects\Interfaces\Interfaces\bin\Debug\Interfaces.exe.config
+C:\Users\tRasHcAn\Desktop\aspProjects\Interfaces\Interfaces\obj\Debug\Interfaces.exe
+C:\Users\tRasHcAn\Desktop\aspProjects\Interfaces\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\tRasHcAn\Desktop\aspProjects\Interfaces\Interfaces\bin\Debug\Interfaces.exe
+C:\Users\tRasHcAn\Desktop\aspProjects\Interfaces\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\tRasHcAn\Desktop\aspProjects\Interfaces\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\tRasHcAn\Desktop\MyWorkExamples\aspProjects\Interfaces\Interfaces\bin\Debug\Interfaces.exe.config
+C:\Users\tRasHcAn\Desktop\MyWorkExamples\aspProjects\Interfaces\Interfaces\obj\Debug\Interfaces.exe
+C:\Users\tRasHcAn\Desktop\MyWorkExamples\aspProjects\Interfaces\Interfaces\obj\Debug\Interfaces.pdb

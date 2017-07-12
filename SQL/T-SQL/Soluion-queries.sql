@@ -10,6 +10,12 @@ however if you use group by colum1, column2 etc, the same column set has
 to appear in the proyeccion. 
 
 There are conditions to use a function or a storedProcedure, check below
+
+An schema is related to db security, check this tab on t-sql object explorer
+An schema contains database objects such as tables, views, stored procedures, etc
+A schema owner can be a database user a database role or application role.
+Every database object is encapsulated by a schema like tst, dbo
+dbo seems to be a user which owns a list of schema
 */
  
 --out of all databases use mydb as current context for queries

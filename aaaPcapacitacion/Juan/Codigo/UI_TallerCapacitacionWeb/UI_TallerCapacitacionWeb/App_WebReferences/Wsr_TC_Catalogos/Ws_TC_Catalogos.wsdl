@@ -1,0 +1,1810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos">
+      <s:element name="TCC_CONDICION_LIBRO_InsertarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntTccCondicionLibro" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EntTccCondicionLibro">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CondicionLibro" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="EntBase" abstract="true">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="UsuarioResponsable" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TCC_CONDICION_LIBRO_InsertarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCC_CONDICION_LIBRO_InsertarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCC_CONDICION_LIBRO_BorrarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntTccCondicionLibro" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCC_CONDICION_LIBRO_BorrarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCC_CONDICION_LIBRO_BorrarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCC_CONDICION_LIBRO_ModificarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntTccCondicionLibro" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCC_CONDICION_LIBRO_ModificarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCC_CONDICION_LIBRO_ModificarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCC_CONDICION_LIBRO_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_Paginar" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumeroPagina" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCC_CONDICION_LIBRO_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCC_CONDICION_LIBRO_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibroResult" type="tns:EntDatosPaginacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EntDatosPaginacion">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="TotalRegistros" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="TamanoPagina" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="TotalPaginas" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="TCC_CONDICION_LIBRO_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_Paginar" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumeroPagina" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCC_CONDICION_LIBRO_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCC_CONDICION_LIBRO_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibrolst">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibrolstResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibrolstResult" type="tns:EntDatosPaginacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCC_CONDICION_LIBRO_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCC_CONDICION_LIBRO_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCC_CONDICION_LIBRO_ObtenerRegistroResult" type="tns:EntTccCondicionLibro" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_InsertarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntTcmAutor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EntTcmAutor">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="IdPersonal" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PrimerApellido" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SegundoApellido" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="FechaHoraNacimiento" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="TimeStamp" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="TCM_AUTOR_InsertarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCM_AUTOR_InsertarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_BorrarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntTcmAutor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_BorrarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCM_AUTOR_BorrarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ModificarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntTcmAutor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ModificarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCM_AUTOR_ModificarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_Paginar" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumeroPagina" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_AUTOR_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ObtenerDatosPaginacionVTcmAutor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorResult" type="tns:EntDatosPaginacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_Paginar" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumeroPagina" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_AUTOR_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorlst">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorlstResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorlstResult" type="tns:EntDatosPaginacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_AUTOR_ObtenerRegistroResult" type="tns:EntTcmAutor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ListarFcTcAutoresDelLibro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_Paginar" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumeroPagina" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_PvcIsbn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ListarFcTcAutoresDelLibroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_AUTOR_ListarFcTcAutoresDelLibroResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresDelLibro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_PvcIsbn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresDelLibroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresDelLibroResult" type="tns:EntDatosPaginacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ListarFcTcAutoresNoAsignadosLib">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_Paginar" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumeroPagina" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_PvcIsbn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ListarFcTcAutoresNoAsignadosLibResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_AUTOR_ListarFcTcAutoresNoAsignadosLibResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresNoAsignadosLib">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_PvcIsbn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresNoAsignadosLibResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresNoAsignadosLibResult" type="tns:EntDatosPaginacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_POR_LIBRO_InsertarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntTcmAutorPorLibro" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EntTcmAutorPorLibro">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Isbn" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="IdPersonal" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="TCM_AUTOR_POR_LIBRO_InsertarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCM_AUTOR_POR_LIBRO_InsertarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_POR_LIBRO_BorrarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntTcmAutorPorLibro" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_POR_LIBRO_BorrarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCM_AUTOR_POR_LIBRO_BorrarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_POR_LIBRO_ModificarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntTcmAutorPorLibro" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_POR_LIBRO_ModificarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCM_AUTOR_POR_LIBRO_ModificarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_POR_LIBRO_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_Paginar" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumeroPagina" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_POR_LIBRO_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_AUTOR_POR_LIBRO_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibroResult" type="tns:EntDatosPaginacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_POR_LIBRO_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_Paginar" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumeroPagina" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_POR_LIBRO_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_AUTOR_POR_LIBRO_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibrolst">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibrolstResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibrolstResult" type="tns:EntDatosPaginacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_POR_LIBRO_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_AUTOR_POR_LIBRO_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_AUTOR_POR_LIBRO_ObtenerRegistroResult" type="tns:EntTcmAutorPorLibro" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_LIBRO_InsertarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntTcmLibro" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EntTcmLibro">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Isbn" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CondicionLibro" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Titulo" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Resumen" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="TotalPaginas" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="FechaHoraImpresion" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="TimeStamp" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="TCM_LIBRO_InsertarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCM_LIBRO_InsertarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_LIBRO_BorrarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntTcmLibro" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_LIBRO_BorrarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCM_LIBRO_BorrarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_LIBRO_ModificarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntTcmLibro" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_LIBRO_ModificarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCM_LIBRO_ModificarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_LIBRO_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_Paginar" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumeroPagina" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_LIBRO_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_LIBRO_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_LIBRO_ObtenerDatosPaginacionVTcmLibro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_LIBRO_ObtenerDatosPaginacionVTcmLibroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_LIBRO_ObtenerDatosPaginacionVTcmLibroResult" type="tns:EntDatosPaginacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_LIBRO_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_Paginar" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumeroPagina" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_LIBRO_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_LIBRO_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_LIBRO_ObtenerDatosPaginacionVTcmLibrolst">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_LIBRO_ObtenerDatosPaginacionVTcmLibrolstResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_LIBRO_ObtenerDatosPaginacionVTcmLibrolstResult" type="tns:EntDatosPaginacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_LIBRO_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TCM_LIBRO_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCM_LIBRO_ObtenerRegistroResult" type="tns:EntTcmLibro" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TCC_CONDICION_LIBRO_InsertarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCC_CONDICION_LIBRO_InsertarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="TCC_CONDICION_LIBRO_InsertarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCC_CONDICION_LIBRO_InsertarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCC_CONDICION_LIBRO_BorrarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCC_CONDICION_LIBRO_BorrarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="TCC_CONDICION_LIBRO_BorrarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCC_CONDICION_LIBRO_BorrarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCC_CONDICION_LIBRO_ModificarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCC_CONDICION_LIBRO_ModificarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="TCC_CONDICION_LIBRO_ModificarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCC_CONDICION_LIBRO_ModificarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCC_CONDICION_LIBRO_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:TCC_CONDICION_LIBRO_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="TCC_CONDICION_LIBRO_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:TCC_CONDICION_LIBRO_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibro" />
+  </wsdl:message>
+  <wsdl:message name="TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCC_CONDICION_LIBRO_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:TCC_CONDICION_LIBRO_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="TCC_CONDICION_LIBRO_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:TCC_CONDICION_LIBRO_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibrolstSoapIn">
+    <wsdl:part name="parameters" element="tns:TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibrolst" />
+  </wsdl:message>
+  <wsdl:message name="TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibrolstSoapOut">
+    <wsdl:part name="parameters" element="tns:TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibrolstResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCC_CONDICION_LIBRO_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCC_CONDICION_LIBRO_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="TCC_CONDICION_LIBRO_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCC_CONDICION_LIBRO_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_InsertarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_InsertarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_InsertarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_InsertarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_BorrarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_BorrarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_BorrarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_BorrarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ModificarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ModificarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ModificarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ModificarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ObtenerDatosPaginacionVTcmAutor" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorlstSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorlst" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorlstSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorlstResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ListarFcTcAutoresDelLibroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ListarFcTcAutoresDelLibro" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ListarFcTcAutoresDelLibroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ListarFcTcAutoresDelLibroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresDelLibroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresDelLibro" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresDelLibroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresDelLibroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ListarFcTcAutoresNoAsignadosLibSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ListarFcTcAutoresNoAsignadosLib" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ListarFcTcAutoresNoAsignadosLibSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ListarFcTcAutoresNoAsignadosLibResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresNoAsignadosLibSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresNoAsignadosLib" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresNoAsignadosLibSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresNoAsignadosLibResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_POR_LIBRO_InsertarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_POR_LIBRO_InsertarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_POR_LIBRO_InsertarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_POR_LIBRO_InsertarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_POR_LIBRO_BorrarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_POR_LIBRO_BorrarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_POR_LIBRO_BorrarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_POR_LIBRO_BorrarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_POR_LIBRO_ModificarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_POR_LIBRO_ModificarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_POR_LIBRO_ModificarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_POR_LIBRO_ModificarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_POR_LIBRO_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_POR_LIBRO_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_POR_LIBRO_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_POR_LIBRO_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibro" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_POR_LIBRO_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_POR_LIBRO_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_POR_LIBRO_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_POR_LIBRO_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibrolstSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibrolst" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibrolstSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibrolstResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_POR_LIBRO_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_POR_LIBRO_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="TCM_AUTOR_POR_LIBRO_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_AUTOR_POR_LIBRO_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_LIBRO_InsertarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_LIBRO_InsertarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="TCM_LIBRO_InsertarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_LIBRO_InsertarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_LIBRO_BorrarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_LIBRO_BorrarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="TCM_LIBRO_BorrarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_LIBRO_BorrarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_LIBRO_ModificarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_LIBRO_ModificarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="TCM_LIBRO_ModificarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_LIBRO_ModificarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_LIBRO_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_LIBRO_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="TCM_LIBRO_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_LIBRO_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_LIBRO_ObtenerDatosPaginacionVTcmLibroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_LIBRO_ObtenerDatosPaginacionVTcmLibro" />
+  </wsdl:message>
+  <wsdl:message name="TCM_LIBRO_ObtenerDatosPaginacionVTcmLibroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_LIBRO_ObtenerDatosPaginacionVTcmLibroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_LIBRO_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_LIBRO_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="TCM_LIBRO_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_LIBRO_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_LIBRO_ObtenerDatosPaginacionVTcmLibrolstSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_LIBRO_ObtenerDatosPaginacionVTcmLibrolst" />
+  </wsdl:message>
+  <wsdl:message name="TCM_LIBRO_ObtenerDatosPaginacionVTcmLibrolstSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_LIBRO_ObtenerDatosPaginacionVTcmLibrolstResponse" />
+  </wsdl:message>
+  <wsdl:message name="TCM_LIBRO_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:TCM_LIBRO_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="TCM_LIBRO_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:TCM_LIBRO_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Ws_TC_CatalogosSoap">
+    <wsdl:operation name="TCC_CONDICION_LIBRO_InsertarRegistro">
+      <wsdl:input message="tns:TCC_CONDICION_LIBRO_InsertarRegistroSoapIn" />
+      <wsdl:output message="tns:TCC_CONDICION_LIBRO_InsertarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_BorrarRegistro">
+      <wsdl:input message="tns:TCC_CONDICION_LIBRO_BorrarRegistroSoapIn" />
+      <wsdl:output message="tns:TCC_CONDICION_LIBRO_BorrarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ModificarRegistro">
+      <wsdl:input message="tns:TCC_CONDICION_LIBRO_ModificarRegistroSoapIn" />
+      <wsdl:output message="tns:TCC_CONDICION_LIBRO_ModificarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ListarRegistros">
+      <wsdl:input message="tns:TCC_CONDICION_LIBRO_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:TCC_CONDICION_LIBRO_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibro">
+      <wsdl:input message="tns:TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibroSoapIn" />
+      <wsdl:output message="tns:TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ListarRegistrosLista">
+      <wsdl:input message="tns:TCC_CONDICION_LIBRO_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:TCC_CONDICION_LIBRO_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibrolst">
+      <wsdl:input message="tns:TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibrolstSoapIn" />
+      <wsdl:output message="tns:TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibrolstSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ObtenerRegistro">
+      <wsdl:input message="tns:TCC_CONDICION_LIBRO_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:TCC_CONDICION_LIBRO_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_InsertarRegistro">
+      <wsdl:input message="tns:TCM_AUTOR_InsertarRegistroSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_InsertarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_BorrarRegistro">
+      <wsdl:input message="tns:TCM_AUTOR_BorrarRegistroSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_BorrarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ModificarRegistro">
+      <wsdl:input message="tns:TCM_AUTOR_ModificarRegistroSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_ModificarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ListarRegistros">
+      <wsdl:input message="tns:TCM_AUTOR_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ObtenerDatosPaginacionVTcmAutor">
+      <wsdl:input message="tns:TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ListarRegistrosLista">
+      <wsdl:input message="tns:TCM_AUTOR_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorlst">
+      <wsdl:input message="tns:TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorlstSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorlstSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ObtenerRegistro">
+      <wsdl:input message="tns:TCM_AUTOR_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ListarFcTcAutoresDelLibro">
+      <wsdl:input message="tns:TCM_AUTOR_ListarFcTcAutoresDelLibroSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_ListarFcTcAutoresDelLibroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresDelLibro">
+      <wsdl:input message="tns:TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresDelLibroSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresDelLibroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ListarFcTcAutoresNoAsignadosLib">
+      <wsdl:input message="tns:TCM_AUTOR_ListarFcTcAutoresNoAsignadosLibSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_ListarFcTcAutoresNoAsignadosLibSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresNoAsignadosLib">
+      <wsdl:input message="tns:TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresNoAsignadosLibSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresNoAsignadosLibSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_InsertarRegistro">
+      <wsdl:input message="tns:TCM_AUTOR_POR_LIBRO_InsertarRegistroSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_POR_LIBRO_InsertarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_BorrarRegistro">
+      <wsdl:input message="tns:TCM_AUTOR_POR_LIBRO_BorrarRegistroSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_POR_LIBRO_BorrarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ModificarRegistro">
+      <wsdl:input message="tns:TCM_AUTOR_POR_LIBRO_ModificarRegistroSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_POR_LIBRO_ModificarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ListarRegistros">
+      <wsdl:input message="tns:TCM_AUTOR_POR_LIBRO_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_POR_LIBRO_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibro">
+      <wsdl:input message="tns:TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibroSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ListarRegistrosLista">
+      <wsdl:input message="tns:TCM_AUTOR_POR_LIBRO_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_POR_LIBRO_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibrolst">
+      <wsdl:input message="tns:TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibrolstSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibrolstSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ObtenerRegistro">
+      <wsdl:input message="tns:TCM_AUTOR_POR_LIBRO_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:TCM_AUTOR_POR_LIBRO_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_InsertarRegistro">
+      <wsdl:input message="tns:TCM_LIBRO_InsertarRegistroSoapIn" />
+      <wsdl:output message="tns:TCM_LIBRO_InsertarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_BorrarRegistro">
+      <wsdl:input message="tns:TCM_LIBRO_BorrarRegistroSoapIn" />
+      <wsdl:output message="tns:TCM_LIBRO_BorrarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ModificarRegistro">
+      <wsdl:input message="tns:TCM_LIBRO_ModificarRegistroSoapIn" />
+      <wsdl:output message="tns:TCM_LIBRO_ModificarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ListarRegistros">
+      <wsdl:input message="tns:TCM_LIBRO_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:TCM_LIBRO_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ObtenerDatosPaginacionVTcmLibro">
+      <wsdl:input message="tns:TCM_LIBRO_ObtenerDatosPaginacionVTcmLibroSoapIn" />
+      <wsdl:output message="tns:TCM_LIBRO_ObtenerDatosPaginacionVTcmLibroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ListarRegistrosLista">
+      <wsdl:input message="tns:TCM_LIBRO_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:TCM_LIBRO_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ObtenerDatosPaginacionVTcmLibrolst">
+      <wsdl:input message="tns:TCM_LIBRO_ObtenerDatosPaginacionVTcmLibrolstSoapIn" />
+      <wsdl:output message="tns:TCM_LIBRO_ObtenerDatosPaginacionVTcmLibrolstSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ObtenerRegistro">
+      <wsdl:input message="tns:TCM_LIBRO_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:TCM_LIBRO_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Ws_TC_CatalogosSoap" type="tns:Ws_TC_CatalogosSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TCC_CONDICION_LIBRO_InsertarRegistro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCC_CONDICION_LIBRO_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_BorrarRegistro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCC_CONDICION_LIBRO_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ModificarRegistro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCC_CONDICION_LIBRO_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ListarRegistros">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCC_CONDICION_LIBRO_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ListarRegistrosLista">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCC_CONDICION_LIBRO_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibrolst">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibrolst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ObtenerRegistro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCC_CONDICION_LIBRO_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_InsertarRegistro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_BorrarRegistro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ModificarRegistro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ListarRegistros">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ObtenerDatosPaginacionVTcmAutor">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ObtenerDatosPaginacionVTcmAutor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ListarRegistrosLista">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorlst">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorlst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ObtenerRegistro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ListarFcTcAutoresDelLibro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ListarFcTcAutoresDelLibro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresDelLibro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresDelLibro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ListarFcTcAutoresNoAsignadosLib">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ListarFcTcAutoresNoAsignadosLib" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresNoAsignadosLib">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresNoAsignadosLib" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_InsertarRegistro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_POR_LIBRO_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_BorrarRegistro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_POR_LIBRO_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ModificarRegistro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_POR_LIBRO_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ListarRegistros">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_POR_LIBRO_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ListarRegistrosLista">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_POR_LIBRO_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibrolst">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibrolst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ObtenerRegistro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_POR_LIBRO_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_InsertarRegistro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_LIBRO_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_BorrarRegistro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_LIBRO_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ModificarRegistro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_LIBRO_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ListarRegistros">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_LIBRO_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ObtenerDatosPaginacionVTcmLibro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_LIBRO_ObtenerDatosPaginacionVTcmLibro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ListarRegistrosLista">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_LIBRO_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ObtenerDatosPaginacionVTcmLibrolst">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_LIBRO_ObtenerDatosPaginacionVTcmLibrolst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ObtenerRegistro">
+      <soap:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_LIBRO_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Ws_TC_CatalogosSoap12" type="tns:Ws_TC_CatalogosSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TCC_CONDICION_LIBRO_InsertarRegistro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCC_CONDICION_LIBRO_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_BorrarRegistro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCC_CONDICION_LIBRO_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ModificarRegistro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCC_CONDICION_LIBRO_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ListarRegistros">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCC_CONDICION_LIBRO_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ListarRegistrosLista">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCC_CONDICION_LIBRO_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibrolst">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCC_CONDICION_LIBRO_ObtenerDatosPaginacionVTccCondicionLibrolst" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCC_CONDICION_LIBRO_ObtenerRegistro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCC_CONDICION_LIBRO_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_InsertarRegistro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_BorrarRegistro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ModificarRegistro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ListarRegistros">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ObtenerDatosPaginacionVTcmAutor">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ObtenerDatosPaginacionVTcmAutor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ListarRegistrosLista">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorlst">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ObtenerDatosPaginacionVTcmAutorlst" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ObtenerRegistro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ListarFcTcAutoresDelLibro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ListarFcTcAutoresDelLibro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresDelLibro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresDelLibro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ListarFcTcAutoresNoAsignadosLib">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ListarFcTcAutoresNoAsignadosLib" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresNoAsignadosLib">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_ObtenerDatosPaginacionFcTcAutoresNoAsignadosLib" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_InsertarRegistro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_POR_LIBRO_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_BorrarRegistro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_POR_LIBRO_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ModificarRegistro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_POR_LIBRO_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ListarRegistros">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_POR_LIBRO_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ListarRegistrosLista">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_POR_LIBRO_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibrolst">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_POR_LIBRO_ObtenerDatosPaginacionVTcmAutorPorLibrolst" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_AUTOR_POR_LIBRO_ObtenerRegistro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_AUTOR_POR_LIBRO_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_InsertarRegistro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_LIBRO_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_BorrarRegistro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_LIBRO_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ModificarRegistro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_LIBRO_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ListarRegistros">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_LIBRO_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ObtenerDatosPaginacionVTcmLibro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_LIBRO_ObtenerDatosPaginacionVTcmLibro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ListarRegistrosLista">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_LIBRO_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ObtenerDatosPaginacionVTcmLibrolst">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_LIBRO_ObtenerDatosPaginacionVTcmLibrolst" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TCM_LIBRO_ObtenerRegistro">
+      <soap12:operation soapAction="http://Tallercapacitacion.ucr.ac.cr/Sla_Tallercapacitacion/Ws_TC_Catalogos/TCM_LIBRO_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Ws_TC_Catalogos">
+    <wsdl:port name="Ws_TC_CatalogosSoap" binding="tns:Ws_TC_CatalogosSoap">
+      <soap:address location="http://localhost/SLA_TallerCapacitacion/Ws_TC_Catalogos.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Ws_TC_CatalogosSoap12" binding="tns:Ws_TC_CatalogosSoap12">
+      <soap12:address location="http://localhost/SLA_TallerCapacitacion/Ws_TC_Catalogos.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

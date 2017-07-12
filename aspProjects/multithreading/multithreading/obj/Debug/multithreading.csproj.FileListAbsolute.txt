@@ -1,0 +1,6 @@
+C:\Users\tRasHcAn\Desktop\multithreading\multithreading\bin\Debug\multithreading.exe.config
+C:\Users\tRasHcAn\Desktop\multithreading\multithreading\bin\Debug\multithreading.exe
+C:\Users\tRasHcAn\Desktop\multithreading\multithreading\bin\Debug\multithreading.pdb
+C:\Users\tRasHcAn\Desktop\multithreading\multithreading\obj\Debug\multithreading.csprojResolveAssemblyReference.cache
+C:\Users\tRasHcAn\Desktop\multithreading\multithreading\obj\Debug\multithreading.exe
+C:\Users\tRasHcAn\Desktop\multithreading\multithreading\obj\Debug\multithreading.pdb

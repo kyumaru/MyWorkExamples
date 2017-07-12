@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67569B84-CCF9-44AB-8D46-020D1E059E4A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>Utilerias.OrdenesDeTrabajo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Utilerias.OrdenesDeTrabajo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Utilerias.OrdenesDeTrabajo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constantes.vb" />
+    <Compile Include="Enumerados.vb" />
+    <Compile Include="Modelo\Catalogos\OTC_ESTADO_AJUSTE.vb" />
+    <Compile Include="Modelo\Catalogos\OTC_ESTADO_GESTION_COMPRA.vb" />
+    <Compile Include="Modelo\Catalogos\OTC_ESTADO_ORDEN_TRABAJO.vb" />
+    <Compile Include="Modelo\Catalogos\OTC_ESTADO_TRASLADO.vb" />
+    <Compile Include="Modelo\Catalogos\OTC_TIPO_ORDEN_TRABAJO.vb" />
+    <Compile Include="Modelo\Catalogos\OTF_INVENTARIO.vb" />
+    <Compile Include="Modelo\Catalogos\OTF_OPERARIO_AREA.vb" />
+    <Compile Include="Modelo\Catalogos\OTF_PERIODO_CIERRE.vb" />
+    <Compile Include="Modelo\Catalogos\OTH_CONTRATACION.vb" />
+    <Compile Include="Modelo\Catalogos\OTL_LINEA_TRASLADO.vb" />
+    <Compile Include="Modelo\Catalogos\OTL_SOLICITUD_TRASLADO.vb" />
+    <Compile Include="Modelo\Catalogos\OTL_TRAZABILIDAD_PROCESO.vb" />
+    <Compile Include="Modelo\Catalogos\OTL_TRAZABIL_GESTION_COMP.vb" />
+    <Compile Include="Modelo\Catalogos\OTL_TRAZABIL_SOL_TRASLADO.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_ACTIVIDAD.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_ALMACEN_BODEGA.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_AREA_PROFESIONAL.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_AUTORIZADO_DIRECTOR.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_AUTORIZADO_UBICACION.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_CATEGORIA_MATERIAL.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_CATEGORIA_SERVICIO.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_CORREO_PROVEEDOR.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_ENCARGADO_ALMACEN.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_ENCARGADO_CONTRATO.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_ESPACIO.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_ETAPA_ORDEN_TRABAJO.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_ETAPA_VIA_CONTRATO.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_FLUJO_GESTION_COMPRA.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_LUGAR_TRABAJO.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_MATERIAL.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_MOTIVO_RECHAZO.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_PROVEEDOR.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_REQUERIMIENTO.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_RUBRO_DECISION_INICIA.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_SECTOR_TALLER.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_SUBCATEGORIA_CATEGOR.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_SUBCATEGORIA_MATERIAL.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_SUBCOMPONENTE.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_TELEFONO_PROVEEDOR.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_TIPO_DOCUMENTO.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_TIPO_LUGAR_UBICACION.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_TIPO_OBRA.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_UBICACION.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_UNIDAD_ENCARGADA.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_UNIDAD_MEDIDA.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_UNIDAD_TIEMPO.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_UNIDAD_UBICACION.vb" />
+    <Compile Include="Modelo\Catalogos\OTM_VIA_COMPRA_CONTRATO.vb" />
+    <Compile Include="Modelo\Catalogos\OTP_PARAMETRO.vb" />
+    <Compile Include="Modelo\Catalogos\OTP_PARAMETRO_GLOBAL.vb" />
+    <Compile Include="Modelo\Catalogos\OTP_PARAMETRO_UBICACION.vb" />
+    <Compile Include="Modelo\Catalogos\OTT_GESTION_COMPRA.vb" />
+    <Compile Include="Modelo\Catalogos\OTT_LINEA_GESTION_COMPRA.vb" />
+    <Compile Include="Modelo\Catalogos\OTT_LINEA_TRASLADO.vb" />
+    <Compile Include="Modelo\Catalogos\OTT_SOLICITUD_TRASLADO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTF_ADJUNTO_ORDEN_TRABAJO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTF_EXCEPCION_PERIODO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTF_FICHA_TECNICA_DETALLE.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTF_FICHA_TECNICA_ESPACIO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTF_FICHA_TECNICA_GENERAL.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTF_FICHA_TECNICA_SUBCOMP.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTF_OPERARIO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTF_PLANEACION_PREVENTIVO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTF_PRE_ORDEN_TRABAJO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTF_REVISION_ORDEN_TRABAJ.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTF_REVISION_PRE_ORDEN_TRA.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTF_UBICACION_FAVORITA.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTL_DETALLE_MATERIAL.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTL_DET_APROVISIONAMIENTO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTL_TRAZABILIDAD_AJUSTE.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTL_TRAZABIL_GESTION_INGR.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_ADJUNTO_COTIZACION.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_ADJUNTO_GESTION_COMPR.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_ADJUNTO_GESTION_INGR.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_ADJUNTO_ORDEN_TRABAJO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_AJUSTE_INVENTARIO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_ANTEPROYECTO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_APROVISIONAMIENTO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_CONTRATACION.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_DESICION_INICIAL.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_DETALLE_AJUSTE.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_DETALLE_GESTION_INGR.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_DETALLE_MATERIAL.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_DETALLE_RETIRO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_DET_APROVISIONAMIENTO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_DOCUMENTO_ANTEPROYECT.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_DOCUMENTO_CONTRATACION.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_FICHA_TECNICA_DETALLE.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_FICHA_TECNICA_ESPACIO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_FICHA_TECNICA_GENERAL.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_FICHA_TECNICA_SUBCOMP.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_GESTION_INGRESO_MATER.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_GRUPO_GESTION_COMPRA.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_INFORME_PRESUPUESTO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_LINEA_ADJUDICACION.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_OFERTA_PROVEEDOR.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_OPERARIO_ORDEN_TRAB.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_ORDEN_TRABAJO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_ORDN_TRAB_DEC_INICIAL.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_PROVEEDOR_COTIZACION.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_REVISION_ORDEN_TRABAJ.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_SOLICITUD_MATERIAL.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_SOLICITUD_REINGRESO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_SOLICITUD_RETIRO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_TIEMPO_OPERARIO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_TRAZABILIDAD_PROCESO.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\OTT_VIABILIDAD_TECNICA.vb" />
+    <Compile Include="Modelo\OrdenesDeTrabajo\V_OTT_GESTION_MATERIAL.vb" />
+    <Compile Include="Modelo\Vistas\OTF_ADJUNTO_INCIDENTE.vb" />
+    <Compile Include="Modelo\Vistas\OTF_INCIDENTE_ALMACEN.vb" />
+    <Compile Include="Modelo\Vistas\OTM_TIPO_INCIDENTE.vb" />
+    <Compile Include="Modelo\Vistas\V_OTC_ESTADO_GESTION_COMPRA.vb" />
+    <Compile Include="Modelo\Vistas\V_OTC_ESTADO_GESTION_COMPRALST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTC_ESTADO_ORDEN_TRABAJO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTC_ESTADO_ORDEN_TRABAJOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTC_ESTADO_TRASLADO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTC_ESTADO_TRASLADOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTC_TIPO_ORDEN_TRABAJO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTC_TIPO_ORDEN_TRABAJOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_ADJUNTO_INCIDENTE.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_ADJUNTO_INCIDENTELST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_ADJUNTO_ORDEN_TRABAJO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_ADJUNTO_ORDEN_TRABAJOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_EXCEPCION_PERIODO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_EXCEPCION_PERIODOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_FICHA_TECNICA_DETALLE.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_FICHA_TECNICA_DETALLELST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_FICHA_TECNICA_ESPACIO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_FICHA_TECNICA_ESPACIOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_FICHA_TECNICA_GENERAL.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_FICHA_TECNICA_GENERALLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_FICHA_TECNICA_SUBCOMP.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_FICHA_TECNICA_SUBCOMPLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_INCIDENTE_ALMACEN.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_INCIDENTE_ALMACENLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_INVENTARIO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_INVENTARIOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_OPERARIO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_OPERARIOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_OPERARIO_AREA.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_OPERARIO_AREALST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_ORDEN_TRABAJO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_ORDEN_TRABAJOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_PERIODO_CIERRE.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_PERIODO_CIERRELST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_PLANEACION_PREVENTIVO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_PLANEACION_PREVENTIVOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_PRE_ORDEN_TRABAJO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_PRE_ORDEN_TRABAJOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_REVISION_ORDEN_TRABAJ.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_REVISION_ORDEN_TRABAJLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_REVISION_PRE_ORDENLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_REVISION_PRE_ORDEN_TRA.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_UBICACION_FAVORITA.vb" />
+    <Compile Include="Modelo\Vistas\V_OTF_UBICACION_FAVORITALST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTH_CONTRATACIONLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTH_ORDEN_TRABAJOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTH_TRAZABILIDAD_PROCESOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTL_DETALLE_MATERIAL.vb" />
+    <Compile Include="Modelo\Vistas\V_OTL_DETALLE_MATERIALLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTL_LINEA_TRASLADO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTL_LINEA_TRASLADOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTL_SOLICITUD_TRASLADO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTL_SOLICITUD_TRASLADOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTL_TRAZABILIDAD_PROCESO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTL_TRAZABILIDAD_PROCESOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTL_TRAZABIL_GESTION_COMP.vb" />
+    <Compile Include="Modelo\Vistas\V_OTL_TRAZABIL_GESTION_COMPLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTL_TRAZABIL_GESTION_INGR.vb" />
+    <Compile Include="Modelo\Vistas\V_OTL_TRAZABIL_GESTION_INGRLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTL_TRAZABIL_SOL_TRASLADO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTL_TRAZABIL_SOL_TRASLADOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_ACTIVIDAD.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_ACTIVIDADLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_ALMACEN_BODEGA.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_ALMACEN_BODEGALST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_AREA_PROFESIONAL.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_AREA_PROFESIONALLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_AUTORIZADO_DIRECTOR.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_AUTORIZADO_DIRECTORLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_AUTORIZADO_UBICACION.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_AUTORIZADO_UBICACIONLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_CATEGORIA_MATERIAL.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_CATEGORIA_MATERIALLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_CATEGORIA_SERVICIO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_CATEGORIA_SERVICIOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_ENCARGADO_ALMACEN.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_ENCARGADO_ALMACENLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_ENCARGADO_CONTRATO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_ENCARGADO_CONTRATOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_ESPACIO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_ESPACIOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_ETAPA_ORDEN_TRABAJO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_ETAPA_ORDEN_TRABAJOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_ETAPA_VIA_CONTRATO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_ETAPA_VIA_CONTRATOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_FLUJO_GESTION_COMPRA.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_FLUJO_GESTION_COMPRALST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_LUGAR_TRABAJO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_LUGAR_TRABAJOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_MATERIAL.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_MATERIALLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_MOTIVO_RECHAZO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_MOTIVO_RECHAZOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_REQUERIMIENTO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_REQUERIMIENTOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_RUBRO_DECISION_INICIA.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_RUBRO_DECISION_INICIALST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_SECTOR_TALLER.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_SECTOR_TALLERLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_SUBCATEGORIA_CATEGOR.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_SUBCATEGORIA_CATEGORLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_SUBCATEGORIA_MATERIAL.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_SUBCATEGORIA_MATERIALLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_SUBCOMPONENTE.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_SUBCOMPONENTELST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_TIPO_DOCUMENTO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_TIPO_DOCUMENTOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_TIPO_INCIDENTE.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_TIPO_INCIDENTELST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_TIPO_LUGAR_UBICACION.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_TIPO_LUGAR_UBICACIONLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_TIPO_OBRA.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_TIPO_OBRALST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_UBICACION.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_UBICACIONLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_UNIDAD_ENCARGADA.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_UNIDAD_ENCARGADALST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_UNIDAD_MEDIDA.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_UNIDAD_MEDIDALST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_UNIDAD_TIEMPO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_UNIDAD_TIEMPOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_UNIDAD_UBICACION.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_UNIDAD_UBICACIONLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_VIA_COMPRA_CONTRATO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTM_VIA_COMPRA_CONTRATOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTP_PARAMETRO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTP_PARAMETROLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTP_PARAMETRO_GLOBAL.vb" />
+    <Compile Include="Modelo\Vistas\V_OTP_PARAMETRO_GLOBALLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTP_PARAMETRO_UBICACION.vb" />
+    <Compile Include="Modelo\Vistas\V_OTP_PARAMETRO_UBICACIONLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_ADJUNTO_COTIZACION.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_ADJUNTO_COTIZACIONLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_ADJUNTO_GESTION_COMPR.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_ADJUNTO_GESTION_COMPRLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_ADJUNTO_LIGEROLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_ADJUNTO_ORDEN_TRABAJO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_ADJUNTO_ORDEN_TRABAJOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_AJUSTE_INVENTARIO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_AJUSTE_INVENTARIOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_ANTEPROYECTO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_ANTEPROYECTOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_APROVISIONAMIENTO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_APROVISIONAMIENTOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_CONTRATACION.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_CONTRATACIONLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_DESICION_INICIAL.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_DESICION_INICIALLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_DETALLE_AJUSTE.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_DETALLE_AJUSTELST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_DETALLE_GESTION_INGR.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_DETALLE_GESTION_INGRLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_DETALLE_MATERIAL.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_DETALLE_MATERIALLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_DETALLE_RETIRO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_DETALLE_RETIROLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_DOCUMENTO_ANTEPROYECT.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_DOCUMENTO_ANTEPROYECTLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_DOCUMENTO_CONTRATACION.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_DOCUMENTO_CONTRATLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_FICHA_TECNICA_DETALLE.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_FICHA_TECNICA_DETALLELST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_FICHA_TECNICA_ESPACIO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_FICHA_TECNICA_ESPACIOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_FICHA_TECNICA_GENERAL.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_FICHA_TECNICA_GENERALLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_FICHA_TECNICA_SUBCOMP.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_FICHA_TECNICA_SUBCOMPLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_GESTION_COMPRA.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_GESTION_COMPRALST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_GESTION_INGRESO_MATER.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_GESTION_INGRESO_MATERLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_GRUPO_GESTION_COMPRA.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_GRUPO_GESTION_COMPRALST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_INFORME_PRESUPUESTO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_INFORME_PRESUPUESTOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_LINEA_ADJUDICACION.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_LINEA_ADJUDICACIONLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_LINEA_GESTION_COMPRA.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_LINEA_GESTION_COMPRALST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_LINEA_TRASLADO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_LINEA_TRASLADOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_OFERTA_PROVEEDOR.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_OFERTA_PROVEEDORLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_OPERARIO_ORDEN_TRAB.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_OPERARIO_ORDEN_TRABLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_ORDEN_TRABAJO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_ORDEN_TRABAJOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_ORDN_TRAB_DEC_INICIAL.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_ORDN_TRAB_DEC_INICIALLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_OST_CON_FICHALST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_OST_SIN_FICHALST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_PARTIDAS_PERSUP.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_PROVEEDOR_COTIZACION.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_PROVEEDOR_COTIZACIONLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_REVISION_ORDEN_TRABAJ.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_REVISION_ORDEN_TRABAJLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_SOLICITUD_MATERIAL.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_SOLICITUD_MATERIALLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_SOLICITUD_REINGRESO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_SOLICITUD_REINGRESOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_SOLICITUD_RETIRO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_SOLICITUD_RETIROLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_SOLICITUD_TRASLADO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_SOLICITUD_TRASLADOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_TIEMPO_OPERARIO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_TIEMPO_OPERARIOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_TRAZABILIDAD_PROCESO.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_TRAZABILIDAD_PROCESOLST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_VIABILIDAD_TECNICA.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_VIABILIDAD_TECNICALST.vb" />
+    <Compile Include="Modelo\Vistas\V_OTT_VIA_COMPRA_ALMACEN.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_ADJUNTO.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_ADJUNTO_PROVEEDOR.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_ALERTAS_TIEMPO.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_CONSULTA_FECHA_CIERRE.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_DETALLE_MATERIAL.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_DET_GEST_ING_GROUP.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_GESTION_SECTOR_TALLER.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_HIJAS_RECHAZADAS.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_INVENTARIO_MAT.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_LINEA_GC_GROUP_FONDO.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_LINEA_GC_GROUP_UEC.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_LINEA_GEST_COMP_GROUP.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_ORDEN_LIQUIDACION.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_ORDEN_SOLIC_REING.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_RECHAZADAS.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_REPORTE_GENERAL.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_REPORTE_ORDEN_TRAB.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_RESPUESTAS_USUARIO.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_RESUMEN_OT.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_REVISION_SUPERVISOR.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_TALLER_CATEGORIAS_SUP.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_UNION_HISTORIC_TRANSAC.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_UNION_ORDEN_PREORDEN.vb" />
+    <Compile Include="Modelo\Vistas\V_OT_UNION_PRE_TRANS_HIST.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OrdenesDeTrabajoException.vb" />
+    <Compile Include="Tipos\TP_MAT_SIMINISTROS.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

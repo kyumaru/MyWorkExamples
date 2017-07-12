@@ -1,0 +1,8 @@
+C:\Users\tRasHcAn\Desktop\Property_enum_region_internal\Property_enum_region_internal\bin\Debug\Property_enum_region_internal.exe.config
+C:\Users\tRasHcAn\Desktop\Property_enum_region_internal\Property_enum_region_internal\bin\Debug\Property_enum_region_internal.exe
+C:\Users\tRasHcAn\Desktop\Property_enum_region_internal\Property_enum_region_internal\bin\Debug\Property_enum_region_internal.pdb
+C:\Users\tRasHcAn\Desktop\Property_enum_region_internal\Property_enum_region_internal\obj\Debug\Property_enum_region_internal.csprojResolveAssemblyReference.cache
+C:\Users\tRasHcAn\Desktop\Property_enum_region_internal\Property_enum_region_internal\obj\Debug\Property_enum_region_internal.exe
+C:\Users\tRasHcAn\Desktop\Property_enum_region_internal\Property_enum_region_internal\obj\Debug\Property_enum_region_internal.pdb
+C:\Users\tRasHcAn\Desktop\Property_enum_region_internal\Property_enum_region_internal\bin\Debug\ClassLibrary1.dll
+C:\Users\tRasHcAn\Desktop\Property_enum_region_internal\Property_enum_region_internal\bin\Debug\ClassLibrary1.pdb

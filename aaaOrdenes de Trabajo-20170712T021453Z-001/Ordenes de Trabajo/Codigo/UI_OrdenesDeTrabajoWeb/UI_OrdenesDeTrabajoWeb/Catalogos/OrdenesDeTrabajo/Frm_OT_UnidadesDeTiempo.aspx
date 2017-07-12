@@ -1,0 +1,151 @@
+﻿<%@ Page Title="Catálogo de Unidades de Tiempo" MasterPageFile="~/MasterPage/Mp_Formulario.master" Language="VB" AutoEventWireup="false" CodeFile="Frm_OT_UnidadesDeTiempo.aspx.vb" Inherits="Catalogos_Frm_OT_UnidadesDeTiempo" %>
+
+
+<asp:Content id="Content1" runat="server" ContentPlaceHolderID="cphFormulario">
+     <header>
+        <h2>
+            <asp:Label runat="server" ID="lblAccion"></asp:Label>
+        </h2>
+    </header>
+    <article class="tituloSeccion">
+        Datos de la Unidad de tiempo
+    </article>
+
+    <article class="formulario">
+        <table>
+            <tr>
+                <th>Descripción</th>
+                <td>
+                    <asp:TextBox runat="server" id="txtDescripcion" Width="40%" data-tipoControl="texto"></asp:TextBox>
+                    <asp:RequiredFieldValidator runat="server" id="rvfTxtDescripcion" ControlToValidate="txtDescripcion" display="Dynamic" ErrorMessage="La Descripción de la unidad de tiempo a ingresar es requerida.">&nbsp;</asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <th>Unidad</th>
+                <td>
+                    <asp:DropDownList Width="40%" runat="server" ID="ddlUnidad" AppendDataBoundItems="true" data-tipoControl="combo"></asp:DropDownList>
+                    <asp:RequiredFieldValidator runat="server" ID="rfvDdlUnidad" ControlToValidate="ddlUnidad" Display="Dynamic" ErrorMessage="La unidad de tiempo es requerida">&nbsp;</asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <th>Valor</th>
+                <td>
+                    <asp:TextBox runat="server" id="txtValor" Width="40%" data-tipoControl="texto" MaxLength="2"></asp:TextBox>
+                    <asp:RequiredFieldValidator runat="server" id="rvfTxtValor" ControlToValidate="txtValor" display="Dynamic" ErrorMessage="El valor de la unidad de tiempo a ingresar es requerida.">&nbsp;</asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <th>Estado</th>
+                <td>
+                    <asp:DropDownList Width="40%" runat="server" ID="ddlEstado" AppendDataBoundItems="true" data-tipoControl="combo"></asp:DropDownList>
+                    <asp:RequiredFieldValidator runat="server" ID="rfvDdlEstado" ControlToValidate="ddlEstado" Display="Dynamic" ErrorMessage="El estado de la unidad de tiempo es requerida.">&nbsp;</asp:RequiredFieldValidator>
+                </td>
+            </tr>
+        </table>
+    </article>
+
+    <article class="areaBotones">
+        <asp:Button runat="server" ID="btnAceptar" Text="Aceptar" />
+        <input type="button" data-tipo="limpiarFormulario" value="Limpiar Formulario" id="btnLimpiarFormulario"/>
+        <input type="button" value="Cancelar" id="btnCancelar" />
+    </article>
+
+    <article id="arPopupDelFormulario"></article>
+    <article id="arAlertasDelFormulario"></article>
+
+    <script type="text/javascript">
+
+        function regresarAlListado() {
+            window.location = 'Lst_OT_UnidadesTiempo.aspx';
+        }
+        function deshabilitarFormulario() {
+            deshabilitarControl('#<%=Me.btnAceptar.ClientID%>');
+            deshabilitarControl('#btnLimpiarFormulario');
+            deshabilitarControl('#btnCancelar');
+            $('.formulario').attr('disabled', 'disabled');
+        }
+
+        function mostrarPopupRegistroExitoso() {
+            var vlo_ConfiguracionPopup = {
+                titulo: 'Catálogo de Unidades de tiempo',
+                mensaje: 'Se ha registrado la información de la unidad de tiempo.<br /><strong>¿Desea registrar otra unidad?</strong>',
+                onClosed: function () { regresarAlListado(); },
+                botones:
+                    [
+                        {
+                            idControl: "btnSi",
+                            textoBoton: "Sí",
+                            onClick: function () { window.location = 'Frm_OT_UnidadesDeTiempo.aspx?pvn_Operacion=<%=Utilerias.OrdenesDeTrabajo.eOperacion.Agregar%>'; }
+                        },
+                        {
+                            idControl: "btnNo",
+                            textoBoton: "No",
+                            onClick: function () { regresarAlListado(); }
+                        }
+                    ]
+
+            };
+
+                    $('#arPopupDelFormulario').popup(vlo_ConfiguracionPopup);
+                    window.location = '#arPopupDelFormulario';
+
+                }
+
+                function mostrarAlertaError(pvc_Msj) {
+                    mostrarAlerta(
+                        '#arAlertasDelFormulario',
+                        {
+                            mensaje: pvc_Msj,
+                            tipo: "peligro",
+                            transparencia: 0.9,
+                            posicion: 'center',
+                            permiteCerrar: true
+                        }
+                    );
+                }
+
+                function mostrarAlertaActualizacionExitosa() {
+                    deshabilitarFormulario();
+
+                    mostrarAlerta(
+                        '#arAlertasDelFormulario',
+                        {
+                            mensaje: 'Se ha actualizado la información de la unidad de tiempo',
+                            tipo: "exito",
+                            transparencia: 0.9,
+                            posicion: 'center',
+                            permiteCerrar: true,
+                            onClosed: function () { regresarAlListado(); }
+                        }
+                    );
+                }
+
+                function mostrarAlertaLlaveIncorrecta() {
+                    deshabilitarFormulario();
+
+                    mostrarAlerta(
+                        '#arAlertasDelFormulario',
+                        {
+                            mensaje: 'El número de identificación provisto no pertenece a ninguna unidad de tiempo registrado en el sistema',
+                            tipo: "peligro",
+                            transparencia: 0.9,
+                            posicion: 'center',
+                            permiteCerrar: true,
+                            onClosed: function () { regresarAlListado(); }
+                        }
+                    );
+                }
+
+                $(document).ready(function () {
+
+                    $('#btnCancelar').click(function () {
+                        regresarAlListado();
+                    });
+
+                    configurarLongitudMaximaTexto('#<%=Me.txtDescripcion.ClientID%>', '<%=Utilerias.OrdenesDeTrabajo.Modelo.OTM_UNIDAD_TIEMPO.DESCRIPCION_BD_TAMANO%>');
+                    configurarContadorCaracteresRestantes('#<%=Me.txtDescripcion.ClientID%>', '#spContadorTxtDescripcion');
+
+                });
+    </script>
+
+    </asp:Content>

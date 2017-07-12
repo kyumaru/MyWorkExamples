@@ -1,0 +1,9 @@
+C:\Users\tRasHcAn\Desktop\Events\Events\bin\Debug\Events.exe.config
+C:\Users\tRasHcAn\Desktop\Events\Events\bin\Debug\Events.exe
+C:\Users\tRasHcAn\Desktop\Events\Events\bin\Debug\Events.pdb
+C:\Users\tRasHcAn\Desktop\Events\Events\obj\Debug\Events.csprojResolveAssemblyReference.cache
+C:\Users\tRasHcAn\Desktop\Events\Events\obj\Debug\Events.exe
+C:\Users\tRasHcAn\Desktop\Events\Events\obj\Debug\Events.pdb
+C:\Users\tRasHcAn\Desktop\MyWorkExamples\aspProjects\Events\Events\bin\Debug\Events.exe.config
+C:\Users\tRasHcAn\Desktop\MyWorkExamples\aspProjects\Events\Events\obj\Debug\Events.exe
+C:\Users\tRasHcAn\Desktop\MyWorkExamples\aspProjects\Events\Events\obj\Debug\Events.pdb

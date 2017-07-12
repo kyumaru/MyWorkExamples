@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://localhost/SLA_GeneradorDeReportes/Ws_SDP_ReportServer.asmx?wsdl" docRef="http://localhost/SLA_GeneradorDeReportes/Ws_SDP_ReportServer.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://localhost/SLA_GeneradorDeReportes/Ws_SDP_ReportServer.asmx" xmlns:q1="http://GeneradorDeReportes.ucr.ac.cr/SLA_GeneradorDeReportes/Ws_SDP_ReportServer" binding="q1:Ws_SDP_ReportServerSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://localhost/SLA_GeneradorDeReportes/Ws_SDP_ReportServer.asmx" xmlns:q2="http://GeneradorDeReportes.ucr.ac.cr/SLA_GeneradorDeReportes/Ws_SDP_ReportServer" binding="q2:Ws_SDP_ReportServerSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

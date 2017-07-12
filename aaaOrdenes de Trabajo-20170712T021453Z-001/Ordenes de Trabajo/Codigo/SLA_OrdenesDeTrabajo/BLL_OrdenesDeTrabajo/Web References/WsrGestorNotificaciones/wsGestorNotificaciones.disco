@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://localhost/SLA_GestorNotificaciones/wsGestorNotificaciones.asmx?wsdl" docRef="http://localhost/SLA_GestorNotificaciones/wsGestorNotificaciones.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://localhost/SLA_GestorNotificaciones/wsGestorNotificaciones.asmx" xmlns:q1="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones" binding="q1:wsGestorNotificacionesSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://localhost/SLA_GestorNotificaciones/wsGestorNotificaciones.asmx" xmlns:q2="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones" binding="q2:wsGestorNotificacionesSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

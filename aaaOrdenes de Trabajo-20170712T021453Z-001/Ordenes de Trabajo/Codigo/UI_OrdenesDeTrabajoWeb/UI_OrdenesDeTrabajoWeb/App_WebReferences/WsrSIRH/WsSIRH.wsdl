@@ -1,0 +1,3000 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s1="http://orh.ucr.ac.cr/BLL_Planillas/BLL_SIRH" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH">
+      <s:import namespace="http://orh.ucr.ac.cr/BLL_Planillas/BLL_SIRH" />
+      <s:element name="ConformarPuesto_AUNMES">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vpd_Mes" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="vpn_NumPlaza" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="vpn_NumEmpleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConformarPuesto_AUNMESResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConformarPuesto_AUNMESResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDePuestosWEB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_Fecha" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_Unidad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_EstadoPuesto" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TipoOcup" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaDePuestosWEBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaDePuestosWEBResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CLASE_OCUPACION_CargarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvo_FechaEntrada" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvo_FechaDesde" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvi_Clase_Ocup" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvi_IndiceValidez" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_CargarTodo" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CLASE_OCUPACION_CargarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CLASE_OCUPACION_CargarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UBICACION_CargarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvo_FechaEntrada" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvo_FechaDesde" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvi_Codigo_Ubica" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvi_IndiceValidez" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvi_TipoUnidad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_CargarTodo" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UBICACION_CargarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UBICACION_CargarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UBICACION_ObtenerDescripcionUbicacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_Fecha_Desde" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_Fecha_Entrada" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_Codigo_Ubica" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UBICACION_ObtenerDescripcionUbicacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UBICACION_ObtenerDescripcionUbicacionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UBICACION_ObtenerDescripcion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_Fecha_Desde" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_Fecha_Entrada" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_Codigo_Ubica" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UBICACION_ObtenerDescripcionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UBICACION_ObtenerDescripcionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UBICACION_ObtenerUbica">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_DataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_cod_ubica" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UBICACION_ObtenerUbicaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_DataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UBICACION_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UBICACION_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UBICACION_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UBICACION_Sombras">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_FechaEntrada" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_FechaDesde" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_CriterioExtra" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UBICACION_SombrasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UBICACION_SombrasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NACIONALIDAD_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NACIONALIDAD_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NACIONALIDAD_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NACIONALIDAD_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NACIONALIDAD_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NACIONALIDAD_ObtenerRegistroResult" type="s1:NACIONALIDAD" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CAT_ACADEMICA_CargarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvo_FechaEntrada" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvo_FechaDesde" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvi_CategoriaAcademica" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvi_TipoCategoria" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvi_IndiceValidez" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_CargarTodo" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CAT_ACADEMICA_CargarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CAT_ACADEMICA_CargarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CAT_ACADEMICA_ObtenerSalariosBaseDocenteFuncionario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CAT_ACADEMICA_ObtenerSalariosBaseDocenteFuncionarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CAT_ACADEMICA_ObtenerSalariosBaseDocenteFuncionarioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_DeterminarSiPoseeNombramientoEnPropiedad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_DeterminarSiPoseeNombramientoEnPropiedadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="HIST_PUESTOS_DeterminarSiPoseeNombramientoEnPropiedadResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_DeterminarEstadoActivoFuncionario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_Fecha" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_DeterminarEstadoActivoFuncionarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="HIST_PUESTOS_DeterminarEstadoActivoFuncionarioResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ObtenerEstadosActivosFuncionario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_Fecha" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ObtenerEstadosActivosFuncionarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HIST_PUESTOS_ObtenerEstadosActivosFuncionarioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SIAR_NombramientoPorUnidadYJornada">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SIAR_NombramientoPorUnidadYJornadaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SIAR_NombramientoPorUnidadYJornadaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ObtenerEmpleadosUnidad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodigoUbica" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ObtenerEmpleadosUnidadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HIST_PUESTOS_ObtenerEmpleadosUnidadResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ObtenerNombramientosFecha">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodigoUbica" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_FechaDesde" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_FechaHasta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ObtenerNombramientosFechaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HIST_PUESTOS_ObtenerNombramientosFechaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ObtenerNombramientosCompleto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodigoUbica" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_FechaDesde" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_FechaHasta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ObtenerNombramientosCompletoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HIST_PUESTOS_ObtenerNombramientosCompletoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ObtenerNombramientosPropiedad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_FechaDesde" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_FechaHasta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ObtenerNombramientosPropiedadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HIST_PUESTOS_ObtenerNombramientosPropiedadResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ObtenerUnidadesFecha">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_FechaDesde" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_FechaHasta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ObtenerUnidadesFechaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HIST_PUESTOS_ObtenerUnidadesFechaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ObtenerTodasUnidadesEmpleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ObtenerTodasUnidadesEmpleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HIST_PUESTOS_ObtenerTodasUnidadesEmpleadoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HIST_PUESTOS_ObtenerRegistroResult" type="s1:HIST_PUESTOS" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HIST_PUESTOS_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_VerificarNombramientoVerano">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_FechaDesde" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_FechaHasta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HIST_PUESTOS_VerificarNombramientoVeranoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HIST_PUESTOS_VerificarNombramientoVeranoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PERSONAS_CargarRegistrosSinTipo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Id_Personal" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PERSONAS_CargarRegistrosSinTipoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PERSONAS_CargarRegistrosSinTipoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PERSONAS_CargarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvo_FechaDesde" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvi_Tipo_ID_Pers" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Id_Personal" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_CargarTodo" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PERSONAS_CargarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PERSONAS_CargarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PERSONAS_ObtenerNombrePorNumEmpleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvi_NumEmpleado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_FechaDesde" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PERSONAS_ObtenerNombrePorNumEmpleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PERSONAS_ObtenerNombrePorNumEmpleadoResult" type="s1:PERSONAS" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PERSONAS_ObtenerNombrePorNumEmpleado_Ds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvi_NumEmpleado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_FechaDesde" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PERSONAS_ObtenerNombrePorNumEmpleado_DsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PERSONAS_ObtenerNombrePorNumEmpleado_DsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PERSONAS_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PERSONAS_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PERSONAS_ObtenerRegistroResult" type="s1:PERSONAS" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PERSONAS_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PERSONAS_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PERSONAS_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PRB050A_HISTORICOS_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PRB050A_HISTORICOS_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PRB050A_HISTORICOS_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EMPLEADOS_ObtenerSexo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvn_NumEmpleado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EMPLEADOS_ObtenerSexoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EMPLEADOS_ObtenerSexoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CLASE_PAGO_CargarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvo_FechaEntrada" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvo_FechaDesde" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvi_CodigoPago" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvi_IndiceValidez" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_CargarTodo" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CLASE_PAGO_CargarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CLASE_PAGO_CargarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CLASE_PAGO_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CLASE_PAGO_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CLASE_PAGO_ObtenerRegistroResult" type="s1:CLASE_PAGO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CUENTA_CONTABLE_CargarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvo_FechaEntrada" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvo_FechaDesde" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvi_EquivCont" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvi_IndiceValidez" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_CargarTodo" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CUENTA_CONTABLE_CargarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CUENTA_CONTABLE_CargarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="COSTARRICENSES_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="COSTARRICENSES_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="COSTARRICENSES_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_Datos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_DatosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_DatosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_TipoEmpleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_TipoEmpleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_TipoEmpleadoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoNuevo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoNuevoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoNuevoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoCorreo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoCorreoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoCorreoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_Empleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_EmpleadosNuevos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_FechaConsulta" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_RangoDias" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_EmpleadosNuevosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_EmpleadosNuevosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CambioDatos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_FechaConsulta" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_RangoDias" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CambioDatosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CambioDatosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CorreoEmpleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CorreoEmpleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CorreoEmpleadoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_TipoEmpleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_FechaConsulta" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_RangoDias" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_TipoEmpleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_TipoEmpleadoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_APLICADOS_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MOVIM_APLICADOS_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MOVIM_APLICADOS_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CONSTANTES_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CONSTANTES_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CONSTANTES_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CONSTANTES_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CONSTANTES_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CONSTANTES_ObtenerRegistroResult" type="s1:CONSTANTES" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CARGOS_BuscarPorCodigoCargo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_FechaEntrada" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_FechaDesde" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_IndiceValidez" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodigoCargo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CARGOS_BuscarPorCodigoCargoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CARGOS_BuscarPorCodigoCargoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PARAMETROS_TRAMITE_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PARAMETROS_TRAMITE_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PARAMETROS_TRAMITE_ObtenerRegistroResult" type="s1:PARAMETROS_TRAMITE" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GENERICO_Obtener_Descripcion_Codigo_Pago_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Fecha_desde" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Fecha_Entrada" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_Codigo_Pago" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_indice_Validez" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GENERICO_Obtener_Descripcion_Codigo_Pago_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GENERICO_Obtener_Descripcion_Codigo_Pago_ListarRegistrosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FECHAS_PLANILLA_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FECHAS_PLANILLA_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FECHAS_PLANILLA_ObtenerRegistroResult" type="s1:FECHAS_PLANILLA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ESTRUCTURA_ORG_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ESTRUCTURA_ORG_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ESTRUCTURA_ORG_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CALCULO_SALARIAL_CargarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_InvocaCalculoNuevoSalario" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TipoFormulario" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumeroDocum" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TipoIdPers" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvn_IdPersonal" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_FechaDesde" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_FechaHasta" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumPlazaAct" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_ClasOcupPro" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CatAcadPro" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumerProp" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_DenomProp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Conceptos" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CALCULO_SALARIAL_CargarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CALCULO_SALARIAL_CargarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://orh.ucr.ac.cr/BLL_Planillas/BLL_SIRH">
+      <s:complexType name="NACIONALIDAD">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NACIONALIDAD" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DESCRIPCION" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="INDIC_VALIDEZ" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="HIST_PUESTOS">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NUM_EMPLEADO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUM_PLAZA" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_DESDE" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_HASTA" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_ENTRADA" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CODIGO_UBICA" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CLASE_OCUP" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="EQUIV_CONT" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SECCION" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PERIODO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TIPO_VAC_PROP" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CAT_ACAD" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CAT_SALAR" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TIPO_OCUP" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ESTADO_PUESTO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TIPO_INCAPAC" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUMER_PUESTO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DENOM_PUESTO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUMER_PSGS" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DENOM_PSGS" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUMER_PCGS" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DENOM_PCGS" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TIPO_OBJ_GASTO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MOTIVO_SUST" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FEC_CAMBIO_ESC" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUM_ESCALAF" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ESC_ANT_JUL_91" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FDO_CONSOLIDAD" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="FEC_CAMBIO_ANT" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="PORC_ANT_MED" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PORC_ANU_CONG" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CODIGO_CARGO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TIPO_CARGO" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PERSONAS">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TIPO_ID_PERS" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ID_PERSONAL" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_DESDE" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="NOMBRE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="APELLIDO1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="APELLIDO2" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUM_EMPLEADO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TIPO_PERSONA" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NACIONALIDAD" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FREC_PAGO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="COD_SICERE" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CARNET" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CLASE_PAGO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CODIGO_PAGO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_ENTRADA" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_DESDE" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EFECTO_DEDIC" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CODI_CALCULO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="VALOR_CALCULO" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TOPE_DEDIC" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="INDIC_VALIDEZ" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="EXIGE_EQUIV_CONT" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DESCRIPCION" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AUTOR_PRESUP" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CONSTANTES">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TIPO_CONSTANTE" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CODIGO_CONSTANTE" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DESCRIPCION" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="INDIC_VALIDEZ" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PARAMETROS_TRAMITE">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TIPO_DATO" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DESCRIPCION" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="VALOR_DATO" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="INDIC_VALIDEZ" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FECHAS_PLANILLA">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TIPO_DATO" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DESCRIPCION" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="INDIC_VALIDEZ" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConformarPuesto_AUNMESSoapIn">
+    <wsdl:part name="parameters" element="tns:ConformarPuesto_AUNMES" />
+  </wsdl:message>
+  <wsdl:message name="ConformarPuesto_AUNMESSoapOut">
+    <wsdl:part name="parameters" element="tns:ConformarPuesto_AUNMESResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDePuestosWEBSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaDePuestosWEB" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaDePuestosWEBSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaDePuestosWEBResponse" />
+  </wsdl:message>
+  <wsdl:message name="CLASE_OCUPACION_CargarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:CLASE_OCUPACION_CargarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="CLASE_OCUPACION_CargarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:CLASE_OCUPACION_CargarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="UBICACION_CargarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:UBICACION_CargarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="UBICACION_CargarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:UBICACION_CargarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="UBICACION_ObtenerDescripcionUbicacionSoapIn">
+    <wsdl:part name="parameters" element="tns:UBICACION_ObtenerDescripcionUbicacion" />
+  </wsdl:message>
+  <wsdl:message name="UBICACION_ObtenerDescripcionUbicacionSoapOut">
+    <wsdl:part name="parameters" element="tns:UBICACION_ObtenerDescripcionUbicacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UBICACION_ObtenerDescripcionSoapIn">
+    <wsdl:part name="parameters" element="tns:UBICACION_ObtenerDescripcion" />
+  </wsdl:message>
+  <wsdl:message name="UBICACION_ObtenerDescripcionSoapOut">
+    <wsdl:part name="parameters" element="tns:UBICACION_ObtenerDescripcionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UBICACION_ObtenerUbicaSoapIn">
+    <wsdl:part name="parameters" element="tns:UBICACION_ObtenerUbica" />
+  </wsdl:message>
+  <wsdl:message name="UBICACION_ObtenerUbicaSoapOut">
+    <wsdl:part name="parameters" element="tns:UBICACION_ObtenerUbicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="UBICACION_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:UBICACION_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="UBICACION_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:UBICACION_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="UBICACION_SombrasSoapIn">
+    <wsdl:part name="parameters" element="tns:UBICACION_Sombras" />
+  </wsdl:message>
+  <wsdl:message name="UBICACION_SombrasSoapOut">
+    <wsdl:part name="parameters" element="tns:UBICACION_SombrasResponse" />
+  </wsdl:message>
+  <wsdl:message name="NACIONALIDAD_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:NACIONALIDAD_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="NACIONALIDAD_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:NACIONALIDAD_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="NACIONALIDAD_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:NACIONALIDAD_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="NACIONALIDAD_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:NACIONALIDAD_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="CAT_ACADEMICA_CargarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:CAT_ACADEMICA_CargarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="CAT_ACADEMICA_CargarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:CAT_ACADEMICA_CargarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="CAT_ACADEMICA_ObtenerSalariosBaseDocenteFuncionarioSoapIn">
+    <wsdl:part name="parameters" element="tns:CAT_ACADEMICA_ObtenerSalariosBaseDocenteFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="CAT_ACADEMICA_ObtenerSalariosBaseDocenteFuncionarioSoapOut">
+    <wsdl:part name="parameters" element="tns:CAT_ACADEMICA_ObtenerSalariosBaseDocenteFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_DeterminarSiPoseeNombramientoEnPropiedadSoapIn">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_DeterminarSiPoseeNombramientoEnPropiedad" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_DeterminarSiPoseeNombramientoEnPropiedadSoapOut">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_DeterminarSiPoseeNombramientoEnPropiedadResponse" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_DeterminarEstadoActivoFuncionarioSoapIn">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_DeterminarEstadoActivoFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_DeterminarEstadoActivoFuncionarioSoapOut">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_DeterminarEstadoActivoFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ObtenerEstadosActivosFuncionarioSoapIn">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ObtenerEstadosActivosFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ObtenerEstadosActivosFuncionarioSoapOut">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ObtenerEstadosActivosFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="SIAR_NombramientoPorUnidadYJornadaSoapIn">
+    <wsdl:part name="parameters" element="tns:SIAR_NombramientoPorUnidadYJornada" />
+  </wsdl:message>
+  <wsdl:message name="SIAR_NombramientoPorUnidadYJornadaSoapOut">
+    <wsdl:part name="parameters" element="tns:SIAR_NombramientoPorUnidadYJornadaResponse" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ObtenerEmpleadosUnidadSoapIn">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ObtenerEmpleadosUnidad" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ObtenerEmpleadosUnidadSoapOut">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ObtenerEmpleadosUnidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ObtenerNombramientosFechaSoapIn">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ObtenerNombramientosFecha" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ObtenerNombramientosFechaSoapOut">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ObtenerNombramientosFechaResponse" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ObtenerNombramientosCompletoSoapIn">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ObtenerNombramientosCompleto" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ObtenerNombramientosCompletoSoapOut">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ObtenerNombramientosCompletoResponse" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ObtenerNombramientosPropiedadSoapIn">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ObtenerNombramientosPropiedad" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ObtenerNombramientosPropiedadSoapOut">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ObtenerNombramientosPropiedadResponse" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ObtenerUnidadesFechaSoapIn">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ObtenerUnidadesFecha" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ObtenerUnidadesFechaSoapOut">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ObtenerUnidadesFechaResponse" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ObtenerTodasUnidadesEmpleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ObtenerTodasUnidadesEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ObtenerTodasUnidadesEmpleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ObtenerTodasUnidadesEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_VerificarNombramientoVeranoSoapIn">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_VerificarNombramientoVerano" />
+  </wsdl:message>
+  <wsdl:message name="HIST_PUESTOS_VerificarNombramientoVeranoSoapOut">
+    <wsdl:part name="parameters" element="tns:HIST_PUESTOS_VerificarNombramientoVeranoResponse" />
+  </wsdl:message>
+  <wsdl:message name="PERSONAS_CargarRegistrosSinTipoSoapIn">
+    <wsdl:part name="parameters" element="tns:PERSONAS_CargarRegistrosSinTipo" />
+  </wsdl:message>
+  <wsdl:message name="PERSONAS_CargarRegistrosSinTipoSoapOut">
+    <wsdl:part name="parameters" element="tns:PERSONAS_CargarRegistrosSinTipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="PERSONAS_CargarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:PERSONAS_CargarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="PERSONAS_CargarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:PERSONAS_CargarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PERSONAS_ObtenerNombrePorNumEmpleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:PERSONAS_ObtenerNombrePorNumEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="PERSONAS_ObtenerNombrePorNumEmpleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:PERSONAS_ObtenerNombrePorNumEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="PERSONAS_ObtenerNombrePorNumEmpleado_DsSoapIn">
+    <wsdl:part name="parameters" element="tns:PERSONAS_ObtenerNombrePorNumEmpleado_Ds" />
+  </wsdl:message>
+  <wsdl:message name="PERSONAS_ObtenerNombrePorNumEmpleado_DsSoapOut">
+    <wsdl:part name="parameters" element="tns:PERSONAS_ObtenerNombrePorNumEmpleado_DsResponse" />
+  </wsdl:message>
+  <wsdl:message name="PERSONAS_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:PERSONAS_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="PERSONAS_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:PERSONAS_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="PERSONAS_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:PERSONAS_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="PERSONAS_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:PERSONAS_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PRB050A_HISTORICOS_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:PRB050A_HISTORICOS_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="PRB050A_HISTORICOS_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:PRB050A_HISTORICOS_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="EMPLEADOS_ObtenerSexoSoapIn">
+    <wsdl:part name="parameters" element="tns:EMPLEADOS_ObtenerSexo" />
+  </wsdl:message>
+  <wsdl:message name="EMPLEADOS_ObtenerSexoSoapOut">
+    <wsdl:part name="parameters" element="tns:EMPLEADOS_ObtenerSexoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CLASE_PAGO_CargarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:CLASE_PAGO_CargarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="CLASE_PAGO_CargarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:CLASE_PAGO_CargarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="CLASE_PAGO_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:CLASE_PAGO_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="CLASE_PAGO_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:CLASE_PAGO_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="CUENTA_CONTABLE_CargarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:CUENTA_CONTABLE_CargarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="CUENTA_CONTABLE_CargarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:CUENTA_CONTABLE_CargarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="COSTARRICENSES_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:COSTARRICENSES_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="COSTARRICENSES_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:COSTARRICENSES_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_DatosSoapIn">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_Datos" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_DatosSoapOut">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_DatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_TipoEmpleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_TipoEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_TipoEmpleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_TipoEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoNuevoSoapIn">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoNuevo" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoNuevoSoapOut">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoNuevoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoCorreoSoapIn">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoCorreo" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoCorreoSoapOut">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoCorreoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_Empleado" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_EmpleadosNuevosSoapIn">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_SincronizarEuSirh_EmpleadosNuevos" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_EmpleadosNuevosSoapOut">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_SincronizarEuSirh_EmpleadosNuevosResponse" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CambioDatosSoapIn">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CambioDatos" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CambioDatosSoapOut">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CambioDatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CorreoEmpleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CorreoEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CorreoEmpleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CorreoEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_TipoEmpleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_SincronizarEuSirh_TipoEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_TipoEmpleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:MOVIM_CAMBIO_DATOS_SincronizarEuSirh_TipoEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_APLICADOS_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:MOVIM_APLICADOS_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="MOVIM_APLICADOS_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:MOVIM_APLICADOS_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="CONSTANTES_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:CONSTANTES_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="CONSTANTES_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:CONSTANTES_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="CONSTANTES_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:CONSTANTES_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="CONSTANTES_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:CONSTANTES_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="CARGOS_BuscarPorCodigoCargoSoapIn">
+    <wsdl:part name="parameters" element="tns:CARGOS_BuscarPorCodigoCargo" />
+  </wsdl:message>
+  <wsdl:message name="CARGOS_BuscarPorCodigoCargoSoapOut">
+    <wsdl:part name="parameters" element="tns:CARGOS_BuscarPorCodigoCargoResponse" />
+  </wsdl:message>
+  <wsdl:message name="PARAMETROS_TRAMITE_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:PARAMETROS_TRAMITE_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="PARAMETROS_TRAMITE_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:PARAMETROS_TRAMITE_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GENERICO_Obtener_Descripcion_Codigo_Pago_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:GENERICO_Obtener_Descripcion_Codigo_Pago_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="GENERICO_Obtener_Descripcion_Codigo_Pago_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:GENERICO_Obtener_Descripcion_Codigo_Pago_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="FECHAS_PLANILLA_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:FECHAS_PLANILLA_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="FECHAS_PLANILLA_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:FECHAS_PLANILLA_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="ESTRUCTURA_ORG_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:ESTRUCTURA_ORG_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="ESTRUCTURA_ORG_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:ESTRUCTURA_ORG_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="CALCULO_SALARIAL_CargarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:CALCULO_SALARIAL_CargarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="CALCULO_SALARIAL_CargarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:CALCULO_SALARIAL_CargarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WsSIRHSoap">
+    <wsdl:operation name="ConformarPuesto_AUNMES">
+      <wsdl:input message="tns:ConformarPuesto_AUNMESSoapIn" />
+      <wsdl:output message="tns:ConformarPuesto_AUNMESSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDePuestosWEB">
+      <wsdl:input message="tns:ConsultaDePuestosWEBSoapIn" />
+      <wsdl:output message="tns:ConsultaDePuestosWEBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CLASE_OCUPACION_CargarRegistros">
+      <wsdl:input message="tns:CLASE_OCUPACION_CargarRegistrosSoapIn" />
+      <wsdl:output message="tns:CLASE_OCUPACION_CargarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_CargarRegistros">
+      <wsdl:input message="tns:UBICACION_CargarRegistrosSoapIn" />
+      <wsdl:output message="tns:UBICACION_CargarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_ObtenerDescripcionUbicacion">
+      <wsdl:input message="tns:UBICACION_ObtenerDescripcionUbicacionSoapIn" />
+      <wsdl:output message="tns:UBICACION_ObtenerDescripcionUbicacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_ObtenerDescripcion">
+      <wsdl:input message="tns:UBICACION_ObtenerDescripcionSoapIn" />
+      <wsdl:output message="tns:UBICACION_ObtenerDescripcionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_ObtenerUbica">
+      <wsdl:input message="tns:UBICACION_ObtenerUbicaSoapIn" />
+      <wsdl:output message="tns:UBICACION_ObtenerUbicaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_ListarRegistros">
+      <wsdl:input message="tns:UBICACION_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:UBICACION_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_Sombras">
+      <wsdl:input message="tns:UBICACION_SombrasSoapIn" />
+      <wsdl:output message="tns:UBICACION_SombrasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NACIONALIDAD_ListarRegistros">
+      <wsdl:input message="tns:NACIONALIDAD_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:NACIONALIDAD_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NACIONALIDAD_ObtenerRegistro">
+      <wsdl:input message="tns:NACIONALIDAD_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:NACIONALIDAD_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CAT_ACADEMICA_CargarRegistros">
+      <wsdl:input message="tns:CAT_ACADEMICA_CargarRegistrosSoapIn" />
+      <wsdl:output message="tns:CAT_ACADEMICA_CargarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CAT_ACADEMICA_ObtenerSalariosBaseDocenteFuncionario">
+      <wsdl:input message="tns:CAT_ACADEMICA_ObtenerSalariosBaseDocenteFuncionarioSoapIn" />
+      <wsdl:output message="tns:CAT_ACADEMICA_ObtenerSalariosBaseDocenteFuncionarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_DeterminarSiPoseeNombramientoEnPropiedad">
+      <wsdl:input message="tns:HIST_PUESTOS_DeterminarSiPoseeNombramientoEnPropiedadSoapIn" />
+      <wsdl:output message="tns:HIST_PUESTOS_DeterminarSiPoseeNombramientoEnPropiedadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_DeterminarEstadoActivoFuncionario">
+      <wsdl:input message="tns:HIST_PUESTOS_DeterminarEstadoActivoFuncionarioSoapIn" />
+      <wsdl:output message="tns:HIST_PUESTOS_DeterminarEstadoActivoFuncionarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerEstadosActivosFuncionario">
+      <wsdl:input message="tns:HIST_PUESTOS_ObtenerEstadosActivosFuncionarioSoapIn" />
+      <wsdl:output message="tns:HIST_PUESTOS_ObtenerEstadosActivosFuncionarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SIAR_NombramientoPorUnidadYJornada">
+      <wsdl:input message="tns:SIAR_NombramientoPorUnidadYJornadaSoapIn" />
+      <wsdl:output message="tns:SIAR_NombramientoPorUnidadYJornadaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerEmpleadosUnidad">
+      <wsdl:input message="tns:HIST_PUESTOS_ObtenerEmpleadosUnidadSoapIn" />
+      <wsdl:output message="tns:HIST_PUESTOS_ObtenerEmpleadosUnidadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerNombramientosFecha">
+      <wsdl:input message="tns:HIST_PUESTOS_ObtenerNombramientosFechaSoapIn" />
+      <wsdl:output message="tns:HIST_PUESTOS_ObtenerNombramientosFechaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerNombramientosCompleto">
+      <wsdl:input message="tns:HIST_PUESTOS_ObtenerNombramientosCompletoSoapIn" />
+      <wsdl:output message="tns:HIST_PUESTOS_ObtenerNombramientosCompletoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerNombramientosPropiedad">
+      <wsdl:input message="tns:HIST_PUESTOS_ObtenerNombramientosPropiedadSoapIn" />
+      <wsdl:output message="tns:HIST_PUESTOS_ObtenerNombramientosPropiedadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerUnidadesFecha">
+      <wsdl:input message="tns:HIST_PUESTOS_ObtenerUnidadesFechaSoapIn" />
+      <wsdl:output message="tns:HIST_PUESTOS_ObtenerUnidadesFechaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerTodasUnidadesEmpleado">
+      <wsdl:input message="tns:HIST_PUESTOS_ObtenerTodasUnidadesEmpleadoSoapIn" />
+      <wsdl:output message="tns:HIST_PUESTOS_ObtenerTodasUnidadesEmpleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerRegistro">
+      <wsdl:input message="tns:HIST_PUESTOS_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:HIST_PUESTOS_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ListarRegistros">
+      <wsdl:input message="tns:HIST_PUESTOS_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:HIST_PUESTOS_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_VerificarNombramientoVerano">
+      <wsdl:input message="tns:HIST_PUESTOS_VerificarNombramientoVeranoSoapIn" />
+      <wsdl:output message="tns:HIST_PUESTOS_VerificarNombramientoVeranoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_CargarRegistrosSinTipo">
+      <wsdl:input message="tns:PERSONAS_CargarRegistrosSinTipoSoapIn" />
+      <wsdl:output message="tns:PERSONAS_CargarRegistrosSinTipoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_CargarRegistros">
+      <wsdl:input message="tns:PERSONAS_CargarRegistrosSoapIn" />
+      <wsdl:output message="tns:PERSONAS_CargarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_ObtenerNombrePorNumEmpleado">
+      <wsdl:input message="tns:PERSONAS_ObtenerNombrePorNumEmpleadoSoapIn" />
+      <wsdl:output message="tns:PERSONAS_ObtenerNombrePorNumEmpleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_ObtenerNombrePorNumEmpleado_Ds">
+      <wsdl:input message="tns:PERSONAS_ObtenerNombrePorNumEmpleado_DsSoapIn" />
+      <wsdl:output message="tns:PERSONAS_ObtenerNombrePorNumEmpleado_DsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_ObtenerRegistro">
+      <wsdl:input message="tns:PERSONAS_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:PERSONAS_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_ListarRegistros">
+      <wsdl:input message="tns:PERSONAS_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:PERSONAS_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PRB050A_HISTORICOS_ListarRegistros">
+      <wsdl:input message="tns:PRB050A_HISTORICOS_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:PRB050A_HISTORICOS_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EMPLEADOS_ObtenerSexo">
+      <wsdl:input message="tns:EMPLEADOS_ObtenerSexoSoapIn" />
+      <wsdl:output message="tns:EMPLEADOS_ObtenerSexoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CLASE_PAGO_CargarRegistros">
+      <wsdl:input message="tns:CLASE_PAGO_CargarRegistrosSoapIn" />
+      <wsdl:output message="tns:CLASE_PAGO_CargarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CLASE_PAGO_ObtenerRegistro">
+      <wsdl:input message="tns:CLASE_PAGO_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:CLASE_PAGO_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CUENTA_CONTABLE_CargarRegistros">
+      <wsdl:input message="tns:CUENTA_CONTABLE_CargarRegistrosSoapIn" />
+      <wsdl:output message="tns:CUENTA_CONTABLE_CargarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="COSTARRICENSES_ListarRegistros">
+      <wsdl:input message="tns:COSTARRICENSES_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:COSTARRICENSES_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_Datos">
+      <wsdl:input message="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_DatosSoapIn" />
+      <wsdl:output message="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_DatosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_TipoEmpleado">
+      <wsdl:input message="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_TipoEmpleadoSoapIn" />
+      <wsdl:output message="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_TipoEmpleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoNuevo">
+      <wsdl:input message="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoNuevoSoapIn" />
+      <wsdl:output message="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoNuevoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoCorreo">
+      <wsdl:input message="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoCorreoSoapIn" />
+      <wsdl:output message="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoCorreoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_Empleado">
+      <wsdl:input message="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoSoapIn" />
+      <wsdl:output message="tns:MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_EmpleadosNuevos">
+      <wsdl:input message="tns:MOVIM_CAMBIO_DATOS_SincronizarEuSirh_EmpleadosNuevosSoapIn" />
+      <wsdl:output message="tns:MOVIM_CAMBIO_DATOS_SincronizarEuSirh_EmpleadosNuevosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CambioDatos">
+      <wsdl:input message="tns:MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CambioDatosSoapIn" />
+      <wsdl:output message="tns:MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CambioDatosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CorreoEmpleado">
+      <wsdl:input message="tns:MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CorreoEmpleadoSoapIn" />
+      <wsdl:output message="tns:MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CorreoEmpleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_TipoEmpleado">
+      <wsdl:input message="tns:MOVIM_CAMBIO_DATOS_SincronizarEuSirh_TipoEmpleadoSoapIn" />
+      <wsdl:output message="tns:MOVIM_CAMBIO_DATOS_SincronizarEuSirh_TipoEmpleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_APLICADOS_ListarRegistros">
+      <wsdl:input message="tns:MOVIM_APLICADOS_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:MOVIM_APLICADOS_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CONSTANTES_ListarRegistros">
+      <wsdl:input message="tns:CONSTANTES_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:CONSTANTES_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CONSTANTES_ObtenerRegistro">
+      <wsdl:input message="tns:CONSTANTES_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:CONSTANTES_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CARGOS_BuscarPorCodigoCargo">
+      <wsdl:input message="tns:CARGOS_BuscarPorCodigoCargoSoapIn" />
+      <wsdl:output message="tns:CARGOS_BuscarPorCodigoCargoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PARAMETROS_TRAMITE_ObtenerRegistro">
+      <wsdl:input message="tns:PARAMETROS_TRAMITE_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:PARAMETROS_TRAMITE_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GENERICO_Obtener_Descripcion_Codigo_Pago_ListarRegistros">
+      <wsdl:input message="tns:GENERICO_Obtener_Descripcion_Codigo_Pago_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:GENERICO_Obtener_Descripcion_Codigo_Pago_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FECHAS_PLANILLA_ObtenerRegistro">
+      <wsdl:input message="tns:FECHAS_PLANILLA_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:FECHAS_PLANILLA_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ESTRUCTURA_ORG_ListarRegistros">
+      <wsdl:input message="tns:ESTRUCTURA_ORG_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:ESTRUCTURA_ORG_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CALCULO_SALARIAL_CargarRegistros">
+      <wsdl:input message="tns:CALCULO_SALARIAL_CargarRegistrosSoapIn" />
+      <wsdl:output message="tns:CALCULO_SALARIAL_CargarRegistrosSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WsSIRHSoap" type="tns:WsSIRHSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConformarPuesto_AUNMES">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/ConformarPuesto_AUNMES" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDePuestosWEB">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/ConsultaDePuestosWEB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CLASE_OCUPACION_CargarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CLASE_OCUPACION_CargarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_CargarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/UBICACION_CargarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_ObtenerDescripcionUbicacion">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/UBICACION_ObtenerDescripcionUbicacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_ObtenerDescripcion">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/UBICACION_ObtenerDescripcion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_ObtenerUbica">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/UBICACION_ObtenerUbica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/UBICACION_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_Sombras">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/UBICACION_Sombras" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NACIONALIDAD_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/NACIONALIDAD_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NACIONALIDAD_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/NACIONALIDAD_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CAT_ACADEMICA_CargarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CAT_ACADEMICA_CargarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CAT_ACADEMICA_ObtenerSalariosBaseDocenteFuncionario">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CAT_ACADEMICA_ObtenerSalariosBaseDocenteFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_DeterminarSiPoseeNombramientoEnPropiedad">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_DeterminarSiPoseeNombramientoEnPropiedad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_DeterminarEstadoActivoFuncionario">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_DeterminarEstadoActivoFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerEstadosActivosFuncionario">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ObtenerEstadosActivosFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SIAR_NombramientoPorUnidadYJornada">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/SIAR_NombramientoPorUnidadYJornada" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerEmpleadosUnidad">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ObtenerEmpleadosUnidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerNombramientosFecha">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ObtenerNombramientosFecha" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerNombramientosCompleto">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ObtenerNombramientosCompleto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerNombramientosPropiedad">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ObtenerNombramientosPropiedad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerUnidadesFecha">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ObtenerUnidadesFecha" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerTodasUnidadesEmpleado">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ObtenerTodasUnidadesEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_VerificarNombramientoVerano">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_VerificarNombramientoVerano" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_CargarRegistrosSinTipo">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/PERSONAS_CargarRegistrosSinTipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_CargarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/PERSONAS_CargarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_ObtenerNombrePorNumEmpleado">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/PERSONAS_ObtenerNombrePorNumEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_ObtenerNombrePorNumEmpleado_Ds">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/PERSONAS_ObtenerNombrePorNumEmpleado_Ds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/PERSONAS_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/PERSONAS_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PRB050A_HISTORICOS_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/PRB050A_HISTORICOS_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EMPLEADOS_ObtenerSexo">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/EMPLEADOS_ObtenerSexo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CLASE_PAGO_CargarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CLASE_PAGO_CargarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CLASE_PAGO_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CLASE_PAGO_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CUENTA_CONTABLE_CargarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CUENTA_CONTABLE_CargarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="COSTARRICENSES_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/COSTARRICENSES_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_Datos">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_ListarRegistrosEU_Datos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_TipoEmpleado">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_ListarRegistrosEU_TipoEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoNuevo">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoNuevo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoCorreo">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoCorreo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_Empleado">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_ListarRegistrosEU_Empleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_EmpleadosNuevos">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_SincronizarEuSirh_EmpleadosNuevos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CambioDatos">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CambioDatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CorreoEmpleado">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CorreoEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_TipoEmpleado">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_SincronizarEuSirh_TipoEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_APLICADOS_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_APLICADOS_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CONSTANTES_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CONSTANTES_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CONSTANTES_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CONSTANTES_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CARGOS_BuscarPorCodigoCargo">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CARGOS_BuscarPorCodigoCargo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PARAMETROS_TRAMITE_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/PARAMETROS_TRAMITE_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GENERICO_Obtener_Descripcion_Codigo_Pago_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/GENERICO_Obtener_Descripcion_Codigo_Pago_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FECHAS_PLANILLA_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/FECHAS_PLANILLA_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ESTRUCTURA_ORG_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/ESTRUCTURA_ORG_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CALCULO_SALARIAL_CargarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CALCULO_SALARIAL_CargarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WsSIRHSoap12" type="tns:WsSIRHSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConformarPuesto_AUNMES">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/ConformarPuesto_AUNMES" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaDePuestosWEB">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/ConsultaDePuestosWEB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CLASE_OCUPACION_CargarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CLASE_OCUPACION_CargarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_CargarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/UBICACION_CargarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_ObtenerDescripcionUbicacion">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/UBICACION_ObtenerDescripcionUbicacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_ObtenerDescripcion">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/UBICACION_ObtenerDescripcion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_ObtenerUbica">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/UBICACION_ObtenerUbica" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/UBICACION_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UBICACION_Sombras">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/UBICACION_Sombras" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NACIONALIDAD_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/NACIONALIDAD_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NACIONALIDAD_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/NACIONALIDAD_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CAT_ACADEMICA_CargarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CAT_ACADEMICA_CargarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CAT_ACADEMICA_ObtenerSalariosBaseDocenteFuncionario">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CAT_ACADEMICA_ObtenerSalariosBaseDocenteFuncionario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_DeterminarSiPoseeNombramientoEnPropiedad">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_DeterminarSiPoseeNombramientoEnPropiedad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_DeterminarEstadoActivoFuncionario">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_DeterminarEstadoActivoFuncionario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerEstadosActivosFuncionario">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ObtenerEstadosActivosFuncionario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SIAR_NombramientoPorUnidadYJornada">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/SIAR_NombramientoPorUnidadYJornada" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerEmpleadosUnidad">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ObtenerEmpleadosUnidad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerNombramientosFecha">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ObtenerNombramientosFecha" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerNombramientosCompleto">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ObtenerNombramientosCompleto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerNombramientosPropiedad">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ObtenerNombramientosPropiedad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerUnidadesFecha">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ObtenerUnidadesFecha" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerTodasUnidadesEmpleado">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ObtenerTodasUnidadesEmpleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIST_PUESTOS_VerificarNombramientoVerano">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/HIST_PUESTOS_VerificarNombramientoVerano" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_CargarRegistrosSinTipo">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/PERSONAS_CargarRegistrosSinTipo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_CargarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/PERSONAS_CargarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_ObtenerNombrePorNumEmpleado">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/PERSONAS_ObtenerNombrePorNumEmpleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_ObtenerNombrePorNumEmpleado_Ds">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/PERSONAS_ObtenerNombrePorNumEmpleado_Ds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/PERSONAS_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PERSONAS_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/PERSONAS_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PRB050A_HISTORICOS_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/PRB050A_HISTORICOS_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EMPLEADOS_ObtenerSexo">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/EMPLEADOS_ObtenerSexo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CLASE_PAGO_CargarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CLASE_PAGO_CargarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CLASE_PAGO_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CLASE_PAGO_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CUENTA_CONTABLE_CargarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CUENTA_CONTABLE_CargarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="COSTARRICENSES_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/COSTARRICENSES_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_Datos">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_ListarRegistrosEU_Datos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_TipoEmpleado">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_ListarRegistrosEU_TipoEmpleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoNuevo">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoNuevo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoCorreo">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_ListarRegistrosEU_EmpleadoCorreo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_ListarRegistrosEU_Empleado">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_ListarRegistrosEU_Empleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_EmpleadosNuevos">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_SincronizarEuSirh_EmpleadosNuevos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CambioDatos">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CambioDatos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CorreoEmpleado">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_SincronizarEuSirh_CorreoEmpleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_CAMBIO_DATOS_SincronizarEuSirh_TipoEmpleado">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_CAMBIO_DATOS_SincronizarEuSirh_TipoEmpleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MOVIM_APLICADOS_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/MOVIM_APLICADOS_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CONSTANTES_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CONSTANTES_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CONSTANTES_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CONSTANTES_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CARGOS_BuscarPorCodigoCargo">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CARGOS_BuscarPorCodigoCargo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PARAMETROS_TRAMITE_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/PARAMETROS_TRAMITE_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GENERICO_Obtener_Descripcion_Codigo_Pago_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/GENERICO_Obtener_Descripcion_Codigo_Pago_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FECHAS_PLANILLA_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/FECHAS_PLANILLA_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ESTRUCTURA_ORG_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/ESTRUCTURA_ORG_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CALCULO_SALARIAL_CargarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH/CALCULO_SALARIAL_CargarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WsSIRH">
+    <wsdl:port name="WsSIRHSoap" binding="tns:WsSIRHSoap">
+      <soap:address location="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsSIRH.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WsSIRHSoap12" binding="tns:WsSIRHSoap12">
+      <soap12:address location="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsSIRH.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

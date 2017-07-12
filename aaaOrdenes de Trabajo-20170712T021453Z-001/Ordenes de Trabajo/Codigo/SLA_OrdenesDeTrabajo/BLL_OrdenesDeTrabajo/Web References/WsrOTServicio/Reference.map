@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://10.60.0.56:8080/PDAGO.Servicio/OTServicio.svc?wsdl" filename="OTServicio.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://10.60.0.56:8080/PDAGO.Servicio/OTServicio.svc?xsd=xsd2" filename="OTServicio.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://10.60.0.56:8080/PDAGO.Servicio/OTServicio.svc?xsd=xsd1" filename="OTServicio0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://10.60.0.56:8080/PDAGO.Servicio/OTServicio.svc?xsd=xsd0" filename="OTServicio1.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

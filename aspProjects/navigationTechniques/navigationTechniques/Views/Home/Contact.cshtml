@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "ServerTransfer is server side navigation, it navigates to internal an internal page only, external navigation generates error, the address bar link is not changed upon navigation";
+}
+<h3>@ViewBag.Title.</h3>
+<h3>@ViewBag.Message</h3>
+
+<div>
+    <!--notice the bare minimun for a form to POST/GET
+        in MVC is defining a method attribute
+        the view is linked to a Controller/Action so it will POST/GET there -->
+
+    <form method="post">
+
+        <input id="myPostButton" class="btn-primary" type="submit" value="make a Server.Transfer">
+    </form>
+</div>

@@ -1,0 +1,1 @@
+<%@ WebService Language="VB" CodeBehind="~/App_Code/Ws_OT_OrdenesDeTrabajo.vb" Class="Ws_OT_OrdenesDeTrabajo" %>

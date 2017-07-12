@@ -1,0 +1,1709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://orh.ucr.ac.cr/BLL_Planillas/BLL_VAMantenimientos" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones">
+      <s:import namespace="http://orh.ucr.ac.cr/BLL_Planillas/BLL_VAMantenimientos" />
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSeccion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSeccionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSeccionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUbicacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodigoUbicacion" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUbicacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUbicacionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerSeccionesPorUbicacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodigoUbicacion" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerSeccionesPorUbicacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerSeccionesPorUbicacionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorSeccion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodigoSeccion" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodigoUbicacion" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorSeccionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorSeccionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerNombreJefeUnidad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_Cod_Unidad" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerNombreJefeUnidadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerNombreJefeUnidadResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorUnidad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_Cod_Unidad" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorUnidadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorUnidadResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ValidarJefeUnidad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_Num_Empleado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_Cod_Unidad" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ValidarJefeUnidadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ValidarJefeUnidadResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerEstructurasJefe">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerEstructurasJefeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerEstructurasJefeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerRegistroResult" type="s1:PLM_ESTRUCTURA_ORG" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesAprobacionesViaticos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvn_Unidades" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesAprobacionesViaticosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesAprobacionesViaticosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaCondicion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumeroEmpleadoJefe" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaCondicionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaCondicionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerUsuariosJefaturaUnidad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodUnidad" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerUsuariosJefaturaUnidadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerUsuariosJefaturaUnidadResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSustitutos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSustitutosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSustitutosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasPorEmpleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasPorEmpleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasPorEmpleadoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerCadenaDependencia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodigoEstructura" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerCadenaDependenciaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerCadenaDependenciaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaPorEstructura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumeroEmpleadoJefe" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodigoEstructura" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaPorEstructuraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaPorEstructuraResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorCodigoEstructura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodigoEstructura" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorCodigoEstructuraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorCodigoEstructuraResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerJefesSeccionUnidad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodUnidad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_JefeUnidad" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerJefesSeccionUnidadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerJefesSeccionUnidadResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerUnidadesPerteneceEmpleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="vpn_NumEmpleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerUnidadesPerteneceEmpleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerUnidadesPerteneceEmpleadoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUnidad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUnidadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUnidadResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ListarEmpleados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ListarEmpleadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ListarEmpleadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerEstructuraParaDecJurada">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ObtenerEstructuraParaDecJuradaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ObtenerEstructuraParaDecJuradaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ListarSubjefesInactivos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_ESTRUCTURA_ORG_ListarSubjefesInactivosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_ESTRUCTURA_ORG_ListarSubjefesInactivosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLEADO_UNIDAD_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLEADO_UNIDAD_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_EMPLEADO_UNIDAD_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLEADO_UNIDAD_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLEADO_UNIDAD_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_EMPLEADO_UNIDAD_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLEADO_UNIDAD_EmpleadosDependientesDeJefatura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleadoJefatura" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLEADO_UNIDAD_EmpleadosDependientesDeJefaturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_EMPLEADO_UNIDAD_EmpleadosDependientesDeJefaturaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLEADO_UNIDAD_ListarEmpleadosUnidadConNumAsegurado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PLM_EMPLEADO_UNIDAD_ListarEmpleadosUnidadConNumAseguradoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PLM_EMPLEADO_UNIDAD_ListarEmpleadosUnidadConNumAseguradoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAM_EMPLEADOS_VAC_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAM_EMPLEADOS_VAC_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAM_EMPLEADOS_VAC_ObtenerRegistroResult" type="s1:VAM_EMPLEADOS_VAC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarRegistros_RelacionLaboral">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarRegistros_RelacionLaboralResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarRegistros_RelacionLaboralResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://orh.ucr.ac.cr/BLL_Planillas/BLL_VAMantenimientos">
+      <s:complexType name="PLM_ESTRUCTURA_ORG">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CODIGO_ESTRUCTURA" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UNIDAD_PADRE" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="COD_UNIDAD_SIRH" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DESCRIPCION" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TIPO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TITULO_JEFE" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUM_EMPLEADO_JEFE" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUM_EMPLEADO_SUSTITUTO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_DESDE_SUSTITUCION" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_HASTA_SUSTITUCION" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="APRUEBA_POSPOSICIONES" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SOLO_VISTOBUENO" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ESTADO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CLASE_OCUP_JEFE" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CODIGO_CARGO_JEFE" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CLASE_OCUP_SUST" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CODIGO_CARGO_SUST" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID_NIVEL_APROBACION" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VAM_EMPLEADOS_VAC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NUM_EMPLEADO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_ULTIMO_INGRESO" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DIA_DERECHO_A_VAC" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MES_DERECHO_A_VAC" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUMERO_DOCUM" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="USUARIO_ULTIMA_MODIF" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_ULTIMA_MODIF" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ESTADO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivas" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSeccionSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSeccion" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSeccionSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSeccionResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUbicacionSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUbicacion" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUbicacionSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUbicacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerSeccionesPorUbicacionSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerSeccionesPorUbicacion" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerSeccionesPorUbicacionSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerSeccionesPorUbicacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorSeccionSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorSeccion" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorSeccionSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorSeccionResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerNombreJefeUnidadSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerNombreJefeUnidad" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerNombreJefeUnidadSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerNombreJefeUnidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorUnidadSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorUnidad" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorUnidadSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorUnidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ValidarJefeUnidadSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ValidarJefeUnidad" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ValidarJefeUnidadSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ValidarJefeUnidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerEstructurasJefeSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerEstructurasJefe" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerEstructurasJefeSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerEstructurasJefeResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesAprobacionesViaticosSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerUbicacionesAprobacionesViaticos" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesAprobacionesViaticosSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerUbicacionesAprobacionesViaticosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefes" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaCondicionSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaCondicion" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaCondicionSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaCondicionResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerUsuariosJefaturaUnidadSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerUsuariosJefaturaUnidad" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerUsuariosJefaturaUnidadSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerUsuariosJefaturaUnidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSustitutosSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSustitutos" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSustitutosSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSustitutosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasPorEmpleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerJefaturasPorEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasPorEmpleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerJefaturasPorEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerCadenaDependenciaSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerCadenaDependencia" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerCadenaDependenciaSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerCadenaDependenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaPorEstructuraSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaPorEstructura" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaPorEstructuraSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaPorEstructuraResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorCodigoEstructuraSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorCodigoEstructura" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorCodigoEstructuraSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorCodigoEstructuraResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerJefesSeccionUnidadSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerJefesSeccionUnidad" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerJefesSeccionUnidadSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerJefesSeccionUnidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerUnidadesPerteneceEmpleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerUnidadesPerteneceEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerUnidadesPerteneceEmpleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerUnidadesPerteneceEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUnidadSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUnidad" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUnidadSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUnidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ListarEmpleadosSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ListarEmpleados" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ListarEmpleadosSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ListarEmpleadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerEstructuraParaDecJuradaSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerEstructuraParaDecJurada" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ObtenerEstructuraParaDecJuradaSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ObtenerEstructuraParaDecJuradaResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ListarSubjefesInactivosSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ListarSubjefesInactivos" />
+  </wsdl:message>
+  <wsdl:message name="PLM_ESTRUCTURA_ORG_ListarSubjefesInactivosSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_ESTRUCTURA_ORG_ListarSubjefesInactivosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLEADO_UNIDAD_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLEADO_UNIDAD_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLEADO_UNIDAD_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLEADO_UNIDAD_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLEADO_UNIDAD_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLEADO_UNIDAD_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLEADO_UNIDAD_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLEADO_UNIDAD_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLEADO_UNIDAD_EmpleadosDependientesDeJefaturaSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLEADO_UNIDAD_EmpleadosDependientesDeJefatura" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLEADO_UNIDAD_EmpleadosDependientesDeJefaturaSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLEADO_UNIDAD_EmpleadosDependientesDeJefaturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLEADO_UNIDAD_ListarEmpleadosUnidadConNumAseguradoSoapIn">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLEADO_UNIDAD_ListarEmpleadosUnidadConNumAsegurado" />
+  </wsdl:message>
+  <wsdl:message name="PLM_EMPLEADO_UNIDAD_ListarEmpleadosUnidadConNumAseguradoSoapOut">
+    <wsdl:part name="parameters" element="tns:PLM_EMPLEADO_UNIDAD_ListarEmpleadosUnidadConNumAseguradoResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAM_EMPLEADOS_VAC_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:VAM_EMPLEADOS_VAC_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="VAM_EMPLEADOS_VAC_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:VAM_EMPLEADOS_VAC_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarRegistros_RelacionLaboralSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarRegistros_RelacionLaboral" />
+  </wsdl:message>
+  <wsdl:message name="ListarRegistros_RelacionLaboralSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarRegistros_RelacionLaboralResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WsCatalogosVacacionesSoap">
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivas">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSeccion">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSeccionSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSeccionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ListarRegistros">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ListarRegistrosLista">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUbicacion">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUbicacionSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUbicacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerSeccionesPorUbicacion">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerSeccionesPorUbicacionSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerSeccionesPorUbicacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorSeccion">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorSeccionSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorSeccionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerNombreJefeUnidad">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerNombreJefeUnidadSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerNombreJefeUnidadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorUnidad">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorUnidadSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorUnidadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ValidarJefeUnidad">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ValidarJefeUnidadSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ValidarJefeUnidadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEstructurasJefe">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerEstructurasJefeSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerEstructurasJefeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerRegistro">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesAprobacionesViaticos">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerUbicacionesAprobacionesViaticosSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerUbicacionesAprobacionesViaticosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefes">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaCondicion">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaCondicionSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaCondicionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerUsuariosJefaturaUnidad">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerUsuariosJefaturaUnidadSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerUsuariosJefaturaUnidadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSustitutos">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSustitutosSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSustitutosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasPorEmpleado">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerJefaturasPorEmpleadoSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerJefaturasPorEmpleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerCadenaDependencia">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerCadenaDependenciaSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerCadenaDependenciaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaPorEstructura">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaPorEstructuraSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaPorEstructuraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorCodigoEstructura">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorCodigoEstructuraSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorCodigoEstructuraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerJefesSeccionUnidad">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerJefesSeccionUnidadSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerJefesSeccionUnidadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerUnidadesPerteneceEmpleado">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerUnidadesPerteneceEmpleadoSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerUnidadesPerteneceEmpleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUnidad">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUnidadSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUnidadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ListarEmpleados">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ListarEmpleadosSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ListarEmpleadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEstructuraParaDecJurada">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ObtenerEstructuraParaDecJuradaSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ObtenerEstructuraParaDecJuradaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ListarSubjefesInactivos">
+      <wsdl:input message="tns:PLM_ESTRUCTURA_ORG_ListarSubjefesInactivosSoapIn" />
+      <wsdl:output message="tns:PLM_ESTRUCTURA_ORG_ListarSubjefesInactivosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLEADO_UNIDAD_ListarRegistros">
+      <wsdl:input message="tns:PLM_EMPLEADO_UNIDAD_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:PLM_EMPLEADO_UNIDAD_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLEADO_UNIDAD_ListarRegistrosLista">
+      <wsdl:input message="tns:PLM_EMPLEADO_UNIDAD_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:PLM_EMPLEADO_UNIDAD_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLEADO_UNIDAD_EmpleadosDependientesDeJefatura">
+      <wsdl:input message="tns:PLM_EMPLEADO_UNIDAD_EmpleadosDependientesDeJefaturaSoapIn" />
+      <wsdl:output message="tns:PLM_EMPLEADO_UNIDAD_EmpleadosDependientesDeJefaturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLEADO_UNIDAD_ListarEmpleadosUnidadConNumAsegurado">
+      <wsdl:input message="tns:PLM_EMPLEADO_UNIDAD_ListarEmpleadosUnidadConNumAseguradoSoapIn" />
+      <wsdl:output message="tns:PLM_EMPLEADO_UNIDAD_ListarEmpleadosUnidadConNumAseguradoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAM_EMPLEADOS_VAC_ObtenerRegistro">
+      <wsdl:input message="tns:VAM_EMPLEADOS_VAC_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:VAM_EMPLEADOS_VAC_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarRegistros_RelacionLaboral">
+      <wsdl:input message="tns:ListarRegistros_RelacionLaboralSoapIn" />
+      <wsdl:output message="tns:ListarRegistros_RelacionLaboralSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WsCatalogosVacacionesSoap" type="tns:WsCatalogosVacacionesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivas">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSeccion">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSeccion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ListarRegistrosLista">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUbicacion">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUbicacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerSeccionesPorUbicacion">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerSeccionesPorUbicacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorSeccion">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorSeccion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerNombreJefeUnidad">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerNombreJefeUnidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorUnidad">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorUnidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ValidarJefeUnidad">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ValidarJefeUnidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEstructurasJefe">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerEstructurasJefe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesAprobacionesViaticos">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerUbicacionesAprobacionesViaticos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefes">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaCondicion">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaCondicion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerUsuariosJefaturaUnidad">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerUsuariosJefaturaUnidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSustitutos">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSustitutos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasPorEmpleado">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerJefaturasPorEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerCadenaDependencia">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerCadenaDependencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaPorEstructura">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaPorEstructura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorCodigoEstructura">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorCodigoEstructura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerJefesSeccionUnidad">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerJefesSeccionUnidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerUnidadesPerteneceEmpleado">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerUnidadesPerteneceEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUnidad">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUnidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ListarEmpleados">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ListarEmpleados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEstructuraParaDecJurada">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerEstructuraParaDecJurada" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ListarSubjefesInactivos">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ListarSubjefesInactivos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLEADO_UNIDAD_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_EMPLEADO_UNIDAD_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLEADO_UNIDAD_ListarRegistrosLista">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_EMPLEADO_UNIDAD_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLEADO_UNIDAD_EmpleadosDependientesDeJefatura">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_EMPLEADO_UNIDAD_EmpleadosDependientesDeJefatura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLEADO_UNIDAD_ListarEmpleadosUnidadConNumAsegurado">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_EMPLEADO_UNIDAD_ListarEmpleadosUnidadConNumAsegurado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAM_EMPLEADOS_VAC_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/VAM_EMPLEADOS_VAC_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarRegistros_RelacionLaboral">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/ListarRegistros_RelacionLaboral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WsCatalogosVacacionesSoap12" type="tns:WsCatalogosVacacionesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivas">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSeccion">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerJefaturasActivasSeccion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ListarRegistrosLista">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUbicacion">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUbicacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerSeccionesPorUbicacion">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerSeccionesPorUbicacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorSeccion">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorSeccion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerNombreJefeUnidad">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerNombreJefeUnidad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorUnidad">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorUnidad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ValidarJefeUnidad">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ValidarJefeUnidad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEstructurasJefe">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerEstructurasJefe" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesAprobacionesViaticos">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerUbicacionesAprobacionesViaticos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefes">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaCondicion">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaCondicion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerUsuariosJefaturaUnidad">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerUsuariosJefaturaUnidad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSustitutos">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerUbicacionesPorJefesSustitutos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerJefaturasPorEmpleado">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerJefaturasPorEmpleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerCadenaDependencia">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerCadenaDependencia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaPorEstructura">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorJefaturaPorEstructura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorCodigoEstructura">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerCorreoJefaturaPorCodigoEstructura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerJefesSeccionUnidad">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerJefesSeccionUnidad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerUnidadesPerteneceEmpleado">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerUnidadesPerteneceEmpleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUnidad">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerEmpleadosPorUnidad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ListarEmpleados">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ListarEmpleados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ObtenerEstructuraParaDecJurada">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ObtenerEstructuraParaDecJurada" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_ESTRUCTURA_ORG_ListarSubjefesInactivos">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_ESTRUCTURA_ORG_ListarSubjefesInactivos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLEADO_UNIDAD_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_EMPLEADO_UNIDAD_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLEADO_UNIDAD_ListarRegistrosLista">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_EMPLEADO_UNIDAD_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLEADO_UNIDAD_EmpleadosDependientesDeJefatura">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_EMPLEADO_UNIDAD_EmpleadosDependientesDeJefatura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PLM_EMPLEADO_UNIDAD_ListarEmpleadosUnidadConNumAsegurado">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/PLM_EMPLEADO_UNIDAD_ListarEmpleadosUnidadConNumAsegurado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAM_EMPLEADOS_VAC_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/VAM_EMPLEADOS_VAC_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarRegistros_RelacionLaboral">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsCatalogosVacaciones/ListarRegistros_RelacionLaboral" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WsCatalogosVacaciones">
+    <wsdl:port name="WsCatalogosVacacionesSoap" binding="tns:WsCatalogosVacacionesSoap">
+      <soap:address location="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsCatalogosVacaciones.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WsCatalogosVacacionesSoap12" binding="tns:WsCatalogosVacacionesSoap12">
+      <soap12:address location="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsCatalogosVacaciones.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

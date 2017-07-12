@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "JSwindow";
+}
+
+<h3>@ViewBag.Title.</h3>
+<h3>@ViewBag.Message</h3>
+
+<div>
+    <!--notice the bare minimun for a form to POST/GET
+        in MVC is defining a method attribute
+        the view is linked to a Controller/Action so it will POST/GET there -->
+
+    <form method="post">
+
+        <div class="form-group">
+            <label for="name">Name </label>
+            <input id="name" name="field1" class="form-control" type="text" placeholder="Full name" />
+        </div>
+
+        <input id="buttonId" onclick="navigateToNewWindow()" class="btn-primary" type="button" value="navigate to Forms page">
+    </form>
+</div>
+<!--you can add this as an element through the server using  Response.Write, it adds
+    HTML to the response, it is basically an string-->>
+<script>
+    function navigateToNewWindow() {
+        var name = document.getElementById('name').value;
+        var URI = '/Home/Forms?name='+name;
+        window.open(URI,'_self','location=no, resizable=no',true);
+    }
+</script>
+

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Rds_OT_Ws_OT_OrdenesDeTrabajo">
+  <ConnectionProperties>
+    <Extension>XML</Extension>
+    <ConnectString>http://localhost/SLA_OrdenesDeTrabajo/Ws_OT_OrdenesDeTrabajo.asmx</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
+  </ConnectionProperties>
+  <DataSourceID>7384d71f-0569-4d69-9642-24cf7042bf6b</DataSourceID>
+</RptDataSource>

@@ -1,0 +1,22 @@
+﻿Imports Microsoft.VisualBasic
+Public Class ConstantesInternas
+    Public Const APP_KEY_USUARIO_APLICACION_GN As String = "UsuarioAplicacionGn"
+    Public Const APP_KEY_CLAVE_APLICACION_GN As String = "ClaveAplicacionGN"
+    Public Const APP_KEY_NOMBRE_APLICACION_GN As String = "NombreAplicacionGn"
+    Public Const APP_KEY_WSR_GESTOR_NOTIFICACIONES As String = "WsrGestorNotificaciones.wsGestorNotificaciones"
+    Public Const APP_KEY_WSR_EU_CURRICULO As String = "WsrEU_Curriculo.wsEU_Curriculo"
+    Public Const APP_KEY_WSR_ORACLE_ROLES_PROVIDER As String = "WsrOracleRolesProvider.WsOracleRolesProvider"
+    Public Const APP_KEY_WSR_CATALOGOS_VACACIONES As String = "WsrCatalogosVacaciones.WsCatalogosVacaciones"
+    Public Const APP_KEY_WSR_CATALOGOS_PLANILLA As String = "WsrCatalogosPlanilla.WsCatalogosPlanilla"
+    Public Const APP_KEY_WSR_SOLICITUD_VACACIONES As String = "WsrSolicitudVacaciones.WsSolicitudVacaciones"
+    Public Const APP_KEY_WSR_OT_SERVICIO As String = "WsrOTServicio.WsOTServicio"
+    Public Const APP_KEY_WSR_SIRH As String = "WsrSIRH.WsSIRH"
+    Public Const APP_KEY_WSR_PLATAFORMA_SERVICIOS As String = "WsrPlataformaDeServicios.WsPlataformaDeServicios"
+    Public Const APP_KEY_DIRECCION_WEB_PANTALLA As String = "DireccionWebRecibidoConforme"
+    Public Const APP_KEY_NOMBRE_APLICACION_PLANILLAS As String = "NombreAplicacionPlanillas"
+    Public Const APP_KEY_ROLE_ASISTENTE_ADMINISTRATIVO As String = "RoleAsistenteAdministrativo"
+    Public Const APP_KEY_ROL_OT_JEFE_ADMINISTRATIVO As String = "RoleOT_JefeAdministrativo"
+    Public Const APP_KEY_ROL_PROVIDER_NAME As String = "RoleProviderName"
+    Public Const APP_KEY_WSR_SDP_REPORT_SERVER As String = "Wsr_SDP_ReportServer.Ws_SDP_ReportServer"
+    Public Const APP_KEY_RUTA_ESCRIBIR_ARCHIVOS As String = "RutaEscribirArchivos"
+End Class

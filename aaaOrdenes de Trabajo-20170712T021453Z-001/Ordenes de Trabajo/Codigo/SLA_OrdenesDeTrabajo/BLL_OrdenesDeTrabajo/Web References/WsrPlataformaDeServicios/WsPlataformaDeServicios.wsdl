@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s1="http://orh.ucr.ac.cr/BLL_Planillas/BLL_PSPlataforma/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios">
+      <s:import namespace="http://orh.ucr.ac.cr/BLL_Planillas/BLL_PSPlataforma/" />
+      <s:element name="PST_SOLICITUD_CONSTANCIA_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PST_SOLICITUD_CONSTANCIA_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PST_SOLICITUD_CONSTANCIA_ObtenerRegistroResult" type="s1:PST_SOLICITUD_CONSTANCIA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PST_SOLICITUD_CONSTANCIA_ListarRegistrosAct_Hist">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PST_SOLICITUD_CONSTANCIA_ListarRegistrosAct_HistResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PST_SOLICITUD_CONSTANCIA_ListarRegistrosAct_HistResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PST_SOLICITUD_CONSTANCIA_LstAnnos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PST_SOLICITUD_CONSTANCIA_LstAnnosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PST_SOLICITUD_CONSTANCIA_LstAnnosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_fecha" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_Dias" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PST_SOLICITUD_CONSTANCIA_SumaDiasHabilesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PST_SOLICITUD_CONSTANCIA_SumaDiasHabilesResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles_CierreUCR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_fecha" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_Dias" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles_CierreUCRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles_CierreUCRResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PST_SOLICITUD_CONSTANCIA_DiferenciaFechasHabiles_CierreUCR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_fechaInicial" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_fechaFinal" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PST_SOLICITUD_CONSTANCIA_DiferenciaFechasHabiles_CierreUCRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PST_SOLICITUD_CONSTANCIA_DiferenciaFechasHabiles_CierreUCRResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PST_SOLICITUD_CONSTANCIA_RestaDiasHabiles_CierreUCR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_fecha" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_Dias" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PST_SOLICITUD_CONSTANCIA_RestaDiasHabiles_CierreUCRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PST_SOLICITUD_CONSTANCIA_RestaDiasHabiles_CierreUCRResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PST_SOLICITUD_CONSTANCIA_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PST_SOLICITUD_CONSTANCIA_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PST_SOLICITUD_CONSTANCIA_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PSM_TIPO_CONSTANCIA_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PSM_TIPO_CONSTANCIA_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PSM_TIPO_CONSTANCIA_ObtenerRegistroResult" type="s1:PSM_TIPO_CONSTANCIA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PSM_TIPO_CONSTANCIA_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PSM_TIPO_CONSTANCIA_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PSM_TIPO_CONSTANCIA_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://orh.ucr.ac.cr/BLL_Planillas/BLL_PSPlataforma/">
+      <s:complexType name="PST_SOLICITUD_CONSTANCIA">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID_SOLICITUD" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID_TIPO_CONSTANCIA" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUM_EMPLEADO" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OBSERVACIONES_CONS" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EMPLEADO_ASIGN" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OBSER_EST_ESP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ARCHIVO_CONSTANCIA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NOMBRE_ARCHIVO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ESTADO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="USUARIO_CREA" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_CREA" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="USUARIO_MODIFICA" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_MODIFICA" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="USUARIO_EXPEDIDA" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_EXPEDIDA" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="USUARIO_ENTREGA" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_ENTREGA" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ID_PERSONA_RETIRA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PSM_TIPO_CONSTANCIA">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID_TIPO_CONSTANCIA" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DESC_CONSTANCIA" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DIAS_ENTREGA" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DIAS_ELIMINAR" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="INDICA_OBS" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="VENTANILLA" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ENTREGA_INMEDIATA" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ESTADO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PST_SOLICITUD_CONSTANCIA_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:PST_SOLICITUD_CONSTANCIA_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="PST_SOLICITUD_CONSTANCIA_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:PST_SOLICITUD_CONSTANCIA_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="PST_SOLICITUD_CONSTANCIA_ListarRegistrosAct_HistSoapIn">
+    <wsdl:part name="parameters" element="tns:PST_SOLICITUD_CONSTANCIA_ListarRegistrosAct_Hist" />
+  </wsdl:message>
+  <wsdl:message name="PST_SOLICITUD_CONSTANCIA_ListarRegistrosAct_HistSoapOut">
+    <wsdl:part name="parameters" element="tns:PST_SOLICITUD_CONSTANCIA_ListarRegistrosAct_HistResponse" />
+  </wsdl:message>
+  <wsdl:message name="PST_SOLICITUD_CONSTANCIA_LstAnnosSoapIn">
+    <wsdl:part name="parameters" element="tns:PST_SOLICITUD_CONSTANCIA_LstAnnos" />
+  </wsdl:message>
+  <wsdl:message name="PST_SOLICITUD_CONSTANCIA_LstAnnosSoapOut">
+    <wsdl:part name="parameters" element="tns:PST_SOLICITUD_CONSTANCIA_LstAnnosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PST_SOLICITUD_CONSTANCIA_SumaDiasHabilesSoapIn">
+    <wsdl:part name="parameters" element="tns:PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles" />
+  </wsdl:message>
+  <wsdl:message name="PST_SOLICITUD_CONSTANCIA_SumaDiasHabilesSoapOut">
+    <wsdl:part name="parameters" element="tns:PST_SOLICITUD_CONSTANCIA_SumaDiasHabilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles_CierreUCRSoapIn">
+    <wsdl:part name="parameters" element="tns:PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles_CierreUCR" />
+  </wsdl:message>
+  <wsdl:message name="PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles_CierreUCRSoapOut">
+    <wsdl:part name="parameters" element="tns:PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles_CierreUCRResponse" />
+  </wsdl:message>
+  <wsdl:message name="PST_SOLICITUD_CONSTANCIA_DiferenciaFechasHabiles_CierreUCRSoapIn">
+    <wsdl:part name="parameters" element="tns:PST_SOLICITUD_CONSTANCIA_DiferenciaFechasHabiles_CierreUCR" />
+  </wsdl:message>
+  <wsdl:message name="PST_SOLICITUD_CONSTANCIA_DiferenciaFechasHabiles_CierreUCRSoapOut">
+    <wsdl:part name="parameters" element="tns:PST_SOLICITUD_CONSTANCIA_DiferenciaFechasHabiles_CierreUCRResponse" />
+  </wsdl:message>
+  <wsdl:message name="PST_SOLICITUD_CONSTANCIA_RestaDiasHabiles_CierreUCRSoapIn">
+    <wsdl:part name="parameters" element="tns:PST_SOLICITUD_CONSTANCIA_RestaDiasHabiles_CierreUCR" />
+  </wsdl:message>
+  <wsdl:message name="PST_SOLICITUD_CONSTANCIA_RestaDiasHabiles_CierreUCRSoapOut">
+    <wsdl:part name="parameters" element="tns:PST_SOLICITUD_CONSTANCIA_RestaDiasHabiles_CierreUCRResponse" />
+  </wsdl:message>
+  <wsdl:message name="PST_SOLICITUD_CONSTANCIA_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:PST_SOLICITUD_CONSTANCIA_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="PST_SOLICITUD_CONSTANCIA_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:PST_SOLICITUD_CONSTANCIA_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="PSM_TIPO_CONSTANCIA_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:PSM_TIPO_CONSTANCIA_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="PSM_TIPO_CONSTANCIA_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:PSM_TIPO_CONSTANCIA_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="PSM_TIPO_CONSTANCIA_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:PSM_TIPO_CONSTANCIA_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="PSM_TIPO_CONSTANCIA_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:PSM_TIPO_CONSTANCIA_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WsPlataformaDeServiciosSoap">
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_ObtenerRegistro">
+      <wsdl:input message="tns:PST_SOLICITUD_CONSTANCIA_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:PST_SOLICITUD_CONSTANCIA_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_ListarRegistrosAct_Hist">
+      <wsdl:input message="tns:PST_SOLICITUD_CONSTANCIA_ListarRegistrosAct_HistSoapIn" />
+      <wsdl:output message="tns:PST_SOLICITUD_CONSTANCIA_ListarRegistrosAct_HistSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_LstAnnos">
+      <wsdl:input message="tns:PST_SOLICITUD_CONSTANCIA_LstAnnosSoapIn" />
+      <wsdl:output message="tns:PST_SOLICITUD_CONSTANCIA_LstAnnosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles">
+      <wsdl:input message="tns:PST_SOLICITUD_CONSTANCIA_SumaDiasHabilesSoapIn" />
+      <wsdl:output message="tns:PST_SOLICITUD_CONSTANCIA_SumaDiasHabilesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles_CierreUCR">
+      <wsdl:input message="tns:PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles_CierreUCRSoapIn" />
+      <wsdl:output message="tns:PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles_CierreUCRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_DiferenciaFechasHabiles_CierreUCR">
+      <wsdl:input message="tns:PST_SOLICITUD_CONSTANCIA_DiferenciaFechasHabiles_CierreUCRSoapIn" />
+      <wsdl:output message="tns:PST_SOLICITUD_CONSTANCIA_DiferenciaFechasHabiles_CierreUCRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_RestaDiasHabiles_CierreUCR">
+      <wsdl:input message="tns:PST_SOLICITUD_CONSTANCIA_RestaDiasHabiles_CierreUCRSoapIn" />
+      <wsdl:output message="tns:PST_SOLICITUD_CONSTANCIA_RestaDiasHabiles_CierreUCRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_ListarRegistrosLista">
+      <wsdl:input message="tns:PST_SOLICITUD_CONSTANCIA_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:PST_SOLICITUD_CONSTANCIA_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PSM_TIPO_CONSTANCIA_ObtenerRegistro">
+      <wsdl:input message="tns:PSM_TIPO_CONSTANCIA_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:PSM_TIPO_CONSTANCIA_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PSM_TIPO_CONSTANCIA_ListarRegistros">
+      <wsdl:input message="tns:PSM_TIPO_CONSTANCIA_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:PSM_TIPO_CONSTANCIA_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WsPlataformaDeServiciosSoap" type="tns:WsPlataformaDeServiciosSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PST_SOLICITUD_CONSTANCIA_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_ListarRegistrosAct_Hist">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PST_SOLICITUD_CONSTANCIA_ListarRegistrosAct_Hist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_LstAnnos">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PST_SOLICITUD_CONSTANCIA_LstAnnos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles_CierreUCR">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles_CierreUCR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_DiferenciaFechasHabiles_CierreUCR">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PST_SOLICITUD_CONSTANCIA_DiferenciaFechasHabiles_CierreUCR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_RestaDiasHabiles_CierreUCR">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PST_SOLICITUD_CONSTANCIA_RestaDiasHabiles_CierreUCR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_ListarRegistrosLista">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PST_SOLICITUD_CONSTANCIA_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PSM_TIPO_CONSTANCIA_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PSM_TIPO_CONSTANCIA_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PSM_TIPO_CONSTANCIA_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PSM_TIPO_CONSTANCIA_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WsPlataformaDeServiciosSoap12" type="tns:WsPlataformaDeServiciosSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PST_SOLICITUD_CONSTANCIA_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_ListarRegistrosAct_Hist">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PST_SOLICITUD_CONSTANCIA_ListarRegistrosAct_Hist" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_LstAnnos">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PST_SOLICITUD_CONSTANCIA_LstAnnos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles_CierreUCR">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PST_SOLICITUD_CONSTANCIA_SumaDiasHabiles_CierreUCR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_DiferenciaFechasHabiles_CierreUCR">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PST_SOLICITUD_CONSTANCIA_DiferenciaFechasHabiles_CierreUCR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_RestaDiasHabiles_CierreUCR">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PST_SOLICITUD_CONSTANCIA_RestaDiasHabiles_CierreUCR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PST_SOLICITUD_CONSTANCIA_ListarRegistrosLista">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PST_SOLICITUD_CONSTANCIA_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PSM_TIPO_CONSTANCIA_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PSM_TIPO_CONSTANCIA_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PSM_TIPO_CONSTANCIA_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsPlataformaDeServicios/PSM_TIPO_CONSTANCIA_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WsPlataformaDeServicios">
+    <wsdl:port name="WsPlataformaDeServiciosSoap" binding="tns:WsPlataformaDeServiciosSoap">
+      <soap:address location="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsPlataformaDeServicios.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WsPlataformaDeServiciosSoap12" binding="tns:WsPlataformaDeServiciosSoap12">
+      <soap12:address location="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsPlataformaDeServicios.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

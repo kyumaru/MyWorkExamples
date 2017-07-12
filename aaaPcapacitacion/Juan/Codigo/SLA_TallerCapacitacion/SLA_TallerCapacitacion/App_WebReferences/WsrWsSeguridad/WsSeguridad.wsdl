@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://utilerias.serguridad.ucr.ac.cr/SLA_UTILERIASSEGURIDAD/WsSeguridad" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://utilerias.serguridad.ucr.ac.cr/SLA_UTILERIASSEGURIDAD/WsSeguridad" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://utilerias.serguridad.ucr.ac.cr/SLA_UTILERIASSEGURIDAD/WsSeguridad">
+      <s:element name="AccesoValido">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Modulo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Role" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AccesoValidoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AccesoValidoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EjecucionAutorizada">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Role" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EjecucionAutorizadaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EjecucionAutorizadaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AccesoValidoSoapIn">
+    <wsdl:part name="parameters" element="tns:AccesoValido" />
+  </wsdl:message>
+  <wsdl:message name="AccesoValidoSoapOut">
+    <wsdl:part name="parameters" element="tns:AccesoValidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="EjecucionAutorizadaSoapIn">
+    <wsdl:part name="parameters" element="tns:EjecucionAutorizada" />
+  </wsdl:message>
+  <wsdl:message name="EjecucionAutorizadaSoapOut">
+    <wsdl:part name="parameters" element="tns:EjecucionAutorizadaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WsSeguridadSoap">
+    <wsdl:operation name="AccesoValido">
+      <wsdl:input message="tns:AccesoValidoSoapIn" />
+      <wsdl:output message="tns:AccesoValidoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EjecucionAutorizada">
+      <wsdl:input message="tns:EjecucionAutorizadaSoapIn" />
+      <wsdl:output message="tns:EjecucionAutorizadaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WsSeguridadSoap" type="tns:WsSeguridadSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AccesoValido">
+      <soap:operation soapAction="http://utilerias.serguridad.ucr.ac.cr/SLA_UTILERIASSEGURIDAD/WsSeguridad/AccesoValido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EjecucionAutorizada">
+      <soap:operation soapAction="http://utilerias.serguridad.ucr.ac.cr/SLA_UTILERIASSEGURIDAD/WsSeguridad/EjecucionAutorizada" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WsSeguridadSoap12" type="tns:WsSeguridadSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AccesoValido">
+      <soap12:operation soapAction="http://utilerias.serguridad.ucr.ac.cr/SLA_UTILERIASSEGURIDAD/WsSeguridad/AccesoValido" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EjecucionAutorizada">
+      <soap12:operation soapAction="http://utilerias.serguridad.ucr.ac.cr/SLA_UTILERIASSEGURIDAD/WsSeguridad/EjecucionAutorizada" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WsSeguridad">
+    <wsdl:port name="WsSeguridadSoap" binding="tns:WsSeguridadSoap">
+      <soap:address location="http://localhost/SLA_UtileriasSeguridad/WsSeguridad.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WsSeguridadSoap12" binding="tns:WsSeguridadSoap12">
+      <soap12:address location="http://localhost/SLA_UtileriasSeguridad/WsSeguridad.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

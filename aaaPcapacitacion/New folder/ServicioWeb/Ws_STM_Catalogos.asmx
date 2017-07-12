@@ -1,0 +1,1 @@
+<%@ WebService Language="VB" CodeBehind="~/App_Code/Ws_STM_Catalogos.vb" Class="Ws_STM_Catalogos" %>

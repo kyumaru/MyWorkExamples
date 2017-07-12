@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s1="http://orh.ucr.ac.cr/BLL_Planillas/BLL_VASolicitud" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones">
+      <s:import namespace="http://orh.ucr.ac.cr/BLL_Planillas/BLL_VASolicitud" />
+      <s:element name="VAH_FECHAS_SOLICITUD_VAC_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_FECHAS_SOLICITUD_VAC_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAH_FECHAS_SOLICITUD_VAC_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_FECHAS_SOLICITUD_VAC_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_FECHAS_SOLICITUD_VAC_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAT_FECHAS_SOLICITUD_VAC_ObtenerRegistroResult" type="s1:VAT_FECHAS_SOLICITUD_VAC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_FECHAS_SOLICITUD_VAC_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_FECHAS_SOLICITUD_VAC_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAT_FECHAS_SOLICITUD_VAC_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_PERIODOS_DEL_EMPLEADO_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_PERIODOS_DEL_EMPLEADO_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAH_PERIODOS_DEL_EMPLEADO_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadTODOS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NUM_EMPLEADO" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="vpn_Ajusta" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadTODOSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadTODOSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionporHoras">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NUM_EMPLEADO" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvn_FechaDesde" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvn_FechaHasta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionporHorasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionporHorasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHDatos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NUM_EMPLEADO" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="vpn_Ajusta" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHDatosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHDatosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NUM_EMPLEADO" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="vpn_Ajusta" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDetalleDedporHoras">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NUM_EMPLEADO" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvn_FechaDesde" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvn_FechaHasta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDetalleDedporHorasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDetalleDedporHorasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAT_SOLICITUD_VAC_ObtenerRegistroResult" type="s1:VAT_SOLICITUD_VAC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmplead" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpleadoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasTodosEmpleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasTodosEmpleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasTodosEmpleadoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_Fecha" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmplResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmplResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ListarDatosPeriodoEmpleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_Unidad" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_RelacionLab" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ListarDatosPeriodoEmpleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAT_SOLICITUD_VAC_ListarDatosPeriodoEmpleadoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ExisteEmpleadoEnJerarquia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodUnidad" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ExisteEmpleadoEnJerarquiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VAT_SOLICITUD_VAC_ExisteEmpleadoEnJerarquiaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ObtenerUnidadesJefeJerarquia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ObtenerUnidadesJefeJerarquiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAT_SOLICITUD_VAC_ObtenerUnidadesJefeJerarquiaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ObtenerEmpleadosporJefatura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodUnidad" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ObtenerEmpleadosporJefaturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAT_SOLICITUD_VAC_ObtenerEmpleadosporJefaturaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAT_SOLICITUD_VAC_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ListarSolicitudesJefatura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAT_SOLICITUD_VAC_ListarSolicitudesJefaturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAT_SOLICITUD_VAC_ListarSolicitudesJefaturaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SOLICITUD_VAC_ListadoVacacionesAsociadasAlFuncionario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvc_NumEmpleado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_FechaDesde" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_FechaHasta" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SOLICITUD_VAC_ListadoVacacionesAsociadasAlFuncionarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SOLICITUD_VAC_ListadoVacacionesAsociadasAlFuncionarioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_SOLICITUD_VAC_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_SOLICITUD_VAC_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAH_SOLICITUD_VAC_ObtenerRegistroResult" type="s1:VAH_SOLICITUD_VAC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_SOLICITUD_VAC_ObtenerP5PorUbicacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodigoUbicacion" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_SOLICITUD_VAC_ObtenerP5PorUbicacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAH_SOLICITUD_VAC_ObtenerP5PorUbicacionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_SOLICITUD_VAC_ReporteSolicitudesVacacionesAprobadas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_CodigoUbicacion" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumeroP5" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TipoReporte" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_SOLICITUD_VAC_ReporteSolicitudesVacacionesAprobadasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAH_SOLICITUD_VAC_ReporteSolicitudesVacacionesAprobadasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_SOLICITUD_VAC_ListarSolicitudesHistoricasJefatura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumEmpleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_SOLICITUD_VAC_ListarSolicitudesHistoricasJefaturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAH_SOLICITUD_VAC_ListarSolicitudesHistoricasJefaturaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_SOLICITUD_VAC_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VAH_SOLICITUD_VAC_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VAH_SOLICITUD_VAC_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://orh.ucr.ac.cr/BLL_Planillas/BLL_VASolicitud">
+      <s:complexType name="VAT_FECHAS_SOLICITUD_VAC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NUM_EMPLEADO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="COD_SOLICITUD" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_SOLICITUD" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TIEMPO_SOLICITUD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VAT_SOLICITUD_VAC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NUM_EMPLEADO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="COD_SOLICITUD" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="COD_UNIDAD" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="RELA_LABORAL" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DENOMINADOR_REBAJO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUMERADOR_REBAJO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DIAS_REBAJO" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="TIPO_VAC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OBSERVACIONES" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="USUARIO_SOLICITA" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_SOLICITA" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="USUARIO_VISTOBUENO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_VISTOBUENO" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="NIVEL_VISTOBUENO" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ESTADO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VAH_SOLICITUD_VAC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NUM_EMPLEADO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="COD_SOLICITUD" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="COD_UNIDAD" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="RELA_LABORAL" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DENOMINADOR_REBAJO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUMERADOR_REBAJO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="COD_SOLICITUD_REF" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DIAS_REBAJO" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="TIPO_VAC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OBSERVACIONES" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="USUARIO_SOLICITA" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_SOLICITA" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="USUARIO_APROBACION" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_APROBACION" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="USUARIO_NEGACION" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_NEGACION" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="USUARIO_ANULA" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_ANULA" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="USUARIO_VISTOBUENO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_VISTOBUENO" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ESTADO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="timestamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="VAH_FECHAS_SOLICITUD_VAC_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:VAH_FECHAS_SOLICITUD_VAC_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="VAH_FECHAS_SOLICITUD_VAC_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:VAH_FECHAS_SOLICITUD_VAC_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAT_FECHAS_SOLICITUD_VAC_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:VAT_FECHAS_SOLICITUD_VAC_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="VAT_FECHAS_SOLICITUD_VAC_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:VAT_FECHAS_SOLICITUD_VAC_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAT_FECHAS_SOLICITUD_VAC_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:VAT_FECHAS_SOLICITUD_VAC_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="VAT_FECHAS_SOLICITUD_VAC_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:VAT_FECHAS_SOLICITUD_VAC_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAH_PERIODOS_DEL_EMPLEADO_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:VAH_PERIODOS_DEL_EMPLEADO_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="VAH_PERIODOS_DEL_EMPLEADO_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:VAH_PERIODOS_DEL_EMPLEADO_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadTODOSSoapIn">
+    <wsdl:part name="parameters" element="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadTODOS" />
+  </wsdl:message>
+  <wsdl:message name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadTODOSSoapOut">
+    <wsdl:part name="parameters" element="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadTODOSResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionporHorasSoapIn">
+    <wsdl:part name="parameters" element="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionporHoras" />
+  </wsdl:message>
+  <wsdl:message name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionporHorasSoapOut">
+    <wsdl:part name="parameters" element="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionporHorasResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHDatosSoapIn">
+    <wsdl:part name="parameters" element="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHDatos" />
+  </wsdl:message>
+  <wsdl:message name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHDatosSoapOut">
+    <wsdl:part name="parameters" element="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHDatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadSoapIn">
+    <wsdl:part name="parameters" element="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidad" />
+  </wsdl:message>
+  <wsdl:message name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadSoapOut">
+    <wsdl:part name="parameters" element="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDetalleDedporHorasSoapIn">
+    <wsdl:part name="parameters" element="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDetalleDedporHoras" />
+  </wsdl:message>
+  <wsdl:message name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDetalleDedporHorasSoapOut">
+    <wsdl:part name="parameters" element="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDetalleDedporHorasResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasTodosEmpleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ObtieneUnidadesActivasTodosEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasTodosEmpleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ObtieneUnidadesActivasTodosEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmplSoapIn">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpl" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmplSoapOut">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmplResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ListarDatosPeriodoEmpleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ListarDatosPeriodoEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ListarDatosPeriodoEmpleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ListarDatosPeriodoEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ExisteEmpleadoEnJerarquiaSoapIn">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ExisteEmpleadoEnJerarquia" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ExisteEmpleadoEnJerarquiaSoapOut">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ExisteEmpleadoEnJerarquiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ObtenerUnidadesJefeJerarquiaSoapIn">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ObtenerUnidadesJefeJerarquia" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ObtenerUnidadesJefeJerarquiaSoapOut">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ObtenerUnidadesJefeJerarquiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ObtenerEmpleadosporJefaturaSoapIn">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ObtenerEmpleadosporJefatura" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ObtenerEmpleadosporJefaturaSoapOut">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ObtenerEmpleadosporJefaturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ListarSolicitudesJefaturaSoapIn">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ListarSolicitudesJefatura" />
+  </wsdl:message>
+  <wsdl:message name="VAT_SOLICITUD_VAC_ListarSolicitudesJefaturaSoapOut">
+    <wsdl:part name="parameters" element="tns:VAT_SOLICITUD_VAC_ListarSolicitudesJefaturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="SOLICITUD_VAC_ListadoVacacionesAsociadasAlFuncionarioSoapIn">
+    <wsdl:part name="parameters" element="tns:SOLICITUD_VAC_ListadoVacacionesAsociadasAlFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="SOLICITUD_VAC_ListadoVacacionesAsociadasAlFuncionarioSoapOut">
+    <wsdl:part name="parameters" element="tns:SOLICITUD_VAC_ListadoVacacionesAsociadasAlFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAH_SOLICITUD_VAC_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:VAH_SOLICITUD_VAC_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="VAH_SOLICITUD_VAC_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:VAH_SOLICITUD_VAC_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAH_SOLICITUD_VAC_ObtenerP5PorUbicacionSoapIn">
+    <wsdl:part name="parameters" element="tns:VAH_SOLICITUD_VAC_ObtenerP5PorUbicacion" />
+  </wsdl:message>
+  <wsdl:message name="VAH_SOLICITUD_VAC_ObtenerP5PorUbicacionSoapOut">
+    <wsdl:part name="parameters" element="tns:VAH_SOLICITUD_VAC_ObtenerP5PorUbicacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAH_SOLICITUD_VAC_ReporteSolicitudesVacacionesAprobadasSoapIn">
+    <wsdl:part name="parameters" element="tns:VAH_SOLICITUD_VAC_ReporteSolicitudesVacacionesAprobadas" />
+  </wsdl:message>
+  <wsdl:message name="VAH_SOLICITUD_VAC_ReporteSolicitudesVacacionesAprobadasSoapOut">
+    <wsdl:part name="parameters" element="tns:VAH_SOLICITUD_VAC_ReporteSolicitudesVacacionesAprobadasResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAH_SOLICITUD_VAC_ListarSolicitudesHistoricasJefaturaSoapIn">
+    <wsdl:part name="parameters" element="tns:VAH_SOLICITUD_VAC_ListarSolicitudesHistoricasJefatura" />
+  </wsdl:message>
+  <wsdl:message name="VAH_SOLICITUD_VAC_ListarSolicitudesHistoricasJefaturaSoapOut">
+    <wsdl:part name="parameters" element="tns:VAH_SOLICITUD_VAC_ListarSolicitudesHistoricasJefaturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VAH_SOLICITUD_VAC_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:VAH_SOLICITUD_VAC_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="VAH_SOLICITUD_VAC_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:VAH_SOLICITUD_VAC_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WsSolicitudVacacionesSoap">
+    <wsdl:operation name="VAH_FECHAS_SOLICITUD_VAC_ListarRegistros">
+      <wsdl:input message="tns:VAH_FECHAS_SOLICITUD_VAC_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:VAH_FECHAS_SOLICITUD_VAC_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAT_FECHAS_SOLICITUD_VAC_ObtenerRegistro">
+      <wsdl:input message="tns:VAT_FECHAS_SOLICITUD_VAC_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:VAT_FECHAS_SOLICITUD_VAC_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAT_FECHAS_SOLICITUD_VAC_ListarRegistros">
+      <wsdl:input message="tns:VAT_FECHAS_SOLICITUD_VAC_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:VAT_FECHAS_SOLICITUD_VAC_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ListarRegistros">
+      <wsdl:input message="tns:VAH_PERIODOS_DEL_EMPLEADO_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:VAH_PERIODOS_DEL_EMPLEADO_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadTODOS">
+      <wsdl:input message="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadTODOSSoapIn" />
+      <wsdl:output message="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadTODOSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionporHoras">
+      <wsdl:input message="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionporHorasSoapIn" />
+      <wsdl:output message="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionporHorasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHDatos">
+      <wsdl:input message="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHDatosSoapIn" />
+      <wsdl:output message="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHDatosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidad">
+      <wsdl:input message="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadSoapIn" />
+      <wsdl:output message="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDetalleDedporHoras">
+      <wsdl:input message="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDetalleDedporHorasSoapIn" />
+      <wsdl:output message="tns:VAH_PERIODOS_DEL_EMPLEADO_ObtenerDetalleDedporHorasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtenerRegistro">
+      <wsdl:input message="tns:VAT_SOLICITUD_VAC_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:VAT_SOLICITUD_VAC_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpleado">
+      <wsdl:input message="tns:VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpleadoSoapIn" />
+      <wsdl:output message="tns:VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasTodosEmpleado">
+      <wsdl:input message="tns:VAT_SOLICITUD_VAC_ObtieneUnidadesActivasTodosEmpleadoSoapIn" />
+      <wsdl:output message="tns:VAT_SOLICITUD_VAC_ObtieneUnidadesActivasTodosEmpleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpl">
+      <wsdl:input message="tns:VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmplSoapIn" />
+      <wsdl:output message="tns:VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmplSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ListarDatosPeriodoEmpleado">
+      <wsdl:input message="tns:VAT_SOLICITUD_VAC_ListarDatosPeriodoEmpleadoSoapIn" />
+      <wsdl:output message="tns:VAT_SOLICITUD_VAC_ListarDatosPeriodoEmpleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ExisteEmpleadoEnJerarquia">
+      <wsdl:input message="tns:VAT_SOLICITUD_VAC_ExisteEmpleadoEnJerarquiaSoapIn" />
+      <wsdl:output message="tns:VAT_SOLICITUD_VAC_ExisteEmpleadoEnJerarquiaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtenerUnidadesJefeJerarquia">
+      <wsdl:input message="tns:VAT_SOLICITUD_VAC_ObtenerUnidadesJefeJerarquiaSoapIn" />
+      <wsdl:output message="tns:VAT_SOLICITUD_VAC_ObtenerUnidadesJefeJerarquiaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtenerEmpleadosporJefatura">
+      <wsdl:input message="tns:VAT_SOLICITUD_VAC_ObtenerEmpleadosporJefaturaSoapIn" />
+      <wsdl:output message="tns:VAT_SOLICITUD_VAC_ObtenerEmpleadosporJefaturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ListarRegistros">
+      <wsdl:input message="tns:VAT_SOLICITUD_VAC_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:VAT_SOLICITUD_VAC_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ListarSolicitudesJefatura">
+      <wsdl:input message="tns:VAT_SOLICITUD_VAC_ListarSolicitudesJefaturaSoapIn" />
+      <wsdl:output message="tns:VAT_SOLICITUD_VAC_ListarSolicitudesJefaturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SOLICITUD_VAC_ListadoVacacionesAsociadasAlFuncionario">
+      <wsdl:input message="tns:SOLICITUD_VAC_ListadoVacacionesAsociadasAlFuncionarioSoapIn" />
+      <wsdl:output message="tns:SOLICITUD_VAC_ListadoVacacionesAsociadasAlFuncionarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAH_SOLICITUD_VAC_ObtenerRegistro">
+      <wsdl:input message="tns:VAH_SOLICITUD_VAC_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:VAH_SOLICITUD_VAC_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAH_SOLICITUD_VAC_ObtenerP5PorUbicacion">
+      <wsdl:input message="tns:VAH_SOLICITUD_VAC_ObtenerP5PorUbicacionSoapIn" />
+      <wsdl:output message="tns:VAH_SOLICITUD_VAC_ObtenerP5PorUbicacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAH_SOLICITUD_VAC_ReporteSolicitudesVacacionesAprobadas">
+      <wsdl:input message="tns:VAH_SOLICITUD_VAC_ReporteSolicitudesVacacionesAprobadasSoapIn" />
+      <wsdl:output message="tns:VAH_SOLICITUD_VAC_ReporteSolicitudesVacacionesAprobadasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAH_SOLICITUD_VAC_ListarSolicitudesHistoricasJefatura">
+      <wsdl:input message="tns:VAH_SOLICITUD_VAC_ListarSolicitudesHistoricasJefaturaSoapIn" />
+      <wsdl:output message="tns:VAH_SOLICITUD_VAC_ListarSolicitudesHistoricasJefaturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VAH_SOLICITUD_VAC_ListarRegistros">
+      <wsdl:input message="tns:VAH_SOLICITUD_VAC_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:VAH_SOLICITUD_VAC_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WsSolicitudVacacionesSoap" type="tns:WsSolicitudVacacionesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VAH_FECHAS_SOLICITUD_VAC_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_FECHAS_SOLICITUD_VAC_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_FECHAS_SOLICITUD_VAC_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_FECHAS_SOLICITUD_VAC_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_FECHAS_SOLICITUD_VAC_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_FECHAS_SOLICITUD_VAC_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_PERIODOS_DEL_EMPLEADO_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadTODOS">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadTODOS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionporHoras">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionporHoras" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHDatos">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHDatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidad">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDetalleDedporHoras">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_PERIODOS_DEL_EMPLEADO_ObtenerDetalleDedporHoras" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpleado">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasTodosEmpleado">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ObtieneUnidadesActivasTodosEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpl">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ListarDatosPeriodoEmpleado">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ListarDatosPeriodoEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ExisteEmpleadoEnJerarquia">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ExisteEmpleadoEnJerarquia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtenerUnidadesJefeJerarquia">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ObtenerUnidadesJefeJerarquia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtenerEmpleadosporJefatura">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ObtenerEmpleadosporJefatura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ListarSolicitudesJefatura">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ListarSolicitudesJefatura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SOLICITUD_VAC_ListadoVacacionesAsociadasAlFuncionario">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/SOLICITUD_VAC_ListadoVacacionesAsociadasAlFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_SOLICITUD_VAC_ObtenerRegistro">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_SOLICITUD_VAC_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_SOLICITUD_VAC_ObtenerP5PorUbicacion">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_SOLICITUD_VAC_ObtenerP5PorUbicacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_SOLICITUD_VAC_ReporteSolicitudesVacacionesAprobadas">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_SOLICITUD_VAC_ReporteSolicitudesVacacionesAprobadas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_SOLICITUD_VAC_ListarSolicitudesHistoricasJefatura">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_SOLICITUD_VAC_ListarSolicitudesHistoricasJefatura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_SOLICITUD_VAC_ListarRegistros">
+      <soap:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_SOLICITUD_VAC_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WsSolicitudVacacionesSoap12" type="tns:WsSolicitudVacacionesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VAH_FECHAS_SOLICITUD_VAC_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_FECHAS_SOLICITUD_VAC_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_FECHAS_SOLICITUD_VAC_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_FECHAS_SOLICITUD_VAC_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_FECHAS_SOLICITUD_VAC_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_FECHAS_SOLICITUD_VAC_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_PERIODOS_DEL_EMPLEADO_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadTODOS">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidadTODOS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionporHoras">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionporHoras" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHDatos">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHDatos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidad">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_PERIODOS_DEL_EMPLEADO_ObtenerDedicacionSIRHConUnidad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_PERIODOS_DEL_EMPLEADO_ObtenerDetalleDedporHoras">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_PERIODOS_DEL_EMPLEADO_ObtenerDetalleDedporHoras" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpleado">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasTodosEmpleado">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ObtieneUnidadesActivasTodosEmpleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpl">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ObtieneUnidadesActivasEmpl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ListarDatosPeriodoEmpleado">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ListarDatosPeriodoEmpleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ExisteEmpleadoEnJerarquia">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ExisteEmpleadoEnJerarquia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtenerUnidadesJefeJerarquia">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ObtenerUnidadesJefeJerarquia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ObtenerEmpleadosporJefatura">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ObtenerEmpleadosporJefatura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAT_SOLICITUD_VAC_ListarSolicitudesJefatura">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAT_SOLICITUD_VAC_ListarSolicitudesJefatura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SOLICITUD_VAC_ListadoVacacionesAsociadasAlFuncionario">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/SOLICITUD_VAC_ListadoVacacionesAsociadasAlFuncionario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_SOLICITUD_VAC_ObtenerRegistro">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_SOLICITUD_VAC_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_SOLICITUD_VAC_ObtenerP5PorUbicacion">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_SOLICITUD_VAC_ObtenerP5PorUbicacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_SOLICITUD_VAC_ReporteSolicitudesVacacionesAprobadas">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_SOLICITUD_VAC_ReporteSolicitudesVacacionesAprobadas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_SOLICITUD_VAC_ListarSolicitudesHistoricasJefatura">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_SOLICITUD_VAC_ListarSolicitudesHistoricasJefatura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VAH_SOLICITUD_VAC_ListarRegistros">
+      <soap12:operation soapAction="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSolicitudVacaciones/VAH_SOLICITUD_VAC_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WsSolicitudVacaciones">
+    <wsdl:port name="WsSolicitudVacacionesSoap" binding="tns:WsSolicitudVacacionesSoap">
+      <soap:address location="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsSolicitudVacaciones.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WsSolicitudVacacionesSoap12" binding="tns:WsSolicitudVacacionesSoap12">
+      <soap12:address location="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsSolicitudVacaciones.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

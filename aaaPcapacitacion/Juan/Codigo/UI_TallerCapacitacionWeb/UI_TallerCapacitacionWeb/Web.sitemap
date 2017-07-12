@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode>
+    <siteMapNode url="" title="Catálogos">
+      <siteMapNode url="~/Catalogos/Lst_TC_Libro.aspx" title="Libros"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Seguridad/Frm_Logout.aspx" title="Salir"></siteMapNode>
+
+    <siteMapNode url="" title="Reportes">
+      <siteMapNode url="~/Reportes/Rpt_Tc_DesplegarPdf.aspx" title="Autores del libro"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Seguridad/Frm_Logout.aspx" title="Salir"></siteMapNode>
+  </siteMapNode>
+</siteMap>

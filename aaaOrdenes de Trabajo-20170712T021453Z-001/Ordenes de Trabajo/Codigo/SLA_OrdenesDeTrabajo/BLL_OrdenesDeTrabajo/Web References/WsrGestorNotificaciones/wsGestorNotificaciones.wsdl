@@ -1,0 +1,2398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones">
+      <s:element name="GNH_ARCHIVO_ADJUNTO_BorrarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNH_ARCHIVO_ADJUNTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EntGNH_ARCHIVO_ADJUNTO">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="ID_ARCHIVO_ADJUNTO" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="ID_NOTIFICACION" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="NOMBRE_ARCHIVO" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ARCHIVO" type="s:base64Binary" />
+              <s:element minOccurs="1" maxOccurs="1" name="TIME_STAMP" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="EntBase" abstract="true">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="UsuarioResponsable" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GNH_ARCHIVO_ADJUNTO_BorrarRegistroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNH_ARCHIVO_ADJUNTO_ModificarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNH_ARCHIVO_ADJUNTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_ARCHIVO_ADJUNTO_ModificarRegistroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNH_ARCHIVO_ADJUNTO_InsertarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNH_ARCHIVO_ADJUNTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_ARCHIVO_ADJUNTO_InsertarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GNH_ARCHIVO_ADJUNTO_InsertarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_ARCHIVO_ADJUNTO_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_ARCHIVO_ADJUNTO_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNH_ARCHIVO_ADJUNTO_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_ARCHIVO_ADJUNTO_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_ARCHIVO_ADJUNTO_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNH_ARCHIVO_ADJUNTO_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_ARCHIVO_ADJUNTO_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_ARCHIVO_ADJUNTO_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNH_ARCHIVO_ADJUNTO_ObtenerRegistroResult" type="tns:EntGNH_ARCHIVO_ADJUNTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_DESTINATARIO_InsertarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNH_DESTINATARIO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EntGNH_DESTINATARIO">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="ID_NOTIFICACION" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="DESTINATARIO" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ESTADO" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MENSAJE_ERROR" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="FECHA_ENVIA" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="TIME_STAMP" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GNH_DESTINATARIO_InsertarRegistroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNH_DESTINATARIO_BorrarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNH_DESTINATARIO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_DESTINATARIO_BorrarRegistroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNH_DESTINATARIO_ModificarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNH_DESTINATARIO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_DESTINATARIO_ModificarRegistroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNH_DESTINATARIO_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_DESTINATARIO_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNH_DESTINATARIO_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_DESTINATARIO_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_DESTINATARIO_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNH_DESTINATARIO_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_DESTINATARIO_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_DESTINATARIO_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNH_DESTINATARIO_ObtenerRegistroResult" type="tns:EntGNH_DESTINATARIO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_NOTIFICACION_BorrarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNH_NOTIFICACION" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EntGNH_NOTIFICACION">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="ID_NOTIFICACION" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="ID_SISTEMA" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="ASUNTO" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CUERPO" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ES_HTML" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="FECHA_CREA" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="USUARIO_CREA" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="TIME_STAMP" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GNH_NOTIFICACION_BorrarRegistroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNH_NOTIFICACION_ModificarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNH_NOTIFICACION" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_NOTIFICACION_ModificarRegistroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNH_NOTIFICACION_InsertarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNH_NOTIFICACION" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_NOTIFICACION_InsertarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GNH_NOTIFICACION_InsertarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_NOTIFICACION_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_NOTIFICACION_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNH_NOTIFICACION_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_NOTIFICACION_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_NOTIFICACION_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNH_NOTIFICACION_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_NOTIFICACION_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNH_NOTIFICACION_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNH_NOTIFICACION_ObtenerRegistroResult" type="tns:EntGNH_NOTIFICACION" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNM_SISTEMA_BorrarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNM_SISTEMA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EntGNM_SISTEMA">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="ID_SISTEMA" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="NOMBRE_SISTEMA" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NOMBRE_CUENTA" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CUENTA_CORREO" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CLAVE_CUENTA" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="PUERTO_SMTP" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="SERVIDOR_SMTP" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="AUTENTICACION_SMTP" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="MAX_INTENTOS" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="ESTADO" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="USUARIO_CREA" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="FECHA_CREA" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="TIME_STAMP" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GNM_SISTEMA_BorrarRegistroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNM_SISTEMA_ModificarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNM_SISTEMA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNM_SISTEMA_ModificarRegistroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNM_SISTEMA_InsertarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNM_SISTEMA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNM_SISTEMA_InsertarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GNM_SISTEMA_InsertarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNM_SISTEMA_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNM_SISTEMA_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNM_SISTEMA_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNM_SISTEMA_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNM_SISTEMA_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNM_SISTEMA_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNM_SISTEMA_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNM_SISTEMA_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNM_SISTEMA_ObtenerRegistroResult" type="tns:EntGNM_SISTEMA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNM_SISTEMA_ObtenerPorNombre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_NombreSistema" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNM_SISTEMA_ObtenerPorNombreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNM_SISTEMA_ObtenerPorNombreResult" type="tns:EntGNM_SISTEMA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_ARCHIVO_ADJUNTO_BorrarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNT_ARCHIVO_ADJUNTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EntGNT_ARCHIVO_ADJUNTO">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="ID_ARCHIVO_ADJUNTO" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="ID_NOTIFICACION" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="NOMBRE_ARCHIVO" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ARCHIVO" type="s:base64Binary" />
+              <s:element minOccurs="1" maxOccurs="1" name="TIME_STAMP" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GNT_ARCHIVO_ADJUNTO_BorrarRegistroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNT_ARCHIVO_ADJUNTO_ModificarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNT_ARCHIVO_ADJUNTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_ARCHIVO_ADJUNTO_ModificarRegistroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNT_ARCHIVO_ADJUNTO_InsertarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNT_ARCHIVO_ADJUNTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_ARCHIVO_ADJUNTO_InsertarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GNT_ARCHIVO_ADJUNTO_InsertarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_ARCHIVO_ADJUNTO_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_ARCHIVO_ADJUNTO_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNT_ARCHIVO_ADJUNTO_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_ARCHIVO_ADJUNTO_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_ARCHIVO_ADJUNTO_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNT_ARCHIVO_ADJUNTO_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_ARCHIVO_ADJUNTO_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_ARCHIVO_ADJUNTO_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNT_ARCHIVO_ADJUNTO_ObtenerRegistroResult" type="tns:EntGNT_ARCHIVO_ADJUNTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_DESTINATARIO_InsertarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNT_DESTINATARIO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EntGNT_DESTINATARIO">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="ID_NOTIFICACION" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="DESTINATARIO" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="INTENTOS" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="ESTADO" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MENSAJE_ERROR" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="FECHA_ENVIA" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="TIME_STAMP" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GNT_DESTINATARIO_InsertarRegistroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNT_DESTINATARIO_BorrarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNT_DESTINATARIO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_DESTINATARIO_BorrarRegistroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNT_DESTINATARIO_ModificarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNT_DESTINATARIO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_DESTINATARIO_ModificarRegistroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNT_DESTINATARIO_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_DESTINATARIO_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNT_DESTINATARIO_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_DESTINATARIO_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_DESTINATARIO_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNT_DESTINATARIO_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_DESTINATARIO_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_DESTINATARIO_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNT_DESTINATARIO_ObtenerRegistroResult" type="tns:EntGNT_DESTINATARIO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_DESTINATARIO_ListarCorreosNoEnviados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_IdNotificacion" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_DESTINATARIO_ListarCorreosNoEnviadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNT_DESTINATARIO_ListarCorreosNoEnviadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_BorrarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNT_NOTIFICACION" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EntGNT_NOTIFICACION">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="ID_NOTIFICACION" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="ID_SISTEMA" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="ASUNTO" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CUERPO" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ES_HTML" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="FECHA_CREA" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="USUARIO_CREA" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="TIME_STAMP" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GNT_NOTIFICACION_BorrarRegistroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_ModificarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNT_NOTIFICACION" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_ModificarRegistroResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_InsertarRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Registro" type="tns:EntGNT_NOTIFICACION" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_InsertarRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GNT_NOTIFICACION_InsertarRegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_ListarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_ListarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNT_NOTIFICACION_ListarRegistrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_ListarRegistrosLista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_ListarRegistrosListaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNT_NOTIFICACION_ListarRegistrosListaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_ObtenerRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_ObtenerRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNT_NOTIFICACION_ObtenerRegistroResult" type="tns:EntGNT_NOTIFICACION" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_Registrar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Sistema" type="tns:EntGNM_SISTEMA" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_Notificacion" type="tns:EntGNT_NOTIFICACION" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_ListaAdjuntos" type="tns:ArrayOfEntGNT_ARCHIVO_ADJUNTO" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_ListaDestinatarios" type="tns:ArrayOfEntGNT_DESTINATARIO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfEntGNT_ARCHIVO_ADJUNTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EntGNT_ARCHIVO_ADJUNTO" nillable="true" type="tns:EntGNT_ARCHIVO_ADJUNTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfEntGNT_DESTINATARIO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EntGNT_DESTINATARIO" nillable="true" type="tns:EntGNT_DESTINATARIO" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GNT_NOTIFICACION_RegistrarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GNT_NOTIFICACION_RegistrarResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_RegistrarNotificaciones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_NombreSistema" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_DsNotificaciones">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_RegistrarNotificacionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GNT_NOTIFICACION_RegistrarNotificacionesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_EnviarNotificaciones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_EnviarNotificacionesResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_ListarFnGnListarnotificaciones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_Paginar" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_NumeroPagina" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_Idsistema" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Asunto" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_Filtrarxfecha" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_Fechacrea" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Destinatario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_ListarFnGnListarnotificacionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNT_NOTIFICACION_ListarFnGnListarnotificacionesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_ObtenerDatosPaginacionFnGnListarnotificaciones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Condicion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Orden" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_TamanoPagina" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvn_Idsistema" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Asunto" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvb_Filtrarxfecha" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pvd_Fechacrea" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Destinatario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GNT_NOTIFICACION_ObtenerDatosPaginacionFnGnListarnotificacionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GNT_NOTIFICACION_ObtenerDatosPaginacionFnGnListarnotificacionesResult" type="tns:EntDatosPaginacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EntDatosPaginacion">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="TotalRegistros" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="TamanoPagina" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="TotalPaginas" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GNH_ARCHIVO_ADJUNTO_BorrarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_ARCHIVO_ADJUNTO_BorrarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNH_ARCHIVO_ADJUNTO_BorrarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_ARCHIVO_ADJUNTO_BorrarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_ARCHIVO_ADJUNTO_ModificarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_ARCHIVO_ADJUNTO_ModificarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNH_ARCHIVO_ADJUNTO_ModificarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_ARCHIVO_ADJUNTO_ModificarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_ARCHIVO_ADJUNTO_InsertarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_ARCHIVO_ADJUNTO_InsertarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNH_ARCHIVO_ADJUNTO_InsertarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_ARCHIVO_ADJUNTO_InsertarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_ARCHIVO_ADJUNTO_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_ARCHIVO_ADJUNTO_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="GNH_ARCHIVO_ADJUNTO_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_ARCHIVO_ADJUNTO_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_ARCHIVO_ADJUNTO_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_ARCHIVO_ADJUNTO_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="GNH_ARCHIVO_ADJUNTO_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_ARCHIVO_ADJUNTO_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_ARCHIVO_ADJUNTO_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_ARCHIVO_ADJUNTO_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNH_ARCHIVO_ADJUNTO_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_ARCHIVO_ADJUNTO_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_DESTINATARIO_InsertarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_DESTINATARIO_InsertarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNH_DESTINATARIO_InsertarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_DESTINATARIO_InsertarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_DESTINATARIO_BorrarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_DESTINATARIO_BorrarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNH_DESTINATARIO_BorrarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_DESTINATARIO_BorrarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_DESTINATARIO_ModificarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_DESTINATARIO_ModificarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNH_DESTINATARIO_ModificarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_DESTINATARIO_ModificarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_DESTINATARIO_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_DESTINATARIO_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="GNH_DESTINATARIO_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_DESTINATARIO_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_DESTINATARIO_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_DESTINATARIO_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="GNH_DESTINATARIO_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_DESTINATARIO_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_DESTINATARIO_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_DESTINATARIO_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNH_DESTINATARIO_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_DESTINATARIO_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_NOTIFICACION_BorrarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_NOTIFICACION_BorrarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNH_NOTIFICACION_BorrarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_NOTIFICACION_BorrarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_NOTIFICACION_ModificarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_NOTIFICACION_ModificarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNH_NOTIFICACION_ModificarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_NOTIFICACION_ModificarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_NOTIFICACION_InsertarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_NOTIFICACION_InsertarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNH_NOTIFICACION_InsertarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_NOTIFICACION_InsertarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_NOTIFICACION_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_NOTIFICACION_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="GNH_NOTIFICACION_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_NOTIFICACION_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_NOTIFICACION_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_NOTIFICACION_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="GNH_NOTIFICACION_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_NOTIFICACION_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNH_NOTIFICACION_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNH_NOTIFICACION_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNH_NOTIFICACION_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNH_NOTIFICACION_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNM_SISTEMA_BorrarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNM_SISTEMA_BorrarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNM_SISTEMA_BorrarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNM_SISTEMA_BorrarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNM_SISTEMA_ModificarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNM_SISTEMA_ModificarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNM_SISTEMA_ModificarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNM_SISTEMA_ModificarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNM_SISTEMA_InsertarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNM_SISTEMA_InsertarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNM_SISTEMA_InsertarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNM_SISTEMA_InsertarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNM_SISTEMA_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:GNM_SISTEMA_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="GNM_SISTEMA_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:GNM_SISTEMA_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNM_SISTEMA_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:GNM_SISTEMA_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="GNM_SISTEMA_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:GNM_SISTEMA_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNM_SISTEMA_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNM_SISTEMA_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNM_SISTEMA_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNM_SISTEMA_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNM_SISTEMA_ObtenerPorNombreSoapIn">
+    <wsdl:part name="parameters" element="tns:GNM_SISTEMA_ObtenerPorNombre" />
+  </wsdl:message>
+  <wsdl:message name="GNM_SISTEMA_ObtenerPorNombreSoapOut">
+    <wsdl:part name="parameters" element="tns:GNM_SISTEMA_ObtenerPorNombreResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_ARCHIVO_ADJUNTO_BorrarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_ARCHIVO_ADJUNTO_BorrarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNT_ARCHIVO_ADJUNTO_BorrarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_ARCHIVO_ADJUNTO_BorrarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_ARCHIVO_ADJUNTO_ModificarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_ARCHIVO_ADJUNTO_ModificarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNT_ARCHIVO_ADJUNTO_ModificarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_ARCHIVO_ADJUNTO_ModificarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_ARCHIVO_ADJUNTO_InsertarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_ARCHIVO_ADJUNTO_InsertarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNT_ARCHIVO_ADJUNTO_InsertarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_ARCHIVO_ADJUNTO_InsertarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_ARCHIVO_ADJUNTO_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_ARCHIVO_ADJUNTO_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="GNT_ARCHIVO_ADJUNTO_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_ARCHIVO_ADJUNTO_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_ARCHIVO_ADJUNTO_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_ARCHIVO_ADJUNTO_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="GNT_ARCHIVO_ADJUNTO_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_ARCHIVO_ADJUNTO_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_ARCHIVO_ADJUNTO_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_ARCHIVO_ADJUNTO_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNT_ARCHIVO_ADJUNTO_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_ARCHIVO_ADJUNTO_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_DESTINATARIO_InsertarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_DESTINATARIO_InsertarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNT_DESTINATARIO_InsertarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_DESTINATARIO_InsertarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_DESTINATARIO_BorrarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_DESTINATARIO_BorrarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNT_DESTINATARIO_BorrarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_DESTINATARIO_BorrarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_DESTINATARIO_ModificarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_DESTINATARIO_ModificarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNT_DESTINATARIO_ModificarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_DESTINATARIO_ModificarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_DESTINATARIO_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_DESTINATARIO_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="GNT_DESTINATARIO_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_DESTINATARIO_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_DESTINATARIO_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_DESTINATARIO_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="GNT_DESTINATARIO_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_DESTINATARIO_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_DESTINATARIO_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_DESTINATARIO_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNT_DESTINATARIO_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_DESTINATARIO_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_DESTINATARIO_ListarCorreosNoEnviadosSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_DESTINATARIO_ListarCorreosNoEnviados" />
+  </wsdl:message>
+  <wsdl:message name="GNT_DESTINATARIO_ListarCorreosNoEnviadosSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_DESTINATARIO_ListarCorreosNoEnviadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_BorrarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_BorrarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_BorrarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_BorrarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_ModificarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_ModificarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_ModificarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_ModificarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_InsertarRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_InsertarRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_InsertarRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_InsertarRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_ListarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_ListarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_ListarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_ListarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_ListarRegistrosListaSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_ListarRegistrosLista" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_ListarRegistrosListaSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_ListarRegistrosListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_ObtenerRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_ObtenerRegistro" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_ObtenerRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_ObtenerRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_RegistrarSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_Registrar" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_RegistrarSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_RegistrarResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_RegistrarNotificacionesSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_RegistrarNotificaciones" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_RegistrarNotificacionesSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_RegistrarNotificacionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_EnviarNotificacionesSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_EnviarNotificaciones" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_EnviarNotificacionesSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_EnviarNotificacionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_ListarFnGnListarnotificacionesSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_ListarFnGnListarnotificaciones" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_ListarFnGnListarnotificacionesSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_ListarFnGnListarnotificacionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_ObtenerDatosPaginacionFnGnListarnotificacionesSoapIn">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_ObtenerDatosPaginacionFnGnListarnotificaciones" />
+  </wsdl:message>
+  <wsdl:message name="GNT_NOTIFICACION_ObtenerDatosPaginacionFnGnListarnotificacionesSoapOut">
+    <wsdl:part name="parameters" element="tns:GNT_NOTIFICACION_ObtenerDatosPaginacionFnGnListarnotificacionesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsGestorNotificacionesSoap">
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_BorrarRegistro">
+      <wsdl:input message="tns:GNH_ARCHIVO_ADJUNTO_BorrarRegistroSoapIn" />
+      <wsdl:output message="tns:GNH_ARCHIVO_ADJUNTO_BorrarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_ModificarRegistro">
+      <wsdl:input message="tns:GNH_ARCHIVO_ADJUNTO_ModificarRegistroSoapIn" />
+      <wsdl:output message="tns:GNH_ARCHIVO_ADJUNTO_ModificarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_InsertarRegistro">
+      <wsdl:input message="tns:GNH_ARCHIVO_ADJUNTO_InsertarRegistroSoapIn" />
+      <wsdl:output message="tns:GNH_ARCHIVO_ADJUNTO_InsertarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_ListarRegistros">
+      <wsdl:input message="tns:GNH_ARCHIVO_ADJUNTO_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:GNH_ARCHIVO_ADJUNTO_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_ListarRegistrosLista">
+      <wsdl:input message="tns:GNH_ARCHIVO_ADJUNTO_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:GNH_ARCHIVO_ADJUNTO_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_ObtenerRegistro">
+      <wsdl:input message="tns:GNH_ARCHIVO_ADJUNTO_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:GNH_ARCHIVO_ADJUNTO_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_InsertarRegistro">
+      <wsdl:input message="tns:GNH_DESTINATARIO_InsertarRegistroSoapIn" />
+      <wsdl:output message="tns:GNH_DESTINATARIO_InsertarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_BorrarRegistro">
+      <wsdl:input message="tns:GNH_DESTINATARIO_BorrarRegistroSoapIn" />
+      <wsdl:output message="tns:GNH_DESTINATARIO_BorrarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_ModificarRegistro">
+      <wsdl:input message="tns:GNH_DESTINATARIO_ModificarRegistroSoapIn" />
+      <wsdl:output message="tns:GNH_DESTINATARIO_ModificarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_ListarRegistros">
+      <wsdl:input message="tns:GNH_DESTINATARIO_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:GNH_DESTINATARIO_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_ListarRegistrosLista">
+      <wsdl:input message="tns:GNH_DESTINATARIO_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:GNH_DESTINATARIO_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_ObtenerRegistro">
+      <wsdl:input message="tns:GNH_DESTINATARIO_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:GNH_DESTINATARIO_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_BorrarRegistro">
+      <wsdl:input message="tns:GNH_NOTIFICACION_BorrarRegistroSoapIn" />
+      <wsdl:output message="tns:GNH_NOTIFICACION_BorrarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_ModificarRegistro">
+      <wsdl:input message="tns:GNH_NOTIFICACION_ModificarRegistroSoapIn" />
+      <wsdl:output message="tns:GNH_NOTIFICACION_ModificarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_InsertarRegistro">
+      <wsdl:input message="tns:GNH_NOTIFICACION_InsertarRegistroSoapIn" />
+      <wsdl:output message="tns:GNH_NOTIFICACION_InsertarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_ListarRegistros">
+      <wsdl:input message="tns:GNH_NOTIFICACION_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:GNH_NOTIFICACION_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_ListarRegistrosLista">
+      <wsdl:input message="tns:GNH_NOTIFICACION_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:GNH_NOTIFICACION_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_ObtenerRegistro">
+      <wsdl:input message="tns:GNH_NOTIFICACION_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:GNH_NOTIFICACION_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_BorrarRegistro">
+      <wsdl:input message="tns:GNM_SISTEMA_BorrarRegistroSoapIn" />
+      <wsdl:output message="tns:GNM_SISTEMA_BorrarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_ModificarRegistro">
+      <wsdl:input message="tns:GNM_SISTEMA_ModificarRegistroSoapIn" />
+      <wsdl:output message="tns:GNM_SISTEMA_ModificarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_InsertarRegistro">
+      <wsdl:input message="tns:GNM_SISTEMA_InsertarRegistroSoapIn" />
+      <wsdl:output message="tns:GNM_SISTEMA_InsertarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_ListarRegistros">
+      <wsdl:input message="tns:GNM_SISTEMA_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:GNM_SISTEMA_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_ListarRegistrosLista">
+      <wsdl:input message="tns:GNM_SISTEMA_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:GNM_SISTEMA_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_ObtenerRegistro">
+      <wsdl:input message="tns:GNM_SISTEMA_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:GNM_SISTEMA_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_ObtenerPorNombre">
+      <wsdl:input message="tns:GNM_SISTEMA_ObtenerPorNombreSoapIn" />
+      <wsdl:output message="tns:GNM_SISTEMA_ObtenerPorNombreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_BorrarRegistro">
+      <wsdl:input message="tns:GNT_ARCHIVO_ADJUNTO_BorrarRegistroSoapIn" />
+      <wsdl:output message="tns:GNT_ARCHIVO_ADJUNTO_BorrarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_ModificarRegistro">
+      <wsdl:input message="tns:GNT_ARCHIVO_ADJUNTO_ModificarRegistroSoapIn" />
+      <wsdl:output message="tns:GNT_ARCHIVO_ADJUNTO_ModificarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_InsertarRegistro">
+      <wsdl:input message="tns:GNT_ARCHIVO_ADJUNTO_InsertarRegistroSoapIn" />
+      <wsdl:output message="tns:GNT_ARCHIVO_ADJUNTO_InsertarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_ListarRegistros">
+      <wsdl:input message="tns:GNT_ARCHIVO_ADJUNTO_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:GNT_ARCHIVO_ADJUNTO_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_ListarRegistrosLista">
+      <wsdl:input message="tns:GNT_ARCHIVO_ADJUNTO_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:GNT_ARCHIVO_ADJUNTO_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_ObtenerRegistro">
+      <wsdl:input message="tns:GNT_ARCHIVO_ADJUNTO_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:GNT_ARCHIVO_ADJUNTO_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_InsertarRegistro">
+      <wsdl:input message="tns:GNT_DESTINATARIO_InsertarRegistroSoapIn" />
+      <wsdl:output message="tns:GNT_DESTINATARIO_InsertarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_BorrarRegistro">
+      <wsdl:input message="tns:GNT_DESTINATARIO_BorrarRegistroSoapIn" />
+      <wsdl:output message="tns:GNT_DESTINATARIO_BorrarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_ModificarRegistro">
+      <wsdl:input message="tns:GNT_DESTINATARIO_ModificarRegistroSoapIn" />
+      <wsdl:output message="tns:GNT_DESTINATARIO_ModificarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_ListarRegistros">
+      <wsdl:input message="tns:GNT_DESTINATARIO_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:GNT_DESTINATARIO_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_ListarRegistrosLista">
+      <wsdl:input message="tns:GNT_DESTINATARIO_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:GNT_DESTINATARIO_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_ObtenerRegistro">
+      <wsdl:input message="tns:GNT_DESTINATARIO_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:GNT_DESTINATARIO_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_ListarCorreosNoEnviados">
+      <wsdl:input message="tns:GNT_DESTINATARIO_ListarCorreosNoEnviadosSoapIn" />
+      <wsdl:output message="tns:GNT_DESTINATARIO_ListarCorreosNoEnviadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_BorrarRegistro">
+      <wsdl:input message="tns:GNT_NOTIFICACION_BorrarRegistroSoapIn" />
+      <wsdl:output message="tns:GNT_NOTIFICACION_BorrarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ModificarRegistro">
+      <wsdl:input message="tns:GNT_NOTIFICACION_ModificarRegistroSoapIn" />
+      <wsdl:output message="tns:GNT_NOTIFICACION_ModificarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_InsertarRegistro">
+      <wsdl:input message="tns:GNT_NOTIFICACION_InsertarRegistroSoapIn" />
+      <wsdl:output message="tns:GNT_NOTIFICACION_InsertarRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ListarRegistros">
+      <wsdl:input message="tns:GNT_NOTIFICACION_ListarRegistrosSoapIn" />
+      <wsdl:output message="tns:GNT_NOTIFICACION_ListarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ListarRegistrosLista">
+      <wsdl:input message="tns:GNT_NOTIFICACION_ListarRegistrosListaSoapIn" />
+      <wsdl:output message="tns:GNT_NOTIFICACION_ListarRegistrosListaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ObtenerRegistro">
+      <wsdl:input message="tns:GNT_NOTIFICACION_ObtenerRegistroSoapIn" />
+      <wsdl:output message="tns:GNT_NOTIFICACION_ObtenerRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_Registrar">
+      <wsdl:input message="tns:GNT_NOTIFICACION_RegistrarSoapIn" />
+      <wsdl:output message="tns:GNT_NOTIFICACION_RegistrarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_RegistrarNotificaciones">
+      <wsdl:input message="tns:GNT_NOTIFICACION_RegistrarNotificacionesSoapIn" />
+      <wsdl:output message="tns:GNT_NOTIFICACION_RegistrarNotificacionesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_EnviarNotificaciones">
+      <wsdl:input message="tns:GNT_NOTIFICACION_EnviarNotificacionesSoapIn" />
+      <wsdl:output message="tns:GNT_NOTIFICACION_EnviarNotificacionesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ListarFnGnListarnotificaciones">
+      <wsdl:input message="tns:GNT_NOTIFICACION_ListarFnGnListarnotificacionesSoapIn" />
+      <wsdl:output message="tns:GNT_NOTIFICACION_ListarFnGnListarnotificacionesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ObtenerDatosPaginacionFnGnListarnotificaciones">
+      <wsdl:input message="tns:GNT_NOTIFICACION_ObtenerDatosPaginacionFnGnListarnotificacionesSoapIn" />
+      <wsdl:output message="tns:GNT_NOTIFICACION_ObtenerDatosPaginacionFnGnListarnotificacionesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsGestorNotificacionesSoap" type="tns:wsGestorNotificacionesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_BorrarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_ARCHIVO_ADJUNTO_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_ModificarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_ARCHIVO_ADJUNTO_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_InsertarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_ARCHIVO_ADJUNTO_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_ListarRegistros">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_ARCHIVO_ADJUNTO_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_ListarRegistrosLista">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_ARCHIVO_ADJUNTO_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_ObtenerRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_ARCHIVO_ADJUNTO_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_InsertarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_DESTINATARIO_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_BorrarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_DESTINATARIO_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_ModificarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_DESTINATARIO_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_ListarRegistros">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_DESTINATARIO_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_ListarRegistrosLista">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_DESTINATARIO_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_ObtenerRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_DESTINATARIO_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_BorrarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_NOTIFICACION_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_ModificarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_NOTIFICACION_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_InsertarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_NOTIFICACION_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_ListarRegistros">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_NOTIFICACION_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_ListarRegistrosLista">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_NOTIFICACION_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_ObtenerRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_NOTIFICACION_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_BorrarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNM_SISTEMA_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_ModificarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNM_SISTEMA_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_InsertarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNM_SISTEMA_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_ListarRegistros">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNM_SISTEMA_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_ListarRegistrosLista">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNM_SISTEMA_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_ObtenerRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNM_SISTEMA_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_ObtenerPorNombre">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNM_SISTEMA_ObtenerPorNombre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_BorrarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_ARCHIVO_ADJUNTO_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_ModificarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_ARCHIVO_ADJUNTO_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_InsertarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_ARCHIVO_ADJUNTO_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_ListarRegistros">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_ARCHIVO_ADJUNTO_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_ListarRegistrosLista">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_ARCHIVO_ADJUNTO_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_ObtenerRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_ARCHIVO_ADJUNTO_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_InsertarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_DESTINATARIO_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_BorrarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_DESTINATARIO_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_ModificarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_DESTINATARIO_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_ListarRegistros">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_DESTINATARIO_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_ListarRegistrosLista">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_DESTINATARIO_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_ObtenerRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_DESTINATARIO_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_ListarCorreosNoEnviados">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_DESTINATARIO_ListarCorreosNoEnviados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_BorrarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ModificarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_InsertarRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ListarRegistros">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ListarRegistrosLista">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ObtenerRegistro">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_Registrar">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_Registrar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_RegistrarNotificaciones">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_RegistrarNotificaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_EnviarNotificaciones">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_EnviarNotificaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ListarFnGnListarnotificaciones">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_ListarFnGnListarnotificaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ObtenerDatosPaginacionFnGnListarnotificaciones">
+      <soap:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_ObtenerDatosPaginacionFnGnListarnotificaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsGestorNotificacionesSoap12" type="tns:wsGestorNotificacionesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_BorrarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_ARCHIVO_ADJUNTO_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_ModificarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_ARCHIVO_ADJUNTO_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_InsertarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_ARCHIVO_ADJUNTO_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_ListarRegistros">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_ARCHIVO_ADJUNTO_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_ListarRegistrosLista">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_ARCHIVO_ADJUNTO_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_ARCHIVO_ADJUNTO_ObtenerRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_ARCHIVO_ADJUNTO_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_InsertarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_DESTINATARIO_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_BorrarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_DESTINATARIO_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_ModificarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_DESTINATARIO_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_ListarRegistros">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_DESTINATARIO_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_ListarRegistrosLista">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_DESTINATARIO_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_DESTINATARIO_ObtenerRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_DESTINATARIO_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_BorrarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_NOTIFICACION_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_ModificarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_NOTIFICACION_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_InsertarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_NOTIFICACION_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_ListarRegistros">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_NOTIFICACION_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_ListarRegistrosLista">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_NOTIFICACION_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNH_NOTIFICACION_ObtenerRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNH_NOTIFICACION_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_BorrarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNM_SISTEMA_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_ModificarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNM_SISTEMA_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_InsertarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNM_SISTEMA_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_ListarRegistros">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNM_SISTEMA_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_ListarRegistrosLista">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNM_SISTEMA_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_ObtenerRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNM_SISTEMA_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNM_SISTEMA_ObtenerPorNombre">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNM_SISTEMA_ObtenerPorNombre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_BorrarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_ARCHIVO_ADJUNTO_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_ModificarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_ARCHIVO_ADJUNTO_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_InsertarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_ARCHIVO_ADJUNTO_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_ListarRegistros">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_ARCHIVO_ADJUNTO_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_ListarRegistrosLista">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_ARCHIVO_ADJUNTO_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_ARCHIVO_ADJUNTO_ObtenerRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_ARCHIVO_ADJUNTO_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_InsertarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_DESTINATARIO_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_BorrarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_DESTINATARIO_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_ModificarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_DESTINATARIO_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_ListarRegistros">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_DESTINATARIO_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_ListarRegistrosLista">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_DESTINATARIO_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_ObtenerRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_DESTINATARIO_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_DESTINATARIO_ListarCorreosNoEnviados">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_DESTINATARIO_ListarCorreosNoEnviados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_BorrarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_BorrarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ModificarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_ModificarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_InsertarRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_InsertarRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ListarRegistros">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_ListarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ListarRegistrosLista">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_ListarRegistrosLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ObtenerRegistro">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_ObtenerRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_Registrar">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_Registrar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_RegistrarNotificaciones">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_RegistrarNotificaciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_EnviarNotificaciones">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_EnviarNotificaciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ListarFnGnListarnotificaciones">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_ListarFnGnListarnotificaciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GNT_NOTIFICACION_ObtenerDatosPaginacionFnGnListarnotificaciones">
+      <soap12:operation soapAction="http://gestornotificaciones.ucr.ac.cr/SLA_GESTORNOTIFICACIONES/wsGestorNotificaciones/GNT_NOTIFICACION_ObtenerDatosPaginacionFnGnListarnotificaciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsGestorNotificaciones">
+    <wsdl:port name="wsGestorNotificacionesSoap" binding="tns:wsGestorNotificacionesSoap">
+      <soap:address location="http://localhost/SLA_GestorNotificaciones/wsGestorNotificaciones.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsGestorNotificacionesSoap12" binding="tns:wsGestorNotificacionesSoap12">
+      <soap12:address location="http://localhost/SLA_GestorNotificaciones/wsGestorNotificaciones.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

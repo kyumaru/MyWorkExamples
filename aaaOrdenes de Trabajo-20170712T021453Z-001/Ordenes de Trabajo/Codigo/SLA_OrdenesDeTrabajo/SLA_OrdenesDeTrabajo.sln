@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ENT_OrdenesDeTrabajo", "ENT_OrdenesDeTrabajo\ENT_OrdenesDeTrabajo.vbproj", "{437A06B8-A0D6-4CB9-BA80-DFE65120AA94}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DAL_OrdenesDeTrabajo", "DAL_OrdenesDeTrabajo\DAL_OrdenesDeTrabajo.vbproj", "{54C99846-5C81-4E63-AA3A-B2E5EF201D21}"
+	ProjectSection(ProjectDependencies) = postProject
+		{437A06B8-A0D6-4CB9-BA80-DFE65120AA94} = {437A06B8-A0D6-4CB9-BA80-DFE65120AA94}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BLL_OrdenesDeTrabajo", "BLL_OrdenesDeTrabajo\BLL_OrdenesDeTrabajo.vbproj", "{B0622282-A977-4B3A-8123-C17D1A0EC0E3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{54C99846-5C81-4E63-AA3A-B2E5EF201D21} = {54C99846-5C81-4E63-AA3A-B2E5EF201D21}
+		{437A06B8-A0D6-4CB9-BA80-DFE65120AA94} = {437A06B8-A0D6-4CB9-BA80-DFE65120AA94}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SLA_OrdenesDeTrabajo", "http://localhost/SLA_OrdenesDeTrabajo", "{DC55D5FA-E1D2-4FAE-8423-D8B54D6F7FF7}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{54c99846-5c81-4e63-aa3a-b2e5ef201d21}|DAL_OrdenesDeTrabajo.dll;{b0622282-a977-4b3a-8123-c17d1a0ec0e3}|BLL_OrdenesDeTrabajo.dll;{437A06B8-A0D6-4CB9-BA80-DFE65120AA94}|ENT_OrdenesDeTrabajo.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/SLA_OrdenesDeTrabajo"
+		Debug.AspNetCompiler.PhysicalPath = "SLA_OrdenesDeTrabajo\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SLA_OrdenesDeTrabajo\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SLA_OrdenesDeTrabajo"
+		Release.AspNetCompiler.PhysicalPath = "SLA_OrdenesDeTrabajo\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SLA_OrdenesDeTrabajo\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "SLA_OrdenesDeTrabajo\"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.sdp.ucr.ac.cr/sdp_proyectos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ENT_OrdenesDeTrabajo\\ENT_OrdenesDeTrabajo.vbproj
+		SccProjectName1 = ENT_OrdenesDeTrabajo
+		SccLocalPath1 = ENT_OrdenesDeTrabajo
+		SccProjectUniqueName2 = DAL_OrdenesDeTrabajo\\DAL_OrdenesDeTrabajo.vbproj
+		SccProjectName2 = DAL_OrdenesDeTrabajo
+		SccLocalPath2 = DAL_OrdenesDeTrabajo
+		SccProjectUniqueName3 = BLL_OrdenesDeTrabajo\\BLL_OrdenesDeTrabajo.vbproj
+		SccProjectName3 = BLL_OrdenesDeTrabajo
+		SccLocalPath3 = BLL_OrdenesDeTrabajo
+		SccWebProject4 = true
+		SccProjectUniqueName4 = http://localhost/SLA_OrdenesDeTrabajo
+		SccProjectName4 = SLA_OrdenesDeTrabajo
+		SccLocalPath4 = SLA_OrdenesDeTrabajo
+		SccProjectEnlistmentChoice4 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{437A06B8-A0D6-4CB9-BA80-DFE65120AA94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{437A06B8-A0D6-4CB9-BA80-DFE65120AA94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{437A06B8-A0D6-4CB9-BA80-DFE65120AA94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{437A06B8-A0D6-4CB9-BA80-DFE65120AA94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54C99846-5C81-4E63-AA3A-B2E5EF201D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C99846-5C81-4E63-AA3A-B2E5EF201D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54C99846-5C81-4E63-AA3A-B2E5EF201D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54C99846-5C81-4E63-AA3A-B2E5EF201D21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0622282-A977-4B3A-8123-C17D1A0EC0E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0622282-A977-4B3A-8123-C17D1A0EC0E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0622282-A977-4B3A-8123-C17D1A0EC0E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0622282-A977-4B3A-8123-C17D1A0EC0E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC55D5FA-E1D2-4FAE-8423-D8B54D6F7FF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC55D5FA-E1D2-4FAE-8423-D8B54D6F7FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC55D5FA-E1D2-4FAE-8423-D8B54D6F7FF7}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC55D5FA-E1D2-4FAE-8423-D8B54D6F7FF7}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

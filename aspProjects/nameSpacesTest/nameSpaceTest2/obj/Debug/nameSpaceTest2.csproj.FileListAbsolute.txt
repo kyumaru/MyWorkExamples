@@ -1,0 +1,5 @@
+C:\Users\tRasHcAn\Desktop\nameSpacesTest\nameSpaceTest2\bin\Debug\nameSpaceTest2.dll
+C:\Users\tRasHcAn\Desktop\nameSpacesTest\nameSpaceTest2\bin\Debug\nameSpaceTest2.pdb
+C:\Users\tRasHcAn\Desktop\nameSpacesTest\nameSpaceTest2\obj\Debug\nameSpaceTest2.dll
+C:\Users\tRasHcAn\Desktop\nameSpacesTest\nameSpaceTest2\obj\Debug\nameSpaceTest2.pdb
+C:\Users\tRasHcAn\Desktop\nameSpacesTest\nameSpaceTest2\obj\Debug\nameSpaceTest2.csprojResolveAssemblyReference.cache

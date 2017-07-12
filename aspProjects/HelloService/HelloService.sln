@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloService", "HelloService\HelloService.csproj", "{76C10859-2241-48D1-A0FB-8FB8E8ACA653}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloServiceHost", "HelloServiceHost\HelloServiceHost.csproj", "{03809018-5202-43A1-ACCA-304DE1590CD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76C10859-2241-48D1-A0FB-8FB8E8ACA653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76C10859-2241-48D1-A0FB-8FB8E8ACA653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76C10859-2241-48D1-A0FB-8FB8E8ACA653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76C10859-2241-48D1-A0FB-8FB8E8ACA653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03809018-5202-43A1-ACCA-304DE1590CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03809018-5202-43A1-ACCA-304DE1590CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03809018-5202-43A1-ACCA-304DE1590CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03809018-5202-43A1-ACCA-304DE1590CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

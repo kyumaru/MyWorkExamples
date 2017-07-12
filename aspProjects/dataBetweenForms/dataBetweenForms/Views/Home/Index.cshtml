@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+ 
+<!-- by default a view will get post to its action, there should be a way to do
+     for other actions-->
+<div class="jumbotron">
+    <form id="myform" asp-controller="Home" asp-action="Index" method="post">
+
+        <div class="form-group">
+            <label for="name">Name </label>
+            <input name="field1" class="form-control"  type="text" placeholder="Full name" />
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email </label>
+            <input name="field2" class="form-control" type="text" placeholder="example@example.com" />
+        </div>
+
+        <input id="myPostButton" class="btn-primary" type="submit" value="post to server">
+    </form>
+</div>

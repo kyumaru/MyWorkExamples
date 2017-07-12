@@ -1,0 +1,6 @@
+C:\Users\tRasHcAn\Desktop\multithreadingWithStrings\multithreadingWithStrings\bin\Debug\multithreadingWithStrings.exe.config
+C:\Users\tRasHcAn\Desktop\multithreadingWithStrings\multithreadingWithStrings\bin\Debug\multithreadingWithStrings.exe
+C:\Users\tRasHcAn\Desktop\multithreadingWithStrings\multithreadingWithStrings\bin\Debug\multithreadingWithStrings.pdb
+C:\Users\tRasHcAn\Desktop\multithreadingWithStrings\multithreadingWithStrings\obj\Debug\multithreadingWithStrings.csprojResolveAssemblyReference.cache
+C:\Users\tRasHcAn\Desktop\multithreadingWithStrings\multithreadingWithStrings\obj\Debug\multithreadingWithStrings.exe
+C:\Users\tRasHcAn\Desktop\multithreadingWithStrings\multithreadingWithStrings\obj\Debug\multithreadingWithStrings.pdb

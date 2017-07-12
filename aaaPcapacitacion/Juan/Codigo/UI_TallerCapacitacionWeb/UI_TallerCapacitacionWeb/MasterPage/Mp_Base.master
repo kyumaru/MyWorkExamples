@@ -1,0 +1,123 @@
+﻿<%@ Master Language="VB" CodeFile="Mp_Base.master.vb" Inherits="MasterPage_Mp_Base" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+    <title><%=ConfigurationManager.AppSettings(ConstantesInternas.APP_KEY_NOMBRE_DE_LA_APLICACION)%></title>
+    <link href="<%=AdministradorRecursos.ObtenerRutaEstilo("smoothness/jquery-ui.min.css")%>" rel="stylesheet" />
+    <link href="<%=AdministradorRecursos.ObtenerRutaEstilo("tooltipster/tooltipster.css")%>" rel="stylesheet" />
+    <link href="<%=AdministradorRecursos.ObtenerRutaEstilo("tooltipster/tooltipster-light.css")%>" rel="stylesheet" />
+    <link href="<%=AdministradorRecursos.ObtenerRutaEstilo("default.css")%>" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server" id="frmFormulario">
+        <asp:ScriptManager ID="smControladorScriptsAjax" runat="server">
+        </asp:ScriptManager>
+
+        <img id="imgIrAlInicio" src="<%=AdministradorRecursos.ObtenerRutaImagen(AdministradorRecursos.TAMANO_IMAGEN.ESPECIAL, AdministradorRecursos.COLOR_IMAGEN.ESPECIAL, "Flecha_Ir_Al_Inicio.png")%>" />
+
+        <article id="popupValidationSummary">
+        </article>
+
+        <input id="versionErroresPopup" type="hidden" value="2" />
+
+        <section id="AreaVisualAplicacion">
+            <section id="EncabezadoBase">
+                <article id="LogoUCR">
+                    <br />
+                    <a href="http://www.ucr.ac.cr" target="_blank">
+                        <img id="imgLogUcr" src="<%=AdministradorRecursos.ObtenerRutaImagen(AdministradorRecursos.TAMANO_IMAGEN.ESPECIAL, AdministradorRecursos.COLOR_IMAGEN.ESPECIAL, "UCR_Logo_Blanco.png")%>" alt="Logo Universidad de Costa Rica" />
+                    </a>
+                </article>
+            </section>
+            <section id="ContenidoBase">
+                <asp:ContentPlaceHolder ID="cphContenidoFormulario" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+            <section id="PiePagina">
+                <img src="<%=AdministradorRecursos.ObtenerRutaImagen(AdministradorRecursos.TAMANO_IMAGEN.ESPECIAL, AdministradorRecursos.COLOR_IMAGEN.ESPECIAL, "UCR_Logo_Pie_de_Pagina.png")%>" alt="Pie de Pagina: Universidad de Costa Rica" />
+            </section>
+        </section>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                /*
+                Acá se configura la funcionalidad 'back-to-top' para el formulario
+                Por defecto el botón aparece una vez que el usuario ha bajado en la pantalla 200 pixeles.
+                La animación para regresar al inicio de la página tarda un segundo.
+                */
+                $("#imgIrAlInicio").hide();
+
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > 200) {
+                        $('#imgIrAlInicio').fadeIn();
+                    } else {
+                        $('#imgIrAlInicio').fadeOut();
+                    }
+                });
+
+                $('#imgIrAlInicio').click(function () {
+                    $('html, body').animate({ scrollTop: 0 }, 1000);
+                });
+            });
+
+
+            /*
+            Acá se sobreescribe la función WebForm_OnSubmit que ASP.Net agrega por defecto.
+            Se sobreescribe para modificar el estilo de los controles asociados a validadores que fallan
+            */
+            function mostrarErroresFormulario(pvc_IdContenedorPopupErrores, pvc_Mensaje) {
+                var vlo_ConfiguracionPopup = {
+                    titulo: 'Mensajes del Sistema',
+                    mensaje: pvc_Mensaje,
+                    botones:
+                            [
+                                {
+                                    idControl: "btnCancelar",
+                                    textoBoton: "Aceptar",
+                                    onClick: function () { cerrarPopup(); }
+                                }
+                            ]
+                };
+
+                var vlc_ContenedorPopup = '#' + pvc_IdContenedorPopupErrores;
+
+                $(vlc_ContenedorPopup).popup(vlo_ConfiguracionPopup);
+
+                window.location = vlc_ContenedorPopup;
+
+                return false;
+            }
+
+            function WebForm_OnSubmit() {
+                var vlo_Control;
+                var vlc_DetalleErrores;
+                
+                if (typeof (ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) {
+                    vlc_DetalleErrores = marcarControlesInvalidos();
+
+                    if (!Page_IsValid) {
+                        try {
+                            if ($('#versionErroresPopup').val() == 2) {
+                                vlc_DetalleErrores = 'Por favor verifique la siguiente información:<br/>' + vlc_DetalleErrores;
+                                mostrarErroresFormulario('popupValidationSummary', vlc_DetalleErrores);
+                            } else {
+                                window.location = "#DetalleDeErrores";
+                            }
+                        }
+                        catch (e) { }
+                    }
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </form>
+</body>
+</html>

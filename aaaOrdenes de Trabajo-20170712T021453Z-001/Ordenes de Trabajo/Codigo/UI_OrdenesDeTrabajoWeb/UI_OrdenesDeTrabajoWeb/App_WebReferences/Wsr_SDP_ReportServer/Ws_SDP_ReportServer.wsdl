@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://GeneradorDeReportes.ucr.ac.cr/SLA_GeneradorDeReportes/Ws_SDP_ReportServer" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://GeneradorDeReportes.ucr.ac.cr/SLA_GeneradorDeReportes/Ws_SDP_ReportServer" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://GeneradorDeReportes.ucr.ac.cr/SLA_GeneradorDeReportes/Ws_SDP_ReportServer">
+      <s:element name="GenerarMultiplesReportes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Formato" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_RutaBase" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Reporte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_SolicitudesDeReporte" type="tns:ArrayOfEntSolicitudReporte" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfEntSolicitudReporte">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EntSolicitudReporte" nillable="true" type="tns:EntSolicitudReporte" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EntSolicitudReporte">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="IdentificadorReporte" type="tns:ArrayOfAnyType" />
+              <s:element minOccurs="0" maxOccurs="1" name="ParametrosReporte" type="tns:ArrayOfEntParametroReporte" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="EntBase" abstract="true">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Existe" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="UsuarioResponsable" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EntReporte">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Formato" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Extension" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Encoding" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MimeType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Reporte" type="s:base64Binary" />
+              <s:element minOccurs="0" maxOccurs="1" name="IdentificadorReporte" type="tns:ArrayOfAnyType" />
+              <s:element minOccurs="1" maxOccurs="1" name="ReporteGenerado" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="InformacionAdicional" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EntParametroReporte">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Valor" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfEntParametroReporte">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EntParametroReporte" nillable="true" type="tns:EntParametroReporte" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfEntReporte">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EntReporte" nillable="true" type="tns:EntReporte" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GenerarMultiplesReportesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerarMultiplesReportesResult" type="tns:ArrayOfEntReporte" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarReporte">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Clave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Formato" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_RutaBase" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvc_Reporte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pvo_ParametrosReporte" type="tns:ArrayOfEntParametroReporte" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarReporteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerarReporteResult" type="tns:EntReporte" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GenerarMultiplesReportesSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerarMultiplesReportes" />
+  </wsdl:message>
+  <wsdl:message name="GenerarMultiplesReportesSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerarMultiplesReportesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerarReporteSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerarReporte" />
+  </wsdl:message>
+  <wsdl:message name="GenerarReporteSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerarReporteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Ws_SDP_ReportServerSoap">
+    <wsdl:operation name="GenerarMultiplesReportes">
+      <wsdl:input message="tns:GenerarMultiplesReportesSoapIn" />
+      <wsdl:output message="tns:GenerarMultiplesReportesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarReporte">
+      <wsdl:input message="tns:GenerarReporteSoapIn" />
+      <wsdl:output message="tns:GenerarReporteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Ws_SDP_ReportServerSoap" type="tns:Ws_SDP_ReportServerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GenerarMultiplesReportes">
+      <soap:operation soapAction="http://GeneradorDeReportes.ucr.ac.cr/SLA_GeneradorDeReportes/Ws_SDP_ReportServer/GenerarMultiplesReportes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarReporte">
+      <soap:operation soapAction="http://GeneradorDeReportes.ucr.ac.cr/SLA_GeneradorDeReportes/Ws_SDP_ReportServer/GenerarReporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Ws_SDP_ReportServerSoap12" type="tns:Ws_SDP_ReportServerSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GenerarMultiplesReportes">
+      <soap12:operation soapAction="http://GeneradorDeReportes.ucr.ac.cr/SLA_GeneradorDeReportes/Ws_SDP_ReportServer/GenerarMultiplesReportes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarReporte">
+      <soap12:operation soapAction="http://GeneradorDeReportes.ucr.ac.cr/SLA_GeneradorDeReportes/Ws_SDP_ReportServer/GenerarReporte" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Ws_SDP_ReportServer">
+    <wsdl:port name="Ws_SDP_ReportServerSoap" binding="tns:Ws_SDP_ReportServerSoap">
+      <soap:address location="http://localhost/SLA_GeneradorDeReportes/Ws_SDP_ReportServer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Ws_SDP_ReportServerSoap12" binding="tns:Ws_SDP_ReportServerSoap12">
+      <soap12:address location="http://localhost/SLA_GeneradorDeReportes/Ws_SDP_ReportServer.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode>
+    <siteMapNode url="" title="Catálogos" roles="OT_Catalogos, OT_DirectorUnidad, OT_Administrador, OT_Encargado_Almacen, OT_Alistador_Almacen, OT_Despachador_Almacen">
+      <!--Catalogos Globales-->
+      <siteMapNode url="" title="Catálogos Globales" roles="OT_Catalogos,OT_DirectorUnidad, OT_Administrador">
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_AutorizadosDirector.aspx" title="Autorizados por Director" roles="OT_DirectorUnidad, OT_Administrador"></siteMapNode>
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_Ubicaciones.aspx" title="Ubicaciones" roles="OT_Catalogos, OT_Administrador"></siteMapNode>
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_TipoLugarUbicacion.aspx" title="Lugares de Ubicación" roles="OT_Catalogos, OT_Administrador"></siteMapNode>
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_MotivoRechazo.aspx" title="Motivos de Rechazo" roles="OT_Catalogos, OT_Administrador"></siteMapNode>
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_UnidadesTiempo.aspx" title="Unidades de Tiempo" roles="OT_Catalogos, OT_Administrador" ></siteMapNode>
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_TipoDocumento.aspx" title="Tipos de documento" roles="OT_Catalogos, OT_Administrador" ></siteMapNode>
+        <siteMapNode url="~/Catalogos/Contrataciones/Lst_OT_ViasContrato.aspx" title="Vías de Compra" roles="OT_Catalogos, OT_Administrador" ></siteMapNode>
+      </siteMapNode>
+      <!--Configuracion de encargados y autorizados por sede-->
+      <siteMapNode url="" title="Encargados y Autorizados" roles="OT_Catalogos, OT_Jefe_Seccion, OT_AutorizadorPorSede, OT_Administrador">
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_FuncionariosAutorizadosSede.aspx" title="Funcionarios Autorizados por Sede" roles="OT_AutorizadorPorSede, OT_Administrador"></siteMapNode>
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_UnidadesPorSede.aspx" title="Unidades por Sede" roles="OT_AutorizadorPorSede, OT_Administrador"></siteMapNode>
+        <siteMapNode url="~/Catalogos/Contrataciones/Lst_OT_AutorizadosContratacion.aspx" title="Encargados del proceso de contratación" roles="OT_Catalogos, OT_Administrador" ></siteMapNode>
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_AsignacionRolDelegado.aspx" title="Asignación de Autorizados por la Jefatura de la Sección de Mantenimiento y Construcción" roles="OT_Jefe_Seccion, OT_Administrador"></siteMapNode>
+      </siteMapNode>
+      <!--Catalogos por ubicacion Ordenes de mantenimiento y de diseño-->
+      <siteMapNode url="" title="Catálogos por Ubicación (Mantenimiento/Diseño)" roles="OT_Catalogos, OT_Administrador">
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_LugarTrabajo.aspx" title="Edificios y Sitios Universitarios" roles="OT_Catalogos, OT_Administrador"></siteMapNode>
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_SectorTaller.aspx" title="Sectores y Talleres" roles="OT_Catalogos, OT_Administrador"></siteMapNode>
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_CategoriaServicio.aspx" title="Categorías de Servicio" roles="OT_Catalogos, OT_Administrador"></siteMapNode>
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_PeriodoCierre.aspx" title="Periodo de Cierre" roles="OT_Catalogos, OT_Administrador" ></siteMapNode>
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_Parametros.aspx" title="Parámetros del sistema" roles="OT_Catalogos, OT_Administrador"></siteMapNode>
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_AreasProfesionales.aspx" title="Areas de Diseño" roles="OT_Catalogos, OT_Administrador" ></siteMapNode>
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_Espacios.aspx" title="Espacios" roles="OT_Catalogos, OT_Administrador" ></siteMapNode>
+        <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_Requerimientos.aspx" title="Requerimientos" roles="OT_Catalogos, OT_Administrador" ></siteMapNode>
+      </siteMapNode>
+      <!--Catalogos para la gestion de materiales y almacenes-->
+      <siteMapNode url="" title="Catálogos por Ubicación (Gestión de Almacén)" roles="OT_Catalogos, OT_Encargado_Almacen, OT_Administrador">
+        <siteMapNode url="~/Catalogos/Almacen/Lst_OT_CategoriasMaterial.aspx" title="Categorías Materiales" roles="OT_Catalogos, OT_Administrador" ></siteMapNode>
+        <siteMapNode url="~/Catalogos/Almacen/Lst_OT_SubCategoriasMaterial.aspx" title="Sub Categorías Materiales" roles="OT_Catalogos, OT_Administrador" ></siteMapNode>        
+        <siteMapNode url="~/Catalogos/Almacen/Lst_OT_UnidadMedida.aspx" title="Unidades de Medida" roles="OT_Catalogos, OT_Administrador" ></siteMapNode>
+        <siteMapNode url="~/Catalogos/Almacen/Lst_OT_AlmacenesBodegas.aspx" title="Almacenes y Bodegas" roles="OT_Catalogos, OT_Administrador" ></siteMapNode>
+        <siteMapNode url="~/Catalogos/Almacen/Lst_OT_Materiales.aspx" title="Materiales" roles="OT_Catalogos, OT_Administrador" ></siteMapNode>
+        <siteMapNode url="~/OrdenesDeTrabajo/Almacen/Lst_OT_EncargadoAlmacen.aspx" title="Encargados de Almacén" roles="OT_Catalogos, OT_Encargado_Almacen, OT_Administrador" ></siteMapNode>
+        <siteMapNode url="~/Catalogos/Almacen/Lst_OT_TipoIncidente.aspx" title="Incidentes en Almacén" roles="OT_Catalogos, OT_Administrador" ></siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <!--Menu para usuario estandar, solicitud y aprobacion de ordenes de trabajo-->
+    <siteMapNode url="" title="Ordenes de Trabajo">
+      <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Frm_OT_SelecciónSedeTrabajo.aspx" title="Sede Favorita"></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_OrdenTrabajo.aspx?pvn_NuevaSeccion=1" title="Solicitud de Ordenes de Trabajo"></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_AutorizacionOrdenTrabajo.aspx" title="Autorización Ordenes de Trabajo" roles="OT_Autorizador_Solicitud, OT_DirectorUnidad, OT_Administrador"></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_ConsultaOrdenesUnidad.aspx" title="Consulta Ordenes de Trabajo por Unidad" roles="OT_Autorizador_Solicitud, OT_DirectorUnidad, OT_Administrador"></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_OrdenTrabajoSedeRodrigoFacio.aspx" title="Solicitud de orden de trabajo a sede Rodrigo Facio" roles="OT_JefeAdministrativoSedeRegional, OT_Administrador"></siteMapNode>
+    </siteMapNode>
+    <!--Ordenes de trabajo, administrativo: Coordinadores, profesionales de diseño-->
+    <siteMapNode url="" title="Gestión Ordenes de Trabajo" roles="OT_Preventivo, OT_RegistroSolicitud, OT_Coordinador_Disenio, OT_Coordinador_Mantenimiento, OT_Profesional_Disenio, OT_Supervisor, OT_RegistroSolicitud, OT_Jefe_Seccion,OT_Autorizado_Jefe_Seccion, OT_Administrador">
+      <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_OrdenesTrabajoRecepcion.aspx?pvn_NuevaSeccion=1" title="Consulta, Inclusión y Modificación de Ordenes de Trabajo en Recepción" roles="OT_RegistroSolicitud, OT_Administrador"></siteMapNode>      
+      <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_OrdenesTrabajoDisenio.aspx" title="Consulta, Inclusión y Modificación de Ordenes de Trabajo de Diseño" roles="OT_Coordinador_Disenio, OT_Administrador"></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_GestionOrdenTrabajoCordinadorSectorTaller.aspx?pvn_NuevaSeccion=1" title="Gestión de OTS por coordinador de Sector o Taller" roles="OT_Coordinador_Disenio, OT_Coordinador_Mantenimiento, OT_Administrador"></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/Almacen/Frm_OT_ReingresoMateriales.aspx" title="Reingreso de Materiales" roles="OT_Coordinador_Mantenimiento, OT_Administrador"></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_GestionProfesionalesDisenio.aspx?pvn_NuevaSeccion=1" title="Gestión de OTS por Profesionales de diseño" roles="OT_Profesional_Disenio, OT_Administrador"></siteMapNode>
+      <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_RubrosTipoObra.aspx" title="Rubros para Tipo de Obra" roles="OT_Profesional_Disenio, OT_Administrador" ></siteMapNode>
+      <siteMapNode url="~/Catalogos/OrdenesDeTrabajo/Lst_OT_Rubros.aspx" title="Rubro para Decisión Inicial" roles="OT_Profesional_Disenio, OT_Administrador" ></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_RevisionGeneral.aspx" title="Seguimiento a Ordenes de Diseño" roles="OT_Coordinador_Disenio, OT_Administrador" ></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/Contrataciones/Lst_OT_Contrataciones.aspx" title="Listado de Contrataciones" roles="OT_Encargado_Contratacion, OT_Administrador" ></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_ExcepcionesDeRegistroOrdenesDeTrabajo.aspx" title="Apertura por excepción para Registro de OT´s fuera del periodo para usuario" roles="OT_Coordinador_Disenio, OT_Supervisor, OT_RegistroSolicitud, OT_Jefe_Seccion,OT_Autorizado_Jefe_Seccion, OT_Administrador"></siteMapNode>
+    </siteMapNode>    
+    <!--Aprobaciones Coordinador de diseño-->
+    <siteMapNode url="" title="Aprobaciones y Revisiones Gestiones de Diseño"  roles="OT_Coordinador_Disenio, OT_Administrador">
+      <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_VistoBuenoAnalisisViabilidadTecnica.aspx?pvn_NuevaSeccion=1" title="Revisión de Análisis de Viabilidad Técnica"  roles="OT_Coordinador_Disenio, OT_Administrador"></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_AprobacionPresupuestoCoordinador.aspx?pvn_NuevaSeccion=1" title="Aprobación del Presupuesto por Coordinador"  roles="OT_Coordinador_Disenio, OT_Administrador"></siteMapNode>
+    </siteMapNode>
+    <!--Aprobaciones y revisiones de la jefatura-->
+    <siteMapNode url="" title="Aprobaciones y Revisiones de la Jefatura"  roles="OT_Jefe_Seccion, OT_Autorizado_Jefe_Seccion, OT_Administrador">
+      <siteMapNode url="" title="Gestiones de Diseño" roles="OT_Jefe_Seccion, OT_Autorizado_Jefe_Seccion, OT_Administrador">
+        <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_VistoBuenoJefaturaSeccionMantenimiento.aspx?pvn_NuevaSeccion=1" title="Visto bueno de la jefatura Sección de Mantenimiento"  roles="OT_Jefe_Seccion, OT_Autorizado_Jefe_Seccion"></siteMapNode>
+        <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_AprobacionPresupuestoJefatura.aspx?pvn_NuevaSeccion=1" title="Aprobación del Presupuesto por Jefatura"  roles="OT_Jefe_Seccion, OT_Autorizado_Jefe_Seccion"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="Gestiones de Compra por Fondo de Trabajo" roles="OT_Jefe_Seccion, OT_Autorizado_Jefe_Seccion, OT_Administrador">
+        <siteMapNode url="~/OrdenesDeTrabajo/GestionesDeCompra/Lst_OT_FondoTrabajoAprobJefatura.aspx" title="Fondo de Trabajo Aprobación Jefatura" roles="OT_Jefe_Seccion,OT_Autorizado_Jefe_Seccion"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="Gestiones de Compra por Unidad Especializada de compra" roles="OT_Jefe_Seccion, OT_Autorizado_Jefe_Seccion, OT_Administrador">
+        <siteMapNode url="~/OrdenesDeTrabajo/GestionesDeCompra/Lst_OT_UnidadEspAprobJefatura.aspx" title="Aprobación Jefatura" roles="OT_Jefe_Seccion,OT_Autorizado_Jefe_Seccion"></siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <!--Aprobaciones y revisiones del supervisor-->
+    <siteMapNode url="" title="Aprobaciones y Revisiones del Supervisor"  roles="OT_Supervisor, OT_Preventivo, OT_Administrador">
+      <siteMapNode url="" title="Ordenes de Trabajo" roles="OT_Supervisor, OT_Preventivo, OT_Administrador">
+        <siteMapNode url="~/OrdenesDeTrabajo/Almacen/Lst_OT_RevisionRequisicionMateriales.aspx" title="Revisión de Requisiciones con Exedente de Presupuesto" roles="OT_Supervisor, OT_Administrador" ></siteMapNode>
+        <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_ProgramacionOTPreventivo.aspx" title="Programación Orden Trabajo Preventivo" roles="OT_Preventivo, OT_Administrador"></siteMapNode>
+        <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_GestionOrdenTrabajoSupervisor.aspx?pvn_NuevaSeccion=1" title="Gestión de OTS Supervisor" roles="OT_Supervisor, OT_Administrador"></siteMapNode>
+        <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_Rechazadas.aspx" title="Visto Bueno o Denegacion a rechazo de Orden trabajo" roles="OT_Supervisor, OT_Administrador" ></siteMapNode>
+        <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_VistoBuenoDenegacionOrdenTrabajoHija.aspx" title="Visto bueno o denegación a creación de orden de trabajo hija" roles="OT_Supervisor, OT_Administrador" ></siteMapNode>
+        <siteMapNode url="~/OrdenesDeTrabajo/OrdenesDeTrabajo/Lst_OT_OrdenesTrabajoSupervisor.aspx" title="Historial de denegaciones de Orden trabajo Hijas" roles="OT_Supervisor, OT_Administrador" ></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="Gestiones de Compra por Fondo de Trabajo" roles="OT_Supervisor, OT_Administrador">
+        <siteMapNode url="~/OrdenesDeTrabajo/GestionesDeCompra/Lst_OT_FondoTrabajoAprobSupervisor.aspx" title="Aprobación Supervisor" roles="OT_Supervisor, OT_Administrador"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="Gestiones de Compra por Unidad Especializada de Compra" roles="OT_Supervisor, OT_Administrador">
+        <siteMapNode url="~/OrdenesDeTrabajo/GestionesDeCompra/Lst_OT_UnidadEspAprobSupervisor.aspx" title="Aprobación Supervisor" roles="OT_Supervisor, OT_Administrador"></siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <!--Tramites y Gesiones para almacenes y materiales-->
+    <siteMapNode url="" title="Gestión de Almacen y Materiales"  roles="OT_Revisor_Requisiciones, OT_Gestor_De_Inventario, OT_Encargado_Compra_Rapida, OT_Encargado_Almacen,OT_Despachador_Almacen, OT_Administrador,OT_Asistente_Inventario, OT_Autorizado_Jefe_Seccion, OT_Jefe_Seccion">
+      <siteMapNode url="" title="Requisiciones" roles="OT_Revisor_Requisiciones, OT_Administrador">
+        <siteMapNode url="~/OrdenesDeTrabajo/Almacen/Lst_OT_Requisiciones.aspx" title="Revisión de Requisiciones" roles="OT_Revisor_Requisiciones, OT_Administrador" ></siteMapNode>
+        <siteMapNode url="~/OrdenesDeTrabajo/Almacen/Lst_OT_AprobacionAjusteMateriales.aspx" title="Revisión a Ajuste de Requisiciones" roles="OT_Revisor_Requisiciones, OT_Administrador" ></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="Gestiones de Compra" roles="OT_Gestor_De_Inventario, OT_Encargado_Compra_Rapida, OT_Administrador">
+        <siteMapNode url="~/OrdenesDeTrabajo/GestionesDeCompra/Lst_OT_GestiónCompraListado.aspx" title="Gestión de Compra" roles="OT_Gestor_De_Inventario, OT_Administrador"></siteMapNode>
+        <siteMapNode url="~/OrdenesDeTrabajo/GestionesDeCompra/Lst_OT_GestiónCompraRapida.aspx" title="Gestión de Compra Unidad de Compra Rápida" roles="OT_Encargado_Compra_Rapida, OT_Administrador"></siteMapNode>
+      </siteMapNode>
+
+      <siteMapNode url="~/OrdenesDeTrabajo/Almacen/Lst_OT_DespachoMateriales.aspx?pvn_NuevaSeccion=1" title="Despacho de Materiales" roles="OT_Encargado_Almacen,OT_Despachador_Almacen, OT_Administrador" ></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/Almacen/Lst_OT_RetiroMateriales.aspx" title="Retiro de materiales por coordinador" roles="OT_Despachador_Almacen, OT_Administrador" ></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/Almacen/Lst_OT_AprobacionReingresoMateriales.aspx" title="Aprobación de Reingreso de Materiales" roles="OT_Encargado_Almacen, OT_Administrador"></siteMapNode>
+
+      <siteMapNode url="" title="Incidentes" roles="OT_Encargado_Almacen, OT_Encargado_Inventario, OT_Administrador">
+        <siteMapNode url="~/OrdenesDeTrabajo/Almacen/Lst_OT_RegistroIncidente.aspx" title="Registro de Incidentes en Almacén" roles="OT_Encargado_Almacen, OT_Administrador"></siteMapNode>
+        <siteMapNode url="~/OrdenesDeTrabajo/Almacen/Lst_OT_AtencionIncidentes.aspx" title="Atención de Incidentes en Almacén" roles="OT_Encargado_Inventario, OT_Administrador"></siteMapNode>
+      </siteMapNode>
+
+      <siteMapNode url="~/OrdenesDeTrabajo/Almacen/Lst_OT_Aprovisionamiento.aspx" title="Aprovisionamiento" roles="OT_Gestor_De_Inventario,OT_Administrador" ></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/Almacen/Lst_OT_AjusteInventario.aspx" title="Ajuste Inventario" roles="OT_Gestor_De_Inventario,OT_Asistente_Inventario,OT_Administrador" ></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/Almacen/Lst_OT_AjusteInventarioAprobSupervisor.aspx" title="Ajuste Inventario aprobación supervisor" roles="OT_Supervisor,OT_Administrador" ></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/Almacen/Lst_OT_AjusteInventarioAprobJefatura.aspx" title="Ajuste Inventario aprobación jefatura" roles="OT_Jefe_Seccion,OT_Autorizado_Jefe_Seccion,OT_Administrador" ></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/Almacen/Lst_OT_IngresoMaterialAlmacen.aspx" title="Ingreso material almacen" roles="OT_Encargado_Almacen,OT_Administrador" ></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/Almacen/Lst_OT_RegistroIngresoInventario.aspx" title="Registro ingreso al inventario" roles="OT_Encargado_Almacen,OT_Administrador" ></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/GestionesDeCompra/Lst_OT_ExclusionMaterialesGestion.aspx" title="Exclusion de materiales" roles="OT_Gestor_De_Inventario,OT_Asistente_Inventario,OT_Administrador" ></siteMapNode>
+
+    </siteMapNode>
+    <!--Tramites de encargado de fondo de trabajo-->
+    <siteMapNode url="" title="Tramites Encargado de Fondo de Trabajo"  roles="OT_Encargado_Fondo_Trabajo, OT_Administrador">
+      <siteMapNode url="~/OrdenesDeTrabajo/GestionesDeCompra/Lst_OT_FondoTrabajoAprobPresupuesto.aspx" title="Fondo de Trabajo Aprobación Presupuesto" roles="OT_Encargado_Fondo_Trabajo, OT_Administrador"></siteMapNode>
+      <siteMapNode url="~/OrdenesDeTrabajo/GestionesDeCompra/Lst_OT_FondoTrabajoAprobPresupuesto.aspx" title="Fondo de Trabajo Gestión de Cheque" roles="OT_Encargado_Fondo_Trabajo, OT_Administrador"></siteMapNode>
+    </siteMapNode>
+    <!--Encargados del presupuesto-->
+    <siteMapNode url="" title="Tramites Encargado Presupuesto"  roles="OT_Encargado_Administrativo, OT_Administrador">
+      <siteMapNode url="~/OrdenesDeTrabajo/GestionesDeCompra/Lst_OT_UnidadEspAprobJefeAdmin.aspx" title="Unidad Especializada Aprobación Jefe Administrativo" roles="OT_Encargado_Administrativo, OT_Administrador"></siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode url="" title="Reportes" roles="OT_Coordinador_Disenio, OT_Coordinador_Mantenimiento, OT_Supervisor, OT_Administrador">
+      <!--<siteMapNode url="~/Reportes/Rpt_OT_GeneralSectoresOTalleres.aspx" title="Reporte general de órdenes de trabajo por sectores o talleres" roles="OT_Coordinador_Disenio, OT_Coordinador_Mantenimiento, OT_Supervisor"></siteMapNode>-->
+      <siteMapNode url="~/Reportes/Rpt_OT_AlertasTiempoAtencion.aspx" title="Reporte de alertas de tiempo de atención" roles="OT_Coordinador_Disenio, OT_Coordinador_Mantenimiento, OT_Supervisor, OT_Administrador"></siteMapNode>
+      <siteMapNode url="~/Reportes/Rpt_OT_ReporteOrdenesTrabajo.aspx" title="Reporte Ordenes de Trabajo" roles="OT_Supervisor, OT_Administrador"></siteMapNode>
+      <siteMapNode url="~/Reportes/Rpt_OT_SectoresOrdenTrabajo.aspx" title="Reporte Ordenes de Trabajo por sector o taller" roles="OT_Supervisor, OT_Administrador"></siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode url="" title="Notificaciones" roles="OT_Pruebas">
+      <siteMapNode url="~/Notificaciones/Lst_OT_ConsultaCorreos.aspx" title="Consulta Correos" roles="OT_Pruebas"></siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode url="" title="Manuales">
+      <siteMapNode url="javascript:window.open('https://www.youtube.com/watch?v=Rmw1jAwluWM','Ingreso de Funcionarios');void(0);"  title="Ingreso de Funcionarios"></siteMapNode>
+      <siteMapNode url="javascript:window.open('https://www.youtube.com/watch?v=QfU7zemPan0','Gestiones por parte del Director de la Unidad');void(0);" title="Gestiones por parte del Director de la Unidad"></siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode url="" title="Seguridad" roles="OT_Seguridad">
+      <siteMapNode url="~/Seguridad/Lst_OT_AdministrarRoles.aspx" title="Administración de Roles" roles="OT_Seguridad"></siteMapNode>
+      <siteMapNode url="~/Seguridad/Frm_OT_RoleUsuario.aspx" title="Administración de Usuarios" roles="OT_Seguridad"></siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode url="~/Seguridad/Frm_Logout.aspx" title="Salir"></siteMapNode>
+  </siteMapNode>
+</siteMap>
+

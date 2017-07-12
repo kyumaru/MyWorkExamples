@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsSIRH.asmx?wsdl" docRef="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsSIRH.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsSIRH.asmx" xmlns:q1="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH" binding="q1:WsSIRHSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsSIRH.asmx" xmlns:q2="http://serviciosorh.ucr.ac.cr/SLA_SERVICIOSORH/WsSIRH" binding="q2:WsSIRHSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

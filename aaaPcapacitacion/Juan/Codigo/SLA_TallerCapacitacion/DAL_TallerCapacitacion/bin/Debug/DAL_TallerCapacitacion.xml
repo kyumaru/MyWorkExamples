@@ -1,0 +1,554 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DAL_TallerCapacitacion
+</name>
+</assembly>
+<members>
+<member name="T:My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTccCondicionLibro.InsertarRegistro(Utilerias.Genericos.Bases.EntBase)">
+ <summary>
+ Permite agregar un registro en la tabla TCC_CONDICION_LIBRO
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso; el valor puede corresponder a la llave autogenerada. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTccCondicionLibro.InsertarRegistro">
+ <summary>
+ Permite agregar un registro en la tabla TCC_CONDICION_LIBRO
+ </summary>
+ <returns>Mayor a cero: El proceso ha sido exitoso; el valor puede corresponder a la llave autogenerada. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTccCondicionLibro.BorrarRegistro(Utilerias.Genericos.Bases.EntBase)">
+ <summary>
+ Permite borrar un registro en la tabla TCC_CONDICION_LIBRO
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTccCondicionLibro.BorrarRegistro">
+ <summary>
+ Permite borrar un registro en la tabla TCC_CONDICION_LIBRO
+ </summary>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTccCondicionLibro.ModificarRegistro(Utilerias.Genericos.Bases.EntBase)">
+ <summary>
+ Permite modificar un registro en la tabla TCC_CONDICION_LIBRO
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTccCondicionLibro.ModificarRegistro">
+ <summary>
+ Permite modificar un registro en la tabla TCC_CONDICION_LIBRO
+ </summary>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTccCondicionLibro.ObtenerRegistro(System.String)">
+ <summary>
+ Obtiene un registro de la tabla TCC_CONDICION_LIBRO según el criterio indicado
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <returns>Entidad que representa la información obtenida al ejecutar la consulta</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTccCondicionLibro.ListarRegistros(System.String,System.String,System.Boolean,System.Int32,System.Int32)">
+ <summary>
+ Obtiene los registros de la vista V_TCC_CONDICION_LIBRO según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvb_Paginar">Indica si debe paginarse el resultado de la consulta</param>
+ <param name="pvn_NumeroPagina">Indica el número de página a retornar</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>DataSet con la información obtenida según el criterio de búsqueda indicado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTccCondicionLibro.ObtenerDatosPaginacionVTccCondicionLibro(System.String,System.String,System.Int32)">
+ <summary>
+ Obtiene la cantidad de registros y páginas que retornará la consulta a la vista V_TCC_CONDICION_LIBRO según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>Entidad que contiene el total de registros de la consulta, el tamaño de la página y la cantidad de páginas requeridas para desplegar la información</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTccCondicionLibro.ListarRegistrosLista(System.String,System.String,System.Boolean,System.Int32,System.Int32)">
+ <summary>
+ Obtiene los registros de la vista V_TCC_CONDICION_LIBROLst según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvb_Paginar">Indica si debe paginarse el resultado de la consulta</param>
+ <param name="pvn_NumeroPagina">Indica el número de página a retornar</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>DataSet con la información obtenida según el criterio de búsqueda indicado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTccCondicionLibro.ObtenerDatosPaginacionVTccCondicionLibrolst(System.String,System.String,System.Int32)">
+ <summary>
+ Obtiene la cantidad de registros y páginas que retornará la consulta a la vista V_TCC_CONDICION_LIBROLst según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>Entidad que contiene el total de registros de la consulta, el tamaño de la página y la cantidad de páginas requeridas para desplegar la información</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 4:34:41 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutor.InsertarRegistro(Utilerias.Genericos.Bases.EntBase)">
+ <summary>
+ Permite agregar un registro en la tabla TCM_AUTOR
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso; el valor puede corresponder a la llave autogenerada. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutor.InsertarRegistro">
+ <summary>
+ Permite agregar un registro en la tabla TCM_AUTOR
+ </summary>
+ <returns>Mayor a cero: El proceso ha sido exitoso; el valor puede corresponder a la llave autogenerada. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutor.BorrarRegistro(Utilerias.Genericos.Bases.EntBase)">
+ <summary>
+ Permite borrar un registro en la tabla TCM_AUTOR
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutor.BorrarRegistro">
+ <summary>
+ Permite borrar un registro en la tabla TCM_AUTOR
+ </summary>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutor.ModificarRegistro(Utilerias.Genericos.Bases.EntBase)">
+ <summary>
+ Permite modificar un registro en la tabla TCM_AUTOR
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutor.ModificarRegistro">
+ <summary>
+ Permite modificar un registro en la tabla TCM_AUTOR
+ </summary>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutor.ObtenerRegistro(System.String)">
+ <summary>
+ Obtiene un registro de la tabla TCM_AUTOR según el criterio indicado
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <returns>Entidad que representa la información obtenida al ejecutar la consulta</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutor.ListarRegistros(System.String,System.String,System.Boolean,System.Int32,System.Int32)">
+ <summary>
+ Obtiene los registros de la vista V_TCM_AUTOR según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvb_Paginar">Indica si debe paginarse el resultado de la consulta</param>
+ <param name="pvn_NumeroPagina">Indica el número de página a retornar</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>DataSet con la información obtenida según el criterio de búsqueda indicado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutor.ObtenerDatosPaginacionVTcmAutor(System.String,System.String,System.Int32)">
+ <summary>
+ Obtiene la cantidad de registros y páginas que retornará la consulta a la vista V_TCM_AUTOR según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>Entidad que contiene el total de registros de la consulta, el tamaño de la página y la cantidad de páginas requeridas para desplegar la información</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutor.ListarRegistrosLista(System.String,System.String,System.Boolean,System.Int32,System.Int32)">
+ <summary>
+ Obtiene los registros de la vista V_TCM_AUTORLst según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvb_Paginar">Indica si debe paginarse el resultado de la consulta</param>
+ <param name="pvn_NumeroPagina">Indica el número de página a retornar</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>DataSet con la información obtenida según el criterio de búsqueda indicado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutor.ObtenerDatosPaginacionVTcmAutorlst(System.String,System.String,System.Int32)">
+ <summary>
+ Obtiene la cantidad de registros y páginas que retornará la consulta a la vista V_TCM_AUTORLst según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>Entidad que contiene el total de registros de la consulta, el tamaño de la página y la cantidad de páginas requeridas para desplegar la información</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutor.ListarFcTcAutoresDelLibro(System.String,System.String,System.Boolean,System.Int32,System.Int32,System.String)">
+ <summary>
+ Ejecuta la función FC_TC_AUTORES_DEL_LIBRO
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvb_Paginar">Indica si debe paginarse el resultado de la consulta</param>
+ <param name="pvn_NumeroPagina">Indica el número de página a retornar</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>DataSet con la información obtenida según el criterio de búsqueda indicado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutor.ObtenerDatosPaginacionFcTcAutoresDelLibro(System.String,System.String,System.Int32,System.String)">
+ <summary>
+ Obtiene la cantidad de registros y páginas que retornará la consulta a la función FC_TC_AUTORES_DEL_LIBRO según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>Entidad que contiene el total de registros de la consulta, el tamaño de la página y la cantidad de páginas requeridas para desplegar la información</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutor.ListarFcTcAutoresNoAsignadosLib(System.String,System.String,System.Boolean,System.Int32,System.Int32,System.String)">
+ <summary>
+ Ejecuta la función FC_TC_AUTORES_NO_ASIGNADOS_LIB
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvb_Paginar">Indica si debe paginarse el resultado de la consulta</param>
+ <param name="pvn_NumeroPagina">Indica el número de página a retornar</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>DataSet con la información obtenida según el criterio de búsqueda indicado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutor.ObtenerDatosPaginacionFcTcAutoresNoAsignadosLib(System.String,System.String,System.Int32,System.String)">
+ <summary>
+ Obtiene la cantidad de registros y páginas que retornará la consulta a la función FC_TC_AUTORES_NO_ASIGNADOS_LIB según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>Entidad que contiene el total de registros de la consulta, el tamaño de la página y la cantidad de páginas requeridas para desplegar la información</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutorPorLibro.InsertarRegistro(Utilerias.Genericos.Bases.EntBase)">
+ <summary>
+ Permite agregar un registro en la tabla TCM_AUTOR_POR_LIBRO
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso; el valor puede corresponder a la llave autogenerada. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutorPorLibro.InsertarRegistro">
+ <summary>
+ Permite agregar un registro en la tabla TCM_AUTOR_POR_LIBRO
+ </summary>
+ <returns>Mayor a cero: El proceso ha sido exitoso; el valor puede corresponder a la llave autogenerada. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutorPorLibro.BorrarRegistro(Utilerias.Genericos.Bases.EntBase)">
+ <summary>
+ Permite borrar un registro en la tabla TCM_AUTOR_POR_LIBRO
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutorPorLibro.BorrarRegistro">
+ <summary>
+ Permite borrar un registro en la tabla TCM_AUTOR_POR_LIBRO
+ </summary>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutorPorLibro.ModificarRegistro(Utilerias.Genericos.Bases.EntBase)">
+ <summary>
+ Permite modificar un registro en la tabla TCM_AUTOR_POR_LIBRO
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutorPorLibro.ModificarRegistro">
+ <summary>
+ Permite modificar un registro en la tabla TCM_AUTOR_POR_LIBRO
+ </summary>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutorPorLibro.ObtenerRegistro(System.String)">
+ <summary>
+ Obtiene un registro de la tabla TCM_AUTOR_POR_LIBRO según el criterio indicado
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <returns>Entidad que representa la información obtenida al ejecutar la consulta</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutorPorLibro.ListarRegistros(System.String,System.String,System.Boolean,System.Int32,System.Int32)">
+ <summary>
+ Obtiene los registros de la vista V_TCM_AUTOR_POR_LIBRO según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvb_Paginar">Indica si debe paginarse el resultado de la consulta</param>
+ <param name="pvn_NumeroPagina">Indica el número de página a retornar</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>DataSet con la información obtenida según el criterio de búsqueda indicado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutorPorLibro.ObtenerDatosPaginacionVTcmAutorPorLibro(System.String,System.String,System.Int32)">
+ <summary>
+ Obtiene la cantidad de registros y páginas que retornará la consulta a la vista V_TCM_AUTOR_POR_LIBRO según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>Entidad que contiene el total de registros de la consulta, el tamaño de la página y la cantidad de páginas requeridas para desplegar la información</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutorPorLibro.ListarRegistrosLista(System.String,System.String,System.Boolean,System.Int32,System.Int32)">
+ <summary>
+ Obtiene los registros de la vista V_TCM_AUTOR_POR_LIBROLst según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvb_Paginar">Indica si debe paginarse el resultado de la consulta</param>
+ <param name="pvn_NumeroPagina">Indica el número de página a retornar</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>DataSet con la información obtenida según el criterio de búsqueda indicado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmAutorPorLibro.ObtenerDatosPaginacionVTcmAutorPorLibrolst(System.String,System.String,System.Int32)">
+ <summary>
+ Obtiene la cantidad de registros y páginas que retornará la consulta a la vista V_TCM_AUTOR_POR_LIBROLst según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>Entidad que contiene el total de registros de la consulta, el tamaño de la página y la cantidad de páginas requeridas para desplegar la información</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmLibro.InsertarRegistro(Utilerias.Genericos.Bases.EntBase)">
+ <summary>
+ Permite agregar un registro en la tabla TCM_LIBRO
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso; el valor puede corresponder a la llave autogenerada. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmLibro.InsertarRegistro">
+ <summary>
+ Permite agregar un registro en la tabla TCM_LIBRO
+ </summary>
+ <returns>Mayor a cero: El proceso ha sido exitoso; el valor puede corresponder a la llave autogenerada. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmLibro.BorrarRegistro(Utilerias.Genericos.Bases.EntBase)">
+ <summary>
+ Permite borrar un registro en la tabla TCM_LIBRO
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmLibro.BorrarRegistro">
+ <summary>
+ Permite borrar un registro en la tabla TCM_LIBRO
+ </summary>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmLibro.ModificarRegistro(Utilerias.Genericos.Bases.EntBase)">
+ <summary>
+ Permite modificar un registro en la tabla TCM_LIBRO
+ </summary>
+ <param name="pvo_Registro">Entidad a procesar</param>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmLibro.ModificarRegistro">
+ <summary>
+ Permite modificar un registro en la tabla TCM_LIBRO
+ </summary>
+ <returns>Mayor a cero: El proceso ha sido exitoso. Menor a cero: El proceso ha fallado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmLibro.ObtenerRegistro(System.String)">
+ <summary>
+ Obtiene un registro de la tabla TCM_LIBRO según el criterio indicado
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <returns>Entidad que representa la información obtenida al ejecutar la consulta</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmLibro.ListarRegistros(System.String,System.String,System.Boolean,System.Int32,System.Int32)">
+ <summary>
+ Obtiene los registros de la vista V_TCM_LIBRO según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvb_Paginar">Indica si debe paginarse el resultado de la consulta</param>
+ <param name="pvn_NumeroPagina">Indica el número de página a retornar</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>DataSet con la información obtenida según el criterio de búsqueda indicado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmLibro.ObtenerDatosPaginacionVTcmLibro(System.String,System.String,System.Int32)">
+ <summary>
+ Obtiene la cantidad de registros y páginas que retornará la consulta a la vista V_TCM_LIBRO según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>Entidad que contiene el total de registros de la consulta, el tamaño de la página y la cantidad de páginas requeridas para desplegar la información</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmLibro.ListarRegistrosLista(System.String,System.String,System.Boolean,System.Int32,System.Int32)">
+ <summary>
+ Obtiene los registros de la vista V_TCM_LIBROLst según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvb_Paginar">Indica si debe paginarse el resultado de la consulta</param>
+ <param name="pvn_NumeroPagina">Indica el número de página a retornar</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>DataSet con la información obtenida según el criterio de búsqueda indicado</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+<member name="M:TallerCapacitacion.AccesoDatos.Catalogos.DalTcmLibro.ObtenerDatosPaginacionVTcmLibrolst(System.String,System.String,System.Int32)">
+ <summary>
+ Obtiene la cantidad de registros y páginas que retornará la consulta a la vista V_TCM_LIBROLst según el criterio y orden indicados
+ </summary>
+ <param name="pvc_Condicion">Corresponde al detalle de la cláusula WHERE</param>
+ <param name="pvc_Orden">Corresponde al detalle de la cláusula ORDER BY</param>
+ <param name="pvn_TamanoPagina">Indica la cantidad máxima de registro a retornar por página</param>
+ <returns>Entidad que contiene el total de registros de la consulta, el tamaño de la página y la cantidad de páginas requeridas para desplegar la información</returns>
+ <author>Generador de Código basado en objetos Oracle</author>
+ <creationDate>4/5/2017 1:54:32 p. m.</creationDate>
+ <changeLog></changeLog>
+</member>
+</members>
+</doc>

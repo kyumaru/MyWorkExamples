@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PDAGO_SL" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PDAGO_SL" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="OrdenTrabajo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="act_codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="edi_codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="otr_Comentario_Recepcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="otr_categoria" type="xs:int" />
+      <xs:element minOccurs="0" name="otr_codigo" type="xs:int" />
+      <xs:element minOccurs="0" name="otr_desc_actividad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="otr_madre" type="xs:int" />
+      <xs:element minOccurs="0" name="sec_codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="uso_codigo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrdenTrabajo" nillable="true" type="tns:OrdenTrabajo" />
+  <xs:complexType name="OTFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FaultMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OTFault" nillable="true" type="tns:OTFault" />
+</xs:schema>

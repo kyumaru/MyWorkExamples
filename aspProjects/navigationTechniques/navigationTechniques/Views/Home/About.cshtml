@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = " Response.Redirect is server side, it navigates to any external webPage or inside this application, it changes the URI in the address bar to the href page. But ther is a catch, there are 2 request/response pairs involved, navigation through serverTransfer or serverExecute is just 1 trip thus faster";
+}
+<h3>@ViewBag.Title.</h3>
+<h3>@ViewBag.Message</h3>
+
+<div >
+    <!--notice the bare minimun for a form to POST/GET
+        in MVC is defining a method attribute
+        the view is linked to a Controller/Action so it will POST/GET there -->
+
+    <form method="post">
+       
+        <input id="myPostButton" class="btn-primary" type="submit" value="redirect">
+    </form>
+</div>

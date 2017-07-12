@@ -1,0 +1,6 @@
+C:\Users\tRasHcAn\Desktop\nameSpacesTest\nameSpacesTest\bin\Debug\nameSpacesTest.exe.config
+C:\Users\tRasHcAn\Desktop\nameSpacesTest\nameSpacesTest\bin\Debug\nameSpacesTest.exe
+C:\Users\tRasHcAn\Desktop\nameSpacesTest\nameSpacesTest\bin\Debug\nameSpacesTest.pdb
+C:\Users\tRasHcAn\Desktop\nameSpacesTest\nameSpacesTest\obj\Debug\nameSpacesTest.csprojResolveAssemblyReference.cache
+C:\Users\tRasHcAn\Desktop\nameSpacesTest\nameSpacesTest\obj\Debug\nameSpacesTest.exe
+C:\Users\tRasHcAn\Desktop\nameSpacesTest\nameSpacesTest\obj\Debug\nameSpacesTest.pdb

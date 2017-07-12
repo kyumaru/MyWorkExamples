@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0622282-A977-4B3A-8123-C17D1A0EC0E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>BLL_OrdenesDeTrabajo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BLL_OrdenesDeTrabajo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BLL_OrdenesDeTrabajo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\Compilados\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Utilerias.BaseDatos.OracleServer">
+      <HintPath>..\..\..\..\Compilados\Utilerias.BaseDatos.OracleServer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Utilerias.Genericos">
+      <HintPath>..\..\..\..\Compilados\Utilerias.Genericos.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Utilerias.Genericos.Extensiones">
+      <HintPath>..\..\..\..\Compilados\Utilerias.Genericos.Extensiones.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Utilerias.GestorNotificaciones">
+      <HintPath>..\..\..\..\Utilitarios\Gestor de Notificaciones\Codigo\Utilerias.GestorNotificaciones\Utilerias.GestorNotificaciones\bin\Release\Utilerias.GestorNotificaciones.dll</HintPath>
+    </Reference>
+    <Reference Include="Utilerias.OrdenesDeTrabajo">
+      <HintPath>..\..\Utilerias.OrdenesDeTrabajo\Utilerias.OrdenesDeTrabajo\bin\Release\Utilerias.OrdenesDeTrabajo.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\ConstantesInternas.vb" />
+    <Compile Include="Catalogos\BllOtcEstadoAjuste.vb" />
+    <Compile Include="Catalogos\BllOtcEstadoOrdenTrabajo.vb" />
+    <Compile Include="Catalogos\BllOtcEstadoTraslado.vb" />
+    <Compile Include="Catalogos\BllOtcTipoOrdenTrabajo.vb" />
+    <Compile Include="Catalogos\BllOtfInventario.vb" />
+    <Compile Include="Catalogos\BllOtfOperarioArea.vb" />
+    <Compile Include="Catalogos\BllOtfPeriodoCierre.vb" />
+    <Compile Include="Catalogos\BllOtlLineaTraslado.vb" />
+    <Compile Include="Catalogos\BllOtlSolicitudTraslado.vb" />
+    <Compile Include="Catalogos\BllOtlTrazabilidadProceso.vb" />
+    <Compile Include="Catalogos\BllOtlTrazabilSolTraslado.vb" />
+    <Compile Include="Catalogos\BllOtmActividad.vb" />
+    <Compile Include="Catalogos\BllOtmAlmacenBodega.vb" />
+    <Compile Include="Catalogos\BllOtmAreaProfesional.vb" />
+    <Compile Include="Catalogos\BllOtmAutorizadoDirector.vb" />
+    <Compile Include="Catalogos\BllOtmAutorizadoUbicacion.vb" />
+    <Compile Include="Catalogos\BllOtmCategoriaMaterial.vb" />
+    <Compile Include="Catalogos\BllOtmCategoriaServicio.vb" />
+    <Compile Include="Catalogos\BllOtmCorreoProveedor.vb" />
+    <Compile Include="Catalogos\BllOtmEncargadoAlmacen.vb" />
+    <Compile Include="Catalogos\BllOtmEncargadoContrato.vb" />
+    <Compile Include="Catalogos\BllOtmEspacio.vb" />
+    <Compile Include="Catalogos\BllOtmEtapaOrdenTrabajo.vb" />
+    <Compile Include="Catalogos\BllOtmEtapaViaContrato.vb" />
+    <Compile Include="Catalogos\BllOtmLugarTrabajo.vb" />
+    <Compile Include="Catalogos\BllOtmMaterial.vb" />
+    <Compile Include="Catalogos\BllOtmMotivoRechazo.vb" />
+    <Compile Include="Catalogos\BllOtmProveedor.vb" />
+    <Compile Include="Catalogos\BllOtmRequerimiento.vb" />
+    <Compile Include="Catalogos\BllOtmRubroDecisionInicia.vb" />
+    <Compile Include="Catalogos\BllOtmSectorTaller.vb" />
+    <Compile Include="Catalogos\BllOtmSubcategoriaCategor.vb" />
+    <Compile Include="Catalogos\BllOtmSubcategoriaMaterial.vb" />
+    <Compile Include="Catalogos\BllOtmSubcomponente.vb" />
+    <Compile Include="Catalogos\BllOtmTelefonoProveedor.vb" />
+    <Compile Include="Catalogos\BllOtmTipoDocumento.vb" />
+    <Compile Include="Catalogos\BllOtmTipoIncidente.vb" />
+    <Compile Include="Catalogos\BllOtmTipoLugarUbicacion.vb" />
+    <Compile Include="Catalogos\BllOtmTipoObra.vb" />
+    <Compile Include="Catalogos\BllOtmUbicacion.vb" />
+    <Compile Include="Catalogos\BllOtmUnidadEncargada.vb" />
+    <Compile Include="Catalogos\BllOtmUnidadMedida.vb" />
+    <Compile Include="Catalogos\BllOtmUnidadTiempo.vb" />
+    <Compile Include="Catalogos\BllOtmUnidadUbicacion.vb" />
+    <Compile Include="Catalogos\BllOtmViaCompraContrato.vb" />
+    <Compile Include="Catalogos\BllOtpParametro.vb" />
+    <Compile Include="Catalogos\BllOtpParametroGlobal.vb" />
+    <Compile Include="Catalogos\BllOtpParametroUbicacion.vb" />
+    <Compile Include="Catalogos\BllOttLineaTraslado.vb" />
+    <Compile Include="Catalogos\BllOttSolicitudTraslado.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OrdenesDeTrabajo\BllOtcEstadoGestionCompra.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOtfAdjuntoOrdenTrabajo.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOtfExcepcionPeriodo.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOtfFichaTecnicaDetalle.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOtfFichaTecnicaEspacio.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOtfFichaTecnicaGeneral.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOtfFichaTecnicaSubcomp.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOtfIncidenteAlmacen.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOtfOperario.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOtfPlaneacionPreventivo.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOtfPreOrdenTrabajo.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOtfRevisionOrdenTrabaj.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOtfRevisionPreOrdenTra.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOtfUbicacionFavorita.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOthContratacion.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOtlDetalleMaterial.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOtlDetAprovisionamiento.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOtmFlujoGestionCompra.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttAdjuntoCotizacion.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttAdjuntoGestionCompr.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttAdjuntoGestionIngr.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttAdjuntoOrdenTrabajo.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttAjusteInventario.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttAnteproyecto.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttAprovisionamiento.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttContratacion.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttDesicionInicial.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttDetalleAjuste.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttDetalleGestionIngr.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttDetalleMaterial.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttDetalleRetiro.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttDetAprovisionamiento.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttDocumentoAnteproyect.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttDocumentoContratacion.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttFichaTecnicaDetalle.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttFichaTecnicaEspacio.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttFichaTecnicaGeneral.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttFichaTecnicaSubcomp.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttGestionCompra.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttGestionIngresoMater.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttGrupoGestionCompra.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttInformePresupuesto.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttLineaAdjudicacion.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttLineaGestionCompra.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttOfertaProveedor.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttOperarioOrdenTrab.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttOrdenTrabajo.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttOrdnTrabDecInicial.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttProveedorCotizacion.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttRevisionOrdenTrabaj.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttSolicitudMaterial.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttSolicitudReingreso.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttSolicitudRetiro.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttTiempoOperario.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttTrazabilidadProceso.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllOttViabilidadTecnica.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllPdfMezcla.vb" />
+    <Compile Include="OrdenesDeTrabajo\BllSincronizarRoles.vb" />
+    <Compile Include="Web References\WsrCatalogosPlanilla\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WsrCatalogosVacaciones\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WsrEU_Curriculo\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WsrGestorNotificaciones\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WsrOracleRolesProvider\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WsrOTServicio\Reference.vb" />
+    <Compile Include="Web References\WsrPlataformaDeServicios\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WsrSIRH\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WsrSolicitudVacaciones\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Wsr_SDP_ReportServer\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WsrCatalogosPlanilla\PLM_CENTRO_ASISTENCIA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrCatalogosPlanilla\PLM_EMPLE_DE_PLANILLA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrCatalogosPlanilla\PLP_PARAMETROS_PLANILLA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrCatalogosPlanilla\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WsrCatalogosPlanilla\WsCatalogosPlanilla.wsdl" />
+    <None Include="Web References\WsrCatalogosVacaciones\PLM_ESTRUCTURA_ORG.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrCatalogosVacaciones\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WsrCatalogosVacaciones\VAM_EMPLEADOS_VAC.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrCatalogosVacaciones\WsCatalogosVacaciones.wsdl" />
+    <None Include="Web References\WsrEU_Curriculo\EntAutor_Externo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntCanton.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntCarreras.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntCursos.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntDistrito.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmpleados.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmpleado_Estado.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Certificaciones.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Certificaciones_Aut.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Cursos.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Cursos_Aut.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Est_Formales.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Est_Formales_Aut.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Exp_Laboral.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Idiomas.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Idioma_Titulos.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Idioma_Titulos_Aut.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Licencia_Conducir.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Parientes.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Producciones.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Produccion_Empleado.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Reconocimientos.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Requisitos.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Telefonos.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEmp_Tipo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEstado.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEu_Imagen_Carnet.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEU_SINCRO_SIRH.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntEU_UNIDAD.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntFuncionario.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntGbl_Estado_Civil.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntGbl_Idiomas.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntGbl_Tipo_Identificacion.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntGbl_Tipo_Licencia.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntGbl_Tipo_Telefono.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntMedio.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntNacion.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntNivel_Educativo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntParentesco.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntProduccion.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntProduccion_Autor_Externo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntProvincia.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntReconocimiento.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntRequisitos.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\EntTipo_Vehiculo_Produccion.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WsrEU_Curriculo\wsEU_Curriculo.wsdl" />
+    <None Include="Web References\WsrGestorNotificaciones\EntDatosPaginacion.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrGestorNotificaciones\EntGNH_ARCHIVO_ADJUNTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrGestorNotificaciones\EntGNH_DESTINATARIO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrGestorNotificaciones\EntGNH_NOTIFICACION.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrGestorNotificaciones\EntGNM_SISTEMA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrGestorNotificaciones\EntGNT_ARCHIVO_ADJUNTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrGestorNotificaciones\EntGNT_DESTINATARIO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrGestorNotificaciones\EntGNT_NOTIFICACION.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrGestorNotificaciones\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WsrGestorNotificaciones\wsGestorNotificaciones.wsdl" />
+    <None Include="Web References\WsrOracleRolesProvider\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WsrOracleRolesProvider\WsOracleRolesProvider.wsdl" />
+    <None Include="Web References\WsrOTServicio\OrdenTrabajo.datasource" />
+    <None Include="Web References\WsrOTServicio\OTServicio.wsdl" />
+    <None Include="Web References\WsrOTServicio\OTServicio.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WsrOTServicio\OTServicio0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WsrOTServicio\OTServicio1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WsrOTServicio\Reference.map" />
+    <None Include="Web References\WsrPlataformaDeServicios\PSM_TIPO_CONSTANCIA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrPlataformaDeServicios\PST_SOLICITUD_CONSTANCIA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrPlataformaDeServicios\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WsrPlataformaDeServicios\WsPlataformaDeServicios.wsdl" />
+    <None Include="Web References\WsrSIRH\CLASE_PAGO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrSIRH\CONSTANTES.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrSIRH\FECHAS_PLANILLA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrSIRH\HIST_PUESTOS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrSIRH\NACIONALIDAD.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrSIRH\PARAMETROS_TRAMITE.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrSIRH\PERSONAS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrSIRH\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WsrSIRH\WsSIRH.wsdl" />
+    <None Include="Web References\WsrSolicitudVacaciones\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WsrSolicitudVacaciones\VAH_SOLICITUD_VAC.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrSolicitudVacaciones\VAT_FECHAS_SOLICITUD_VAC.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrSolicitudVacaciones\VAT_SOLICITUD_VAC.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsrSolicitudVacaciones\WsSolicitudVacaciones.wsdl" />
+    <None Include="Web References\Wsr_SDP_ReportServer\EntReporte.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Wsr_SDP_ReportServer\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\Wsr_SDP_ReportServer\Ws_SDP_ReportServer.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL_OrdenesDeTrabajo\DAL_OrdenesDeTrabajo.vbproj">
+      <Project>{54c99846-5c81-4e63-aa3a-b2e5ef201d21}</Project>
+      <Name>DAL_OrdenesDeTrabajo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENT_OrdenesDeTrabajo\ENT_OrdenesDeTrabajo.vbproj">
+      <Project>{437a06b8-a0d6-4cb9-ba80-dfe65120aa94}</Project>
+      <Name>ENT_OrdenesDeTrabajo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WsrEU_Curriculo\wsEU_Curriculo.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost/SLA_ExpUnico/wsEU_Curriculo.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WsrEU_Curriculo\</RelPath>
+      <UpdateFromURL>http://localhost/SLA_ExpUnico/wsEU_Curriculo.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BLL_OrdenesDeTrabajo_WsrEU_Curriculo_wsEU_Curriculo</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/SLA_GeneradorDeReportes/Ws_SDP_ReportServer.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Wsr_SDP_ReportServer\</RelPath>
+      <UpdateFromURL>http://localhost/SLA_GeneradorDeReportes/Ws_SDP_ReportServer.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BLL_OrdenesDeTrabajo_Wsr_SDP_ReportServer_Ws_SDP_ReportServer</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/SLA_GestorNotificaciones/wsGestorNotificaciones.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WsrGestorNotificaciones\</RelPath>
+      <UpdateFromURL>http://localhost/SLA_GestorNotificaciones/wsGestorNotificaciones.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BLL_OrdenesDeTrabajo_WsrGestorNotificaciones_wsGestorNotificaciones</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsCatalogosPlanilla.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WsrCatalogosPlanilla\</RelPath>
+      <UpdateFromURL>http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsCatalogosPlanilla.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BLL_OrdenesDeTrabajo_WsrCatalogosPlanilla_WsCatalogosPlanilla</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsCatalogosVacaciones.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WsrCatalogosVacaciones\</RelPath>
+      <UpdateFromURL>http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsCatalogosVacaciones.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BLL_OrdenesDeTrabajo_WsrCatalogosVacaciones_WsCatalogosVacaciones</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsPlataformaDeServicios.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WsrPlataformaDeServicios\</RelPath>
+      <UpdateFromURL>http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsPlataformaDeServicios.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BLL_OrdenesDeTrabajo_WsrPlataformaDeServicios_WsPlataformaDeServicios</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsSIRH.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WsrSIRH\</RelPath>
+      <UpdateFromURL>http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsSIRH.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BLL_OrdenesDeTrabajo_WsrSIRH_WsSIRH</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsSolicitudVacaciones.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WsrSolicitudVacaciones\</RelPath>
+      <UpdateFromURL>http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsSolicitudVacaciones.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BLL_OrdenesDeTrabajo_WsrSolicitudVacaciones_WsSolicitudVacaciones</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/SLA_UtileriasSeguridad/WsOracleRolesProvider.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WsrOracleRolesProvider\</RelPath>
+      <UpdateFromURL>http://localhost/SLA_UtileriasSeguridad/WsOracleRolesProvider.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BLL_OrdenesDeTrabajo_WsrOracleRolesProvider_WsOracleRolesProvider</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WsrGestorNotificaciones\wsGestorNotificaciones.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL_OrdenesDeTrabajo\DAL_OrdenesDeTrabajo.vbproj">
+      <Project>{54c99846-5c81-4e63-aa3a-b2e5ef201d21}</Project>
+      <Name>DAL_OrdenesDeTrabajo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENT_OrdenesDeTrabajo\ENT_OrdenesDeTrabajo.vbproj">
+      <Project>{437a06b8-a0d6-4cb9-ba80-dfe65120aa94}</Project>
+      <Name>ENT_OrdenesDeTrabajo</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WsrCatalogosVacaciones\WsCatalogosVacaciones.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WsrOracleRolesProvider\WsOracleRolesProvider.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WsrSolicitudVacaciones\WsSolicitudVacaciones.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WsrPlataformaDeServicios\WsPlataformaDeServicios.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WsrCatalogosPlanilla\WsCatalogosPlanilla.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WsrSIRH\WsSIRH.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\Wsr_SDP_ReportServer\Ws_SDP_ReportServer.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

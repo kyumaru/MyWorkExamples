@@ -1,0 +1,10 @@
+D:\Working Folder\Juan\Codigo\SLA_TallerCapacitacion\ENT_TallerCapacitacion\bin\Debug\ENT_TallerCapacitacion.dll
+D:\Working Folder\Juan\Codigo\SLA_TallerCapacitacion\ENT_TallerCapacitacion\bin\Debug\ENT_TallerCapacitacion.pdb
+D:\Working Folder\Juan\Codigo\SLA_TallerCapacitacion\ENT_TallerCapacitacion\bin\Debug\ENT_TallerCapacitacion.xml
+D:\Working Folder\Juan\Codigo\SLA_TallerCapacitacion\ENT_TallerCapacitacion\bin\Debug\Utilerias.Genericos.dll
+D:\Working Folder\Juan\Codigo\SLA_TallerCapacitacion\ENT_TallerCapacitacion\obj\Debug\ENT_TallerCapacitacion.vbprojResolveAssemblyReference.cache
+D:\Working Folder\Juan\Codigo\SLA_TallerCapacitacion\ENT_TallerCapacitacion\obj\Debug\Resources.resources
+D:\Working Folder\Juan\Codigo\SLA_TallerCapacitacion\ENT_TallerCapacitacion\obj\Debug\ENT_TallerCapacitacion.vbproj.GenerateResource.Cache
+D:\Working Folder\Juan\Codigo\SLA_TallerCapacitacion\ENT_TallerCapacitacion\obj\Debug\ENT_TallerCapacitacion.dll
+D:\Working Folder\Juan\Codigo\SLA_TallerCapacitacion\ENT_TallerCapacitacion\obj\Debug\ENT_TallerCapacitacion.xml
+D:\Working Folder\Juan\Codigo\SLA_TallerCapacitacion\ENT_TallerCapacitacion\obj\Debug\ENT_TallerCapacitacion.pdb

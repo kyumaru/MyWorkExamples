@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://localhost/SLA_OrdenesDeTrabajo/Ws_OT_OrdenesDeTrabajo.asmx?wsdl" docRef="http://localhost/SLA_OrdenesDeTrabajo/Ws_OT_OrdenesDeTrabajo.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://localhost/SLA_OrdenesDeTrabajo/Ws_OT_OrdenesDeTrabajo.asmx" xmlns:q1="http://Ordenesdetrabajo.ucr.ac.cr/Sla_Ordenesdetrabajo/Ws_OT_OrdenesDeTrabajo" binding="q1:Ws_OT_OrdenesDeTrabajoSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://localhost/SLA_OrdenesDeTrabajo/Ws_OT_OrdenesDeTrabajo.asmx" xmlns:q2="http://Ordenesdetrabajo.ucr.ac.cr/Sla_Ordenesdetrabajo/Ws_OT_OrdenesDeTrabajo" binding="q2:Ws_OT_OrdenesDeTrabajoSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

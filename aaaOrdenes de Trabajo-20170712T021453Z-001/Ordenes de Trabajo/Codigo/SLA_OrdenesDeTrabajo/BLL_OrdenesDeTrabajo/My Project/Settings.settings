@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="BLL_OrdenesDeTrabajo_WsrGestorNotificaciones_wsGestorNotificaciones" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/SLA_GestorNotificaciones/wsGestorNotificaciones.asmx</Value>
+    </Setting>
+    <Setting Name="BLL_OrdenesDeTrabajo_WsrEU_Curriculo_wsEU_Curriculo" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/SLA_ExpUnico/wsEU_Curriculo.asmx</Value>
+    </Setting>
+    <Setting Name="BLL_OrdenesDeTrabajo_WsrSolicitudVacaciones_WsSolicitudVacaciones" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsSolicitudVacaciones.asmx</Value>
+    </Setting>
+    <Setting Name="BLL_OrdenesDeTrabajo_WsrCatalogosVacaciones_WsCatalogosVacaciones" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsCatalogosVacaciones.asmx</Value>
+    </Setting>
+    <Setting Name="BLL_OrdenesDeTrabajo_WsrOracleRolesProvider_WsOracleRolesProvider" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/SLA_UtileriasSeguridad/WsOracleRolesProvider.asmx</Value>
+    </Setting>
+    <Setting Name="BLL_OrdenesDeTrabajo_WsrPlataformaDeServicios_WsPlataformaDeServicios" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsPlataformaDeServicios.asmx</Value>
+    </Setting>
+    <Setting Name="BLL_OrdenesDeTrabajo_WsrCatalogosPlanilla_WsCatalogosPlanilla" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsCatalogosPlanilla.asmx</Value>
+    </Setting>
+    <Setting Name="BLL_OrdenesDeTrabajo_WsrSIRH_WsSIRH" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.11.28.15/SLA_ServiciosOrh_SDP_Sirh_Desarrollo/WsSIRH.asmx</Value>
+    </Setting>
+    <Setting Name="BLL_OrdenesDeTrabajo_Wsr_SDP_ReportServer_Ws_SDP_ReportServer" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/SLA_GeneradorDeReportes/Ws_SDP_ReportServer.asmx</Value>
+    </Setting>
+    <Setting Name="BLL_OrdenesDeTrabajo_WsrOTServicio_OTServicio" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

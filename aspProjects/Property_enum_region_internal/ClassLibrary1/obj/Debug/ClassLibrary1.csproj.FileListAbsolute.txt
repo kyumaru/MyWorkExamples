@@ -1,0 +1,5 @@
+C:\Users\tRasHcAn\Desktop\Property_enum_region_internal\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\tRasHcAn\Desktop\Property_enum_region_internal\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\tRasHcAn\Desktop\Property_enum_region_internal\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\tRasHcAn\Desktop\Property_enum_region_internal\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\tRasHcAn\Desktop\Property_enum_region_internal\ClassLibrary1\obj\Debug\ClassLibrary1.csprojResolveAssemblyReference.cache
